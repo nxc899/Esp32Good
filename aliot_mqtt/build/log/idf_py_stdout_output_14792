@@ -1,0 +1,2843 @@
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (27) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 25 2025 20:09:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=20004h (131076) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=0003002c vaddr=3fc99d00 size=0499ch ( 18844) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=000349d0 vaddr=40374000 size=0b648h ( 46664) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a30dch (667868) map[0m
+[0;32mI (261) esp_image: segment 4: paddr=000e3104 vaddr=4037f648 size=0a5f8h ( 42488) load[0m
+[0;32mI (279) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (279) boot: Disabling RNG early entropy source...[0m
+[0;32mI (291) cpu_start: Multicore app[0m
+[0;32mI (301) cpu_start: Pro cpu start user code[0m
+[0;32mI (301) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (301) app_init: Application information:[0m
+[0;32mI (304) app_init: Project name:     aliot_mqtt[0m
+[0;32mI (309) app_init: App version:      1[0m
+[0;32mI (313) app_init: Compile time:     Jul 25 2025 20:08:48[0m
+[0;32mI (319) app_init: ELF file SHA256:  4b65702a6...[0m
+[0;32mI (324) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (329) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (334) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (339) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (344) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (351) heap_init: At 3FCA28C0 len 00046E50 (283 KiB): RAM[0m
+[0;32mI (357) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (369) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (384) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (398) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (404) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (412) main_task: Started on CPU0[0m
+[0;32mI (432) main_task: Calling app_main()[0m
+[0;32mI (432) app_main: create event group succeed![0m
+[0;32mI (452) pp: pp rom version: e7ae62f[0m
+[0;32mI (452) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (462) wifi:wifi driver task: 3fcaccc8, prio:23, stack:6656, core=0[0m
+[0;32mI (472) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (472) wifi:wifi certification version: v7.0[0m
+[0;32mI (472) wifi:config NVS flash: enabled[0m
+[0;32mI (472) wifi:config nano formating: disabled[0m
+[0;32mI (472) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (482) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (482) wifi:Init management short buffer num: 32[0m
+[0;32mI (482) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (492) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (492) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (502) wifi:Init static rx buffer num: 10[0m
+[0;32mI (502) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (502) wifi_init: rx ba win: 6[0m
+[0;32mI (512) wifi_init: accept mbox: 6[0m
+[0;32mI (512) wifi_init: tcpip mbox: 32[0m
+[0;32mI (522) wifi_init: udp mbox: 6[0m
+[0;32mI (522) wifi_init: tcp mbox: 6[0m
+[0;32mI (522) wifi_init: tcp tx win: 5760[0m
+[0;32mI (532) wifi_init: tcp rx win: 5760[0m
+[0;32mI (532) wifi_init: tcp mss: 1440[0m
+[0;32mI (542) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (542) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (552) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (592) wifi:mode : sta (e8:06:90:98:bd:d4)[0m
+[0;32mI (592) wifi:enable tsf[0m
+[0;32mI (592) app_wifi: STA START,CONNECTING WIFI![0m
+[0;32mI (602) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (602) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (622) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (642) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (662) wifi:<ba-add>idx:0 (ifx:0, 18:f2:2c:6d:f0:a8), tid:5, ssn:0, winSize:64[0m
+[0;32mI (762) wifi:connected with 502, aid = 12, channel 1, 40U, bssid = 18:f2:2c:6d:f0:a8[0m
+[0;32mI (762) wifi:security: WPA2-PSK, phy: bgn, rssi: -57[0m
+[0;32mI (762) wifi:pm start, type: 1[0m
+
+[0;32mI (762) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (772) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (782) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (782) app_wifi: WIFI CONNECTED![0m
+[0;32mI (1782) esp_netif_handlers: sta ip: 192.168.1.112, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1782) app_wifi: ESP GOT IP![0m
+[0;32mI (1782) app_main: got ip succeed,event group bit = 1[0m
+eventid = 7
+[0;32mI (1812) wifi:<ba-add>idx:1 (ifx:0, 18:f2:2c:6d:f0:a8), tid:0, ssn:1, winSize:64[0m
+eventid = 1
+[0;32mI (2482) aliot_mqtt: connect to server success[0m
+[0;32mI (2482) app_main: got ip succeed,event group bit = 2[0m
+eventid = 3
+[0;32mI (2512) aliot_mqtt: subscribe success, msgid:0[0m
+eventid = 3
+[0;32mI (2552) aliot_mqtt: subscribe success, msgid:0[0m
+eventid = 3
+[0;32mI (2562) aliot_mqtt: subscribe success, msgid:0[0m
+[0;32mI (7482) app_main: now app_light_state is 0[0m
+[0;32mI (7482) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (7482) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (7492) app_main: delete dm[0m
+[0;32mI (7492) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (7502) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (7502) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (7512) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (7512) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (7522) aliyun_dm: FREE pdm[0m
+[0;32mI (7522) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (7582) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (7582) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (12522) app_main: now app_light_state is 1[0m
+[0;32mI (12522) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (12522) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (12532) app_main: delete dm[0m
+[0;32mI (12532) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (12542) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (12542) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (12552) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (12552) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (12562) aliyun_dm: FREE pdm[0m
+[0;32mI (12562) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (12602) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (12602) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (17562) app_main: now app_light_state is 0[0m
+[0;32mI (17562) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (17562) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (17572) app_main: delete dm[0m
+[0;32mI (17572) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (17582) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (17582) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (17592) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (17592) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (17602) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (17602) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (17772) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (17772) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (22602) app_main: now app_light_state is 1[0m
+[0;32mI (22602) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (22602) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (22612) app_main: delete dm[0m
+[0;32mI (22612) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (22622) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (22622) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (22632) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (22632) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (22642) aliyun_dm: FREE pdm[0m
+[0;32mI (22642) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (22692) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (22692) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (27642) app_main: now app_light_state is 0[0m
+[0;32mI (27642) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (27642) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (27652) app_main: delete dm[0m
+[0;32mI (27652) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (27662) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (27662) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (27672) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (27672) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (27682) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (27682) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (27812) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (27812) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (32682) app_main: now app_light_state is 1[0m
+[0;32mI (32682) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (32682) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (32692) app_main: delete dm[0m
+[0;32mI (32692) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (32702) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (32702) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (32712) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (32712) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (32722) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (32722) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (32772) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (32772) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (37722) app_main: now app_light_state is 0[0m
+[0;32mI (37722) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (37722) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (37732) app_main: delete dm[0m
+[0;32mI (37732) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (37742) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (37742) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (37752) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (37752) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (37762) aliyun_dm: FREE pdm[0m
+[0;32mI (37762) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (37822) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (37822) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (42762) app_main: now app_light_state is 1[0m
+[0;32mI (42762) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (42762) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (42772) app_main: delete dm[0m
+[0;32mI (42772) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (42782) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (42782) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (42792) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (42792) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (42802) aliyun_dm: FREE pdm[0m
+[0;32mI (42802) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (42962) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (42962) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (47802) app_main: now app_light_state is 0[0m
+[0;32mI (47802) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (47802) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (47812) app_main: delete dm[0m
+[0;32mI (47812) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (47822) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (47822) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (47832) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (47832) aliyun_dm: FREE pdm->obj successful[0m
+eventid = 5
+[0;32mI (47842) aliyun_dm: FREE pdm[0m
+[0;32mI (47842) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (47882) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (47882) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (52842) app_main: now app_light_state is 1[0m
+[0;32mI (52842) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (52842) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (52852) app_main: delete dm[0m
+[0;32mI (52852) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (52862) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (52862) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (52872) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (52872) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (52882) aliyun_dm: FREE pdm[0m
+[0;32mI (52882) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (52992) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (52992) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (57882) app_main: now app_light_state is 0[0m
+[0;32mI (57882) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (57882) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (57892) app_main: delete dm[0m
+[0;32mI (57892) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (57902) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (57902) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (57912) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (57912) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (57922) aliyun_dm: FREE pdm[0m
+[0;32mI (57922) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (57972) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (57972) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (62922) app_main: now app_light_state is 1[0m
+[0;32mI (62922) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (62922) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (62932) app_main: delete dm[0m
+[0;32mI (62932) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (62942) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (62942) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (62952) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (62952) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (62962) aliyun_dm: FREE pdm[0m
+[0;32mI (62962) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (63012) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (63012) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (67962) app_main: now app_light_state is 0[0m
+[0;32mI (67962) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (67962) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (67972) app_main: delete dm[0m
+[0;32mI (67972) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (67982) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (67982) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (67992) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (67992) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (68002) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (68002) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (68042) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (68042) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (73002) app_main: now app_light_state is 1[0m
+[0;32mI (73002) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (73002) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (73012) app_main: delete dm[0m
+[0;32mI (73012) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (73022) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (73022) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (73032) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (73032) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (73042) aliyun_dm: FREE pdm[0m
+[0;32mI (73042) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (73092) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (73092) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (78042) app_main: now app_light_state is 0[0m
+[0;32mI (78042) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (78042) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (78052) app_main: delete dm[0m
+[0;32mI (78052) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (78062) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (78062) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (78072) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (78072) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (78082) aliyun_dm: FREE pdm[0m
+[0;32mI (78082) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (78182) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (78182) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (83082) app_main: now app_light_state is 1[0m
+[0;32mI (83082) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (83082) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (83092) app_main: delete dm[0m
+[0;32mI (83092) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (83102) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (83102) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (83112) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (83112) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (83122) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (83122) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (83172) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (83172) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (88122) app_main: now app_light_state is 0[0m
+[0;32mI (88122) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (88122) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (88132) app_main: delete dm[0m
+[0;32mI (88132) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (88142) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (88142) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (88152) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (88152) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (88162) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (88162) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (88202) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (88202) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (93162) app_main: now app_light_state is 1[0m
+[0;32mI (93162) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (93162) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (93172) app_main: delete dm[0m
+[0;32mI (93172) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (93182) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (93182) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (93192) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (93192) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (93202) aliyun_dm: FREE pdm[0m
+[0;32mI (93202) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (93252) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (93252) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (98202) app_main: now app_light_state is 0[0m
+[0;32mI (98202) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (98202) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (98212) app_main: delete dm[0m
+[0;32mI (98212) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (98222) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (98222) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (98232) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (98232) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (98242) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (98242) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (98312) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (98312) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (103242) app_main: now app_light_state is 1[0m
+[0;32mI (103242) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (103242) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (103252) app_main: delete dm[0m
+[0;32mI (103252) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (103262) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (103262) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (103272) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (103272) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (103282) aliyun_dm: FREE pdm[0m
+[0;32mI (103282) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (103352) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (103352) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (108292) app_main: now app_light_state is 0[0m
+[0;32mI (108292) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (108292) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (108302) app_main: delete dm[0m
+[0;32mI (108302) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (108312) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (108312) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (108322) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (108322) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (108332) aliyun_dm: FREE pdm[0m
+[0;32mI (108332) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (108502) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (108502) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (113342) app_main: now app_light_state is 1[0m
+[0;32mI (113342) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (113342) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (113352) app_main: delete dm[0m
+[0;32mI (113352) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (113362) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (113362) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (113372) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (113372) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (113382) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (113382) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (113422) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (113432) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (118382) app_main: now app_light_state is 0[0m
+[0;32mI (118382) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (118382) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (118392) app_main: delete dm[0m
+[0;32mI (118392) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (118402) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (118402) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (118412) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (118412) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (118422) aliyun_dm: FREE pdm[0m
+[0;32mI (118422) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (118542) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (118542) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (123432) app_main: now app_light_state is 1[0m
+[0;32mI (123432) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (123432) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (123442) app_main: delete dm[0m
+[0;32mI (123442) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (123452) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (123452) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (123462) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (123462) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (123472) aliyun_dm: FREE pdm[0m
+[0;32mI (123472) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (123552) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (123552) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (128482) app_main: now app_light_state is 0[0m
+[0;32mI (128482) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (128482) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (128492) app_main: delete dm[0m
+[0;32mI (128492) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (128502) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (128502) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (128512) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (128512) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (128522) aliyun_dm: FREE pdm[0m
+[0;32mI (128522) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (128582) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (128582) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (133482) app_main: now app_light_state is 1[0m
+[0;32mI (133482) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (133482) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (133492) app_main: delete dm[0m
+[0;32mI (133492) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (133502) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (133502) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (133512) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (133512) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (133522) aliyun_dm: FREE pdm[0m
+[0;32mI (133522) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (133592) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (133592) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (138532) app_main: now app_light_state is 0[0m
+[0;32mI (138532) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (138532) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (138542) app_main: delete dm[0m
+[0;32mI (138542) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (138552) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (138552) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (138562) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (138562) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (138572) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (138572) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (138812) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (138812) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (143572) app_main: now app_light_state is 1[0m
+[0;32mI (143572) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (143572) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (143582) app_main: delete dm[0m
+[0;32mI (143582) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (143592) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (143592) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (143602) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (143602) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (143612) aliyun_dm: FREE pdm[0m
+[0;32mI (143612) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (143732) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (143732) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (148622) app_main: now app_light_state is 0[0m
+[0;32mI (148622) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (148622) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (148632) app_main: delete dm[0m
+[0;32mI (148632) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (148642) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (148642) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (148652) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (148652) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (148662) aliyun_dm: FREE pdm[0m
+[0;32mI (148662) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (148722) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (148722) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (153672) app_main: now app_light_state is 1[0m
+[0;32mI (153672) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (153672) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (153682) app_main: delete dm[0m
+[0;32mI (153682) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (153692) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (153692) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (153702) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (153702) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (153712) aliyun_dm: FREE pdm[0m
+[0;32mI (153712) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (153962) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (153962) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (158722) app_main: now app_light_state is 0[0m
+[0;32mI (158722) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (158722) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (158732) app_main: delete dm[0m
+[0;32mI (158732) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (158742) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (158742) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (158752) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (158752) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (158762) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (158762) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (158802) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (158802) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (163762) app_main: now app_light_state is 1[0m
+[0;32mI (163762) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (163762) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (163772) app_main: delete dm[0m
+[0;32mI (163772) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (163782) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (163782) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (163792) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (163792) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (163802) aliyun_dm: FREE pdm[0m
+[0;32mI (163802) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (163862) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (163862) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (168812) app_main: now app_light_state is 0[0m
+[0;32mI (168812) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (168812) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (168822) app_main: delete dm[0m
+[0;32mI (168822) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (168832) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (168832) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (168842) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (168842) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (168852) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (168852) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (169052) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (169052) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (173852) app_main: now app_light_state is 1[0m
+[0;32mI (173852) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (173852) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (173862) app_main: delete dm[0m
+[0;32mI (173862) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (173872) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (173872) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (173882) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (173882) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (173892) aliyun_dm: FREE pdm[0m
+[0;32mI (173892) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (174052) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (174052) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (178902) app_main: now app_light_state is 0[0m
+[0;32mI (178902) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (178902) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (178912) app_main: delete dm[0m
+[0;32mI (178912) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (178922) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (178922) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (178932) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (178932) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (178942) aliyun_dm: FREE pdm[0m
+[0;32mI (178942) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (178992) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (178992) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (183952) app_main: now app_light_state is 1[0m
+[0;32mI (183952) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (183952) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (183962) app_main: delete dm[0m
+[0;32mI (183962) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (183972) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (183972) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (183982) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (183982) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (183992) aliyun_dm: FREE pdm[0m
+[0;32mI (183992) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (184032) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (184032) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (189002) app_main: now app_light_state is 0[0m
+[0;32mI (189002) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (189002) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (189012) app_main: delete dm[0m
+[0;32mI (189012) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (189022) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (189022) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (189032) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (189032) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (189042) aliyun_dm: FREE pdm[0m
+[0;32mI (189042) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (189092) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (189092) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (194052) app_main: now app_light_state is 1[0m
+[0;32mI (194052) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (194052) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (194062) app_main: delete dm[0m
+[0;32mI (194062) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (194072) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (194072) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (194082) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (194082) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (194092) aliyun_dm: FREE pdm[0m
+[0;32mI (194092) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (194212) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (194212) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (199102) app_main: now app_light_state is 0[0m
+[0;32mI (199102) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (199102) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (199112) app_main: delete dm[0m
+[0;32mI (199112) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (199122) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (199122) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (199132) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (199132) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (199142) aliyun_dm: FREE pdm[0m
+[0;32mI (199142) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (199212) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (199212) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (204152) app_main: now app_light_state is 1[0m
+[0;32mI (204152) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (204152) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (204162) app_main: delete dm[0m
+[0;32mI (204162) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (204172) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (204172) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (204182) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (204182) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (204192) aliyun_dm: FREE pdm[0m
+[0;32mI (204192) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (205162) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (205162) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (209202) app_main: now app_light_state is 0[0m
+[0;32mI (209202) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (209202) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (209212) app_main: delete dm[0m
+[0;32mI (209212) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (209222) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (209222) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (209232) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (209232) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (209242) aliyun_dm: FREE pdm[0m
+[0;32mI (209242) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (209282) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (209282) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (214252) app_main: now app_light_state is 1[0m
+[0;32mI (214252) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (214252) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (214262) app_main: delete dm[0m
+[0;32mI (214262) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (214272) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (214272) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (214282) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (214282) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (214292) aliyun_dm: FREE pdm[0m
+[0;32mI (214292) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (214792) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (214792) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (219302) app_main: now app_light_state is 0[0m
+[0;32mI (219302) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (219302) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (219312) app_main: delete dm[0m
+[0;32mI (219312) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (219322) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (219322) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (219332) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (219332) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (219342) aliyun_dm: FREE pdm[0m
+[0;32mI (219342) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (219392) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (219392) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (224352) app_main: now app_light_state is 1[0m
+[0;32mI (224352) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (224352) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (224362) app_main: delete dm[0m
+[0;32mI (224362) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (224372) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (224372) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (224382) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (224382) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (224392) aliyun_dm: FREE pdm[0m
+[0;32mI (224392) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (224522) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (224522) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (229402) app_main: now app_light_state is 0[0m
+[0;32mI (229402) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (229402) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (229412) app_main: delete dm[0m
+[0;32mI (229412) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (229422) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (229422) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (229432) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (229432) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (229442) aliyun_dm: FREE pdm[0m
+[0;32mI (229442) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (229492) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (229492) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (234452) app_main: now app_light_state is 1[0m
+[0;32mI (234452) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (234452) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (234462) app_main: delete dm[0m
+[0;32mI (234462) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (234472) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (234472) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (234482) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (234482) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (234492) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (234492) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (234552) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (234552) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (239492) app_main: now app_light_state is 0[0m
+[0;32mI (239492) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (239492) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (239502) app_main: delete dm[0m
+[0;32mI (239502) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (239512) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (239512) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (239522) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (239522) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (239532) aliyun_dm: FREE pdm[0m
+[0;32mI (239532) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (239682) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (239682) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (244542) app_main: now app_light_state is 1[0m
+[0;32mI (244542) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (244542) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (244552) app_main: delete dm[0m
+[0;32mI (244552) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (244562) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (244562) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (244572) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (244572) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (244582) aliyun_dm: FREE pdm[0m
+[0;32mI (244582) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (244652) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (244652) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (249592) app_main: now app_light_state is 0[0m
+[0;32mI (249592) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (249592) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (249602) app_main: delete dm[0m
+[0;32mI (249602) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (249612) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (249612) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (249622) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (249622) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (249632) aliyun_dm: FREE pdm[0m
+[0;32mI (249632) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (249812) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (249812) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (254642) app_main: now app_light_state is 1[0m
+[0;32mI (254642) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (254642) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (254652) app_main: delete dm[0m
+[0;32mI (254652) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (254662) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (254662) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (254672) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (254672) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (254682) aliyun_dm: FREE pdm[0m
+[0;32mI (254682) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (254742) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (254742) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (259692) app_main: now app_light_state is 0[0m
+[0;32mI (259692) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (259692) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (259702) app_main: delete dm[0m
+[0;32mI (259702) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (259712) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (259712) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (259722) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (259722) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (259732) aliyun_dm: FREE pdm[0m
+[0;32mI (259732) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (259782) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (259782) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (264692) app_main: now app_light_state is 1[0m
+[0;32mI (264692) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (264692) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (264702) app_main: delete dm[0m
+[0;32mI (264702) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (264712) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (264712) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (264722) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (264722) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (264732) aliyun_dm: FREE pdm[0m
+[0;32mI (264732) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (264802) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (264802) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (269742) app_main: now app_light_state is 0[0m
+[0;32mI (269742) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (269742) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (269752) app_main: delete dm[0m
+[0;32mI (269752) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (269762) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (269762) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (269772) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (269772) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (269782) aliyun_dm: FREE pdm[0m
+[0;32mI (269782) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (269882) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (269882) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (274792) app_main: now app_light_state is 1[0m
+[0;32mI (274792) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (274792) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (274802) app_main: delete dm[0m
+[0;32mI (274802) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (274812) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (274812) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (274822) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (274822) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (274832) aliyun_dm: FREE pdm[0m
+[0;32mI (274832) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (274902) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (274902) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (279842) app_main: now app_light_state is 0[0m
+[0;32mI (279842) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (279842) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (279852) app_main: delete dm[0m
+[0;32mI (279852) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (279862) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (279862) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (279872) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (279872) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (279882) aliyun_dm: FREE pdm[0m
+[0;32mI (279882) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (279932) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (279932) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (284892) app_main: now app_light_state is 1[0m
+[0;32mI (284892) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (284892) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (284902) app_main: delete dm[0m
+[0;32mI (284902) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (284912) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (284912) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (284922) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (284922) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (284932) aliyun_dm: FREE pdm[0m
+[0;32mI (284932) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (284992) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (284992) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (289942) app_main: now app_light_state is 0[0m
+[0;32mI (289942) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (289942) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (289952) app_main: delete dm[0m
+[0;32mI (289952) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (289962) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (289962) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (289972) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (289972) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (289982) aliyun_dm: FREE pdm[0m
+[0;32mI (289982) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (290052) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (290052) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (294992) app_main: now app_light_state is 1[0m
+[0;32mI (294992) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (294992) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (295002) app_main: delete dm[0m
+[0;32mI (295002) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (295012) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (295012) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (295022) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (295022) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (295032) aliyun_dm: FREE pdm[0m
+[0;32mI (295032) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (295092) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (295092) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (300042) app_main: now app_light_state is 0[0m
+[0;32mI (300042) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (300042) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (300052) app_main: delete dm[0m
+[0;32mI (300052) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (300062) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (300062) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (300072) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (300072) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (300082) aliyun_dm: FREE pdm[0m
+[0;32mI (300082) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (300192) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (300192) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (305092) app_main: now app_light_state is 1[0m
+[0;32mI (305092) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (305092) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (305102) app_main: delete dm[0m
+[0;32mI (305102) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (305112) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (305112) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (305122) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (305122) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (305132) aliyun_dm: FREE pdm[0m
+[0;32mI (305132) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (305212) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (305212) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (310142) app_main: now app_light_state is 0[0m
+[0;32mI (310142) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (310142) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (310152) app_main: delete dm[0m
+[0;32mI (310152) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (310162) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (310162) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (310172) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (310172) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (310182) aliyun_dm: FREE pdm[0m
+[0;32mI (310182) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (310232) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (310232) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (315192) app_main: now app_light_state is 1[0m
+[0;32mI (315192) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (315192) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (315202) app_main: delete dm[0m
+[0;32mI (315202) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (315212) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (315212) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (315222) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (315222) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (315232) aliyun_dm: FREE pdm[0m
+[0;32mI (315232) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (315352) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (315352) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (320242) app_main: now app_light_state is 0[0m
+[0;32mI (320242) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (320242) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (320252) app_main: delete dm[0m
+[0;32mI (320252) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (320262) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (320262) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (320272) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (320272) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (320282) aliyun_dm: FREE pdm[0m
+[0;32mI (320282) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (320682) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (320682) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (325292) app_main: now app_light_state is 1[0m
+[0;32mI (325292) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (325292) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (325302) app_main: delete dm[0m
+[0;32mI (325302) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (325312) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (325312) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (325322) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (325322) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (325332) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (325332) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (325382) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (325382) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (330332) app_main: now app_light_state is 0[0m
+[0;32mI (330332) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (330332) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (330342) app_main: delete dm[0m
+[0;32mI (330342) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (330352) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (330352) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (330362) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (330362) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (330372) aliyun_dm: FREE pdm[0m
+[0;32mI (330372) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (330412) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (330412) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (335382) app_main: now app_light_state is 1[0m
+[0;32mI (335382) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (335382) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (335392) app_main: delete dm[0m
+[0;32mI (335392) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (335402) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (335402) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (335412) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (335412) aliyun_dm: FREE pdm->obj successful[0m
+eventid = 5
+[0;32mI (335422) aliyun_dm: FREE pdm[0m
+[0;32mI (335422) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (335472) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (335472) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (340422) app_main: now app_light_state is 0[0m
+[0;32mI (340422) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (340422) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (340432) app_main: delete dm[0m
+[0;32mI (340432) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (340442) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (340442) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (340452) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (340452) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (340462) aliyun_dm: FREE pdm[0m
+[0;32mI (340462) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (340532) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (340532) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (345472) app_main: now app_light_state is 1[0m
+[0;32mI (345472) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (345472) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (345482) app_main: delete dm[0m
+[0;32mI (345482) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (345492) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (345492) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (345502) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (345502) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (345512) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (345512) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (345552) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (345552) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (350512) app_main: now app_light_state is 0[0m
+[0;32mI (350512) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (350512) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (350522) app_main: delete dm[0m
+[0;32mI (350522) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (350532) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (350532) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (350542) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (350542) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (350552) aliyun_dm: FREE pdm[0m
+[0;32mI (350552) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (350672) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (350672) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (355562) app_main: now app_light_state is 1[0m
+[0;32mI (355562) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (355562) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (355572) app_main: delete dm[0m
+[0;32mI (355572) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (355582) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (355582) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (355592) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (355592) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (355602) aliyun_dm: FREE pdm[0m
+[0;32mI (355602) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (355692) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (355692) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (360612) app_main: now app_light_state is 0[0m
+[0;32mI (360612) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (360612) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (360622) app_main: delete dm[0m
+[0;32mI (360622) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (360632) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (360632) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (360642) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (360642) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (360652) aliyun_dm: FREE pdm[0m
+[0;32mI (360652) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (360722) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (360722) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (365662) app_main: now app_light_state is 1[0m
+[0;32mI (365662) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (365662) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (365672) app_main: delete dm[0m
+[0;32mI (365672) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (365682) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (365682) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (365692) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (365692) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (365702) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (365702) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (365752) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (365752) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (370702) app_main: now app_light_state is 0[0m
+[0;32mI (370702) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (370702) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (370712) app_main: delete dm[0m
+[0;32mI (370712) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (370722) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (370722) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (370732) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (370732) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (370742) aliyun_dm: FREE pdm[0m
+[0;32mI (370742) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (370792) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (370792) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (375752) app_main: now app_light_state is 1[0m
+[0;32mI (375752) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (375752) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (375762) app_main: delete dm[0m
+[0;32mI (375762) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (375772) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (375772) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (375782) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (375782) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (375792) aliyun_dm: FREE pdm[0m
+[0;32mI (375792) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (375842) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (375842) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (380802) app_main: now app_light_state is 0[0m
+[0;32mI (380802) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (380802) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (380812) app_main: delete dm[0m
+[0;32mI (380812) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (380822) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (380822) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (380832) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (380832) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (380842) aliyun_dm: FREE pdm[0m
+[0;32mI (380842) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (381092) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (381092) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (385852) app_main: now app_light_state is 1[0m
+[0;32mI (385852) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (385852) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (385862) app_main: delete dm[0m
+[0;32mI (385862) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (385872) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (385872) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (385882) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (385882) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (385892) aliyun_dm: FREE pdm[0m
+[0;32mI (385892) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (385942) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (385942) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (390902) app_main: now app_light_state is 0[0m
+[0;32mI (390902) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (390902) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (390912) app_main: delete dm[0m
+[0;32mI (390912) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (390922) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (390922) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (390932) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (390932) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (390942) aliyun_dm: FREE pdm[0m
+[0;32mI (390942) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (390992) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (391002) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (395952) app_main: now app_light_state is 1[0m
+[0;32mI (395952) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (395952) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (395962) app_main: delete dm[0m
+[0;32mI (395962) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (395972) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (395972) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (395982) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (395982) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (395992) aliyun_dm: FREE pdm[0m
+[0;32mI (395992) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (396142) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (396142) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (401002) app_main: now app_light_state is 0[0m
+[0;32mI (401002) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (401002) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (401012) app_main: delete dm[0m
+[0;32mI (401012) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (401022) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (401022) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (401032) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (401032) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (401042) aliyun_dm: FREE pdm[0m
+[0;32mI (401042) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (401092) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (401092) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (406052) app_main: now app_light_state is 1[0m
+[0;32mI (406052) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (406052) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (406062) app_main: delete dm[0m
+[0;32mI (406062) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (406072) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (406072) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (406082) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (406082) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (406092) aliyun_dm: FREE pdm[0m
+[0;32mI (406092) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (406142) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (406142) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (411102) app_main: now app_light_state is 0[0m
+[0;32mI (411102) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (411102) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (411112) app_main: delete dm[0m
+[0;32mI (411112) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (411122) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (411122) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (411132) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (411132) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (411142) aliyun_dm: FREE pdm[0m
+[0;32mI (411142) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (411192) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (411192) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (416152) app_main: now app_light_state is 1[0m
+[0;32mI (416152) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (416152) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (416162) app_main: delete dm[0m
+[0;32mI (416162) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (416172) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (416172) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (416182) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (416182) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (416192) aliyun_dm: FREE pdm[0m
+[0;32mI (416192) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (416422) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (416422) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (421202) app_main: now app_light_state is 0[0m
+[0;32mI (421202) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (421202) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (421212) app_main: delete dm[0m
+[0;32mI (421212) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (421222) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (421222) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (421232) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (421232) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (421242) aliyun_dm: FREE pdm[0m
+[0;32mI (421242) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (421332) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (421332) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (426252) app_main: now app_light_state is 1[0m
+[0;32mI (426252) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (426252) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (426262) app_main: delete dm[0m
+[0;32mI (426262) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (426272) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (426272) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (426282) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (426282) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (426292) aliyun_dm: FREE pdm[0m
+[0;32mI (426292) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (426352) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (426352) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (431252) app_main: now app_light_state is 0[0m
+[0;32mI (431252) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (431252) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (431262) app_main: delete dm[0m
+[0;32mI (431262) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (431272) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (431272) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (431282) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (431282) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (431292) aliyun_dm: FREE pdm[0m
+[0;32mI (431292) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (431352) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (431352) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (436302) app_main: now app_light_state is 1[0m
+[0;32mI (436302) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (436302) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (436312) app_main: delete dm[0m
+[0;32mI (436312) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (436322) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (436322) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (436332) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (436332) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (436342) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (436342) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (436392) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (436392) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (441342) app_main: now app_light_state is 0[0m
+[0;32mI (441342) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (441342) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (441352) app_main: delete dm[0m
+[0;32mI (441352) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (441362) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (441362) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (441372) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (441372) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (441382) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (441382) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (441422) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (441422) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (446382) app_main: now app_light_state is 1[0m
+[0;32mI (446382) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (446382) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (446392) app_main: delete dm[0m
+[0;32mI (446392) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (446402) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (446402) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (446412) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (446412) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (446422) aliyun_dm: FREE pdm[0m
+[0;32mI (446422) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (446552) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (446552) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (451432) app_main: now app_light_state is 0[0m
+[0;32mI (451432) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (451432) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (451442) app_main: delete dm[0m
+[0;32mI (451442) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (451452) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (451452) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (451462) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (451462) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (451472) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (451472) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (451522) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (451522) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (456472) app_main: now app_light_state is 1[0m
+[0;32mI (456472) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (456472) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (456482) app_main: delete dm[0m
+[0;32mI (456482) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (456492) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (456492) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (456502) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (456502) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (456512) aliyun_dm: FREE pdm[0m
+[0;32mI (456512) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (456582) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (456582) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (461522) app_main: now app_light_state is 0[0m
+[0;32mI (461522) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (461522) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (461532) app_main: delete dm[0m
+[0;32mI (461532) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (461542) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (461542) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (461552) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (461552) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (461562) aliyun_dm: FREE pdm[0m
+[0;32mI (461562) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (461612) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (461612) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (466572) app_main: now app_light_state is 1[0m
+[0;32mI (466572) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (466572) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (466582) app_main: delete dm[0m
+[0;32mI (466582) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (466592) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (466592) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (466602) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (466602) aliyun_dm: FREE pdm->obj successful[0m
+eventid = 5
+[0;32mI (466612) aliyun_dm: FREE pdm[0m
+[0;32mI (466612) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (466692) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (466692) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (471572) app_main: now app_light_state is 0[0m
+[0;32mI (471572) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (471572) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (471582) app_main: delete dm[0m
+[0;32mI (471582) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (471592) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (471592) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (471602) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (471602) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (471612) aliyun_dm: FREE pdm[0m
+[0;32mI (471612) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (471662) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (471662) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (476622) app_main: now app_light_state is 1[0m
+[0;32mI (476622) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (476622) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (476632) app_main: delete dm[0m
+[0;32mI (476632) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (476642) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (476642) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (476652) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (476652) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (476662) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (476662) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (476702) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (476702) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (481662) app_main: now app_light_state is 0[0m
+[0;32mI (481662) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (481662) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (481672) app_main: delete dm[0m
+[0;32mI (481672) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (481682) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (481682) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (481692) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (481692) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (481702) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (481702) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (481752) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (481752) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (486702) app_main: now app_light_state is 1[0m
+[0;32mI (486702) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (486702) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (486712) app_main: delete dm[0m
+[0;32mI (486712) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (486722) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (486722) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (486732) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (486732) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (486742) aliyun_dm: FREE pdm[0m
+[0;32mI (486742) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (487072) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (487072) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (491752) app_main: now app_light_state is 0[0m
+[0;32mI (491752) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (491752) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (491762) app_main: delete dm[0m
+[0;32mI (491762) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (491772) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (491772) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (491782) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (491782) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (491792) aliyun_dm: FREE pdm[0m
+[0;32mI (491792) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (491842) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (491842) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (496802) app_main: now app_light_state is 1[0m
+[0;32mI (496802) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (496802) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (496812) app_main: delete dm[0m
+[0;32mI (496812) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (496822) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (496822) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (496832) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (496832) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (496842) aliyun_dm: FREE pdm[0m
+[0;32mI (496842) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (497002) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (497002) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (501852) app_main: now app_light_state is 0[0m
+[0;32mI (501852) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (501852) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (501862) app_main: delete dm[0m
+[0;32mI (501862) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (501872) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (501872) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (501882) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (501882) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (501892) aliyun_dm: FREE pdm[0m
+[0;32mI (501892) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (501942) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (501942) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (506902) app_main: now app_light_state is 1[0m
+[0;32mI (506902) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (506902) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (506912) app_main: delete dm[0m
+[0;32mI (506912) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (506922) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (506922) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (506932) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (506932) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (506942) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (506942) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (506992) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (506992) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (511942) app_main: now app_light_state is 0[0m
+[0;32mI (511942) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (511942) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (511952) app_main: delete dm[0m
+[0;32mI (511952) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (511962) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (511962) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (511972) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (511972) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (511982) aliyun_dm: FREE pdm[0m
+[0;32mI (511982) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (512052) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (512062) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (516992) app_main: now app_light_state is 1[0m
+[0;32mI (516992) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (516992) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (517002) app_main: delete dm[0m
+[0;32mI (517002) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (517012) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (517012) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (517022) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (517022) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (517032) aliyun_dm: FREE pdm[0m
+[0;32mI (517032) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (517092) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (517102) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (522042) app_main: now app_light_state is 0[0m
+[0;32mI (522042) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (522042) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (522052) app_main: delete dm[0m
+[0;32mI (522052) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (522062) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (522062) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (522072) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (522072) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (522082) aliyun_dm: FREE pdm[0m
+[0;32mI (522082) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (522202) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (522202) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (527092) app_main: now app_light_state is 1[0m
+[0;32mI (527092) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (527092) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (527102) app_main: delete dm[0m
+[0;32mI (527102) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (527112) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (527112) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (527122) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (527122) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (527132) aliyun_dm: FREE pdm[0m
+[0;32mI (527132) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (527182) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (527182) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (532142) app_main: now app_light_state is 0[0m
+[0;32mI (532142) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (532142) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (532152) app_main: delete dm[0m
+[0;32mI (532152) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (532162) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (532162) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (532172) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (532172) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (532182) aliyun_dm: FREE pdm[0m
+[0;32mI (532182) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (532312) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (532312) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (537192) app_main: now app_light_state is 1[0m
+[0;32mI (537192) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (537192) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (537202) app_main: delete dm[0m
+[0;32mI (537202) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (537212) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (537212) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (537222) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (537222) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (537232) aliyun_dm: FREE pdm[0m
+[0;32mI (537232) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (537302) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (537302) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (542242) app_main: now app_light_state is 0[0m
+[0;32mI (542242) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (542242) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (542252) app_main: delete dm[0m
+[0;32mI (542252) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (542262) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (542262) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (542272) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (542272) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (542282) aliyun_dm: FREE pdm[0m
+[0;32mI (542282) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+[0;32mI (547292) app_main: now app_light_state is 1[0m
+[0;32mI (547292) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (547292) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (547302) app_main: delete dm[0m
+eventid = 6
+[0;32mI (547302) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (547302) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (547312) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (547322) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (547322) aliyun_dm: FREE pdm->outbuf successful[0m
+eventid = 5
+[0;32mI (547342) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (547352) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (547352) aliyun_dm: FREE pdm[0m
+[0;32mI (547362) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (547402) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (547402) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (552302) app_main: now app_light_state is 0[0m
+[0;32mI (552302) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (552302) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (552312) app_main: delete dm[0m
+[0;32mI (552312) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (552322) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (552322) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (552332) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (552332) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (552342) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (552342) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (552502) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (552502) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (557342) app_main: now app_light_state is 1[0m
+[0;32mI (557342) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (557342) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (557352) app_main: delete dm[0m
+[0;32mI (557352) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (557362) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (557362) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (557372) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (557372) aliyun_dm: FREE pdm->obj successful[0m
+eventid = 5
+[0;32mI (557382) aliyun_dm: FREE pdm[0m
+[0;32mI (557382) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (557552) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (557552) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (562382) app_main: now app_light_state is 0[0m
+[0;32mI (562382) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (562382) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (562392) app_main: delete dm[0m
+[0;32mI (562392) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (562402) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (562402) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (562412) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (562412) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (562422) aliyun_dm: FREE pdm[0m
+[0;32mI (562422) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (562532) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (562532) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (567432) app_main: now app_light_state is 1[0m
+[0;32mI (567432) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (567432) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (567442) app_main: delete dm[0m
+[0;32mI (567442) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (567452) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (567452) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (567462) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (567462) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (567472) aliyun_dm: FREE pdm[0m
+[0;32mI (567472) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (567502) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (567502) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (572482) app_main: now app_light_state is 0[0m
+[0;32mI (572482) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (572482) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (572492) app_main: delete dm[0m
+[0;32mI (572492) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (572502) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (572502) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (572512) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (572512) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (572522) aliyun_dm: FREE pdm[0m
+[0;32mI (572522) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (572582) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (572582) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (577532) app_main: now app_light_state is 1[0m
+[0;32mI (577532) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (577532) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (577542) app_main: delete dm[0m
+[0;32mI (577542) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (577552) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (577552) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (577562) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (577562) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (577572) aliyun_dm: FREE pdm[0m
+[0;32mI (577572) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (577622) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (577622) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (582582) app_main: now app_light_state is 0[0m
+[0;32mI (582582) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (582582) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (582592) app_main: delete dm[0m
+[0;32mI (582592) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (582602) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (582602) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (582612) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (582612) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (582622) aliyun_dm: FREE pdm[0m
+[0;32mI (582622) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (582672) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (582672) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (587592) app_main: now app_light_state is 1[0m
+[0;32mI (587592) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (587592) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (587602) app_main: delete dm[0m
+[0;32mI (587602) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (587612) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (587612) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (587622) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (587622) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (587632) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (587632) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (587682) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (587682) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (592632) app_main: now app_light_state is 0[0m
+[0;32mI (592632) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (592632) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (592642) app_main: delete dm[0m
+[0;32mI (592642) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (592652) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (592652) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (592662) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (592662) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (592672) aliyun_dm: FREE pdm[0m
+[0;32mI (592672) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (592722) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (592722) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (597682) app_main: now app_light_state is 1[0m
+[0;32mI (597682) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (597682) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (597692) app_main: delete dm[0m
+[0;32mI (597692) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (597702) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (597702) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (597712) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (597712) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (597722) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (597722) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (597762) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (597772) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (602722) app_main: now app_light_state is 0[0m
+[0;32mI (602722) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (602722) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (602732) app_main: delete dm[0m
+[0;32mI (602732) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (602742) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (602742) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (602752) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (602752) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (602762) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (602762) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (602812) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (602812) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (607762) app_main: now app_light_state is 1[0m
+[0;32mI (607762) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (607762) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (607772) app_main: delete dm[0m
+[0;32mI (607772) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (607782) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (607782) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (607792) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (607792) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (607802) aliyun_dm: FREE pdm[0m
+[0;32mI (607802) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (607852) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (607852) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (612812) app_main: now app_light_state is 0[0m
+[0;32mI (612812) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (612812) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (612822) app_main: delete dm[0m
+[0;32mI (612822) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (612832) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (612832) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (612842) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (612842) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (612852) aliyun_dm: FREE pdm[0m
+[0;32mI (612852) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (612922) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (612922) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (617862) app_main: now app_light_state is 1[0m
+[0;32mI (617862) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (617862) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (617872) app_main: delete dm[0m
+[0;32mI (617872) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (617882) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (617882) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (617892) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (617892) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (617902) aliyun_dm: FREE pdm[0m
+[0;32mI (617902) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (618042) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (618042) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (622912) app_main: now app_light_state is 0[0m
+[0;32mI (622912) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (622912) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (622922) app_main: delete dm[0m
+[0;32mI (622922) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (622932) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (622932) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (622942) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (622942) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (622952) aliyun_dm: FREE pdm[0m
+[0;32mI (622952) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (622992) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (622992) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (627962) app_main: now app_light_state is 1[0m
+[0;32mI (627962) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (627962) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (627972) app_main: delete dm[0m
+[0;32mI (627972) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (627982) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (627982) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (627992) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (627992) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (628002) aliyun_dm: FREE pdm[0m
+[0;32mI (628002) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (628062) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (628062) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (633012) app_main: now app_light_state is 0[0m
+[0;32mI (633012) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (633012) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (633022) app_main: delete dm[0m
+[0;32mI (633022) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (633032) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (633032) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (633042) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (633042) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (633052) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (633052) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (633102) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (633102) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (638052) app_main: now app_light_state is 1[0m
+[0;32mI (638052) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (638052) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (638062) app_main: delete dm[0m
+[0;32mI (638062) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (638072) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (638072) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (638082) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (638082) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (638092) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (638092) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (638132) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (638132) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (643092) app_main: now app_light_state is 0[0m
+[0;32mI (643092) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (643092) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (643102) app_main: delete dm[0m
+[0;32mI (643102) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (643112) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (643112) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (643122) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (643122) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (643132) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (643132) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (643182) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (643182) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (648132) app_main: now app_light_state is 1[0m
+[0;32mI (648132) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (648132) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (648142) app_main: delete dm[0m
+[0;32mI (648142) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (648152) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (648152) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (648162) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (648162) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (648172) aliyun_dm: FREE pdm[0m
+[0;32mI (648172) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (648222) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (648222) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (653182) app_main: now app_light_state is 0[0m
+[0;32mI (653182) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (653182) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (653192) app_main: delete dm[0m
+[0;32mI (653192) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (653202) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (653202) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (653212) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (653212) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (653222) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (653222) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (653302) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (653302) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (658182) app_main: now app_light_state is 1[0m
+[0;32mI (658182) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (658182) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (658192) app_main: delete dm[0m
+[0;32mI (658192) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (658202) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (658202) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (658212) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (658212) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (658222) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (658222) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (658262) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (658262) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (663222) app_main: now app_light_state is 0[0m
+[0;32mI (663222) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (663222) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (663232) app_main: delete dm[0m
+[0;32mI (663232) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (663242) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (663242) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (663252) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (663252) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (663262) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (663262) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (663302) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (663312) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (668262) app_main: now app_light_state is 1[0m
+[0;32mI (668262) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (668262) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (668272) app_main: delete dm[0m
+[0;32mI (668272) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (668282) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (668282) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (668292) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (668292) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (668302) aliyun_dm: FREE pdm[0m
+[0;32mI (668302) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (668362) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (668362) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (673312) app_main: now app_light_state is 0[0m
+[0;32mI (673312) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (673312) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (673322) app_main: delete dm[0m
+[0;32mI (673322) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (673332) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (673332) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (673342) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (673342) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (673352) aliyun_dm: FREE pdm[0m
+[0;32mI (673352) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (673442) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (673442) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (678362) app_main: now app_light_state is 1[0m
+[0;32mI (678362) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (678362) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (678372) app_main: delete dm[0m
+[0;32mI (678372) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (678382) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (678382) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (678392) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (678392) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (678402) aliyun_dm: FREE pdm[0m
+[0;32mI (678402) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (678572) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (678572) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (683412) app_main: now app_light_state is 0[0m
+[0;32mI (683412) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (683412) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (683422) app_main: delete dm[0m
+[0;32mI (683422) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (683432) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (683432) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (683442) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (683442) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (683452) aliyun_dm: FREE pdm[0m
+[0;32mI (683452) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (683552) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (683552) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (688462) app_main: now app_light_state is 1[0m
+[0;32mI (688462) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (688462) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (688472) app_main: delete dm[0m
+[0;32mI (688472) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (688482) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (688482) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (688492) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (688492) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (688502) aliyun_dm: FREE pdm[0m
+[0;32mI (688502) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (688562) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (688562) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (693512) app_main: now app_light_state is 0[0m
+[0;32mI (693512) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (693512) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (693522) app_main: delete dm[0m
+[0;32mI (693522) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (693532) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (693532) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (693542) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (693542) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (693552) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (693552) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (693802) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (693802) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (698552) app_main: now app_light_state is 1[0m
+[0;32mI (698552) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (698552) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (698562) app_main: delete dm[0m
+[0;32mI (698562) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (698572) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (698572) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (698582) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (698582) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (698592) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (698592) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (698742) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (698742) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (703592) app_main: now app_light_state is 0[0m
+[0;32mI (703592) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (703592) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (703602) app_main: delete dm[0m
+[0;32mI (703602) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (703612) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (703612) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (703622) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (703622) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (703632) aliyun_dm: FREE pdm[0m
+[0;32mI (703632) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (703752) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (703752) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (708642) app_main: now app_light_state is 1[0m
+[0;32mI (708642) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (708642) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (708652) app_main: delete dm[0m
+[0;32mI (708652) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (708662) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (708662) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (708672) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (708672) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (708682) aliyun_dm: FREE pdm[0m
+[0;32mI (708682) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (708732) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (708732) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (713692) app_main: now app_light_state is 0[0m
+[0;32mI (713692) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (713692) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (713702) app_main: delete dm[0m
+[0;32mI (713702) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (713712) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (713712) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (713722) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (713722) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (713732) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (713732) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (713812) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (713812) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (718732) app_main: now app_light_state is 1[0m
+[0;32mI (718732) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (718732) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (718742) app_main: delete dm[0m
+[0;32mI (718742) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (718752) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (718752) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (718762) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (718762) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (718772) aliyun_dm: FREE pdm[0m
+[0;32mI (718772) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (718822) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (718822) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (723782) app_main: now app_light_state is 0[0m
+[0;32mI (723782) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (723782) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (723792) app_main: delete dm[0m
+[0;32mI (723792) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (723802) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (723802) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (723812) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (723812) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (723822) aliyun_dm: FREE pdm[0m
+[0;32mI (723822) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (723882) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (723882) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (728832) app_main: now app_light_state is 1[0m
+[0;32mI (728832) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (728832) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (728842) app_main: delete dm[0m
+[0;32mI (728842) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (728852) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (728852) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (728862) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (728862) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (728872) aliyun_dm: FREE pdm[0m
+[0;32mI (728872) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (728922) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (728922) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (733882) app_main: now app_light_state is 0[0m
+[0;32mI (733882) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (733882) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (733892) app_main: delete dm[0m
+[0;32mI (733892) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (733902) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (733902) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (733912) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (733912) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (733922) aliyun_dm: FREE pdm[0m
+[0;32mI (733922) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (733972) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (733972) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (738932) app_main: now app_light_state is 1[0m
+[0;32mI (738932) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (738932) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (738942) app_main: delete dm[0m
+[0;32mI (738942) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (738952) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (738952) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (738962) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (738962) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (738972) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (738972) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (739012) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (739012) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (743972) app_main: now app_light_state is 0[0m
+[0;32mI (743972) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (743972) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (743982) app_main: delete dm[0m
+[0;32mI (743982) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (743992) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (743992) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (744002) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (744002) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (744012) aliyun_dm: FREE pdm[0m
+[0;32mI (744012) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (744062) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (744062) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (748982) app_main: now app_light_state is 1[0m
+[0;32mI (748982) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (748982) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (748992) app_main: delete dm[0m
+[0;32mI (748992) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (749002) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (749002) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (749012) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (749012) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (749022) aliyun_dm: FREE pdm[0m
+[0;32mI (749022) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (749082) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (749082) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (754032) app_main: now app_light_state is 0[0m
+[0;32mI (754032) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (754032) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (754042) app_main: delete dm[0m
+[0;32mI (754042) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (754052) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (754052) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (754062) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (754062) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (754072) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (754072) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (754242) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (754242) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (759072) app_main: now app_light_state is 1[0m
+[0;32mI (759072) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (759072) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (759082) app_main: delete dm[0m
+[0;32mI (759082) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (759092) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (759092) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (759102) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (759102) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (759112) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (759112) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (759152) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (759152) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (764112) app_main: now app_light_state is 0[0m
+[0;32mI (764112) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (764112) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (764122) app_main: delete dm[0m
+[0;32mI (764122) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (764132) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (764132) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (764142) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (764142) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (764152) aliyun_dm: FREE pdm[0m
+[0;32mI (764152) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (764272) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (764272) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (769162) app_main: now app_light_state is 1[0m
+[0;32mI (769162) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (769162) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (769172) app_main: delete dm[0m
+[0;32mI (769172) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (769182) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (769182) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (769192) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (769192) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (769202) aliyun_dm: FREE pdm[0m
+[0;32mI (769202) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (769252) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (769252) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (774212) app_main: now app_light_state is 0[0m
+[0;32mI (774212) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (774212) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (774222) app_main: delete dm[0m
+[0;32mI (774222) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (774232) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (774232) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (774242) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (774242) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (774252) aliyun_dm: FREE pdm[0m
+[0;32mI (774252) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (774312) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (774312) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (779262) app_main: now app_light_state is 1[0m
+[0;32mI (779262) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (779262) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (779272) app_main: delete dm[0m
+[0;32mI (779272) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (779282) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (779282) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (779292) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (779292) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (779302) aliyun_dm: FREE pdm[0m
+[0;32mI (779302) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (779352) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (779352) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (784312) app_main: now app_light_state is 0[0m
+[0;32mI (784312) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (784312) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (784322) app_main: delete dm[0m
+[0;32mI (784322) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (784332) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (784332) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (784342) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (784342) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (784352) aliyun_dm: FREE pdm[0m
+[0;32mI (784352) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (784392) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (784392) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (789362) app_main: now app_light_state is 1[0m
+[0;32mI (789362) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (789362) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (789372) app_main: delete dm[0m
+[0;32mI (789372) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (789382) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (789382) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (789392) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (789392) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (789402) aliyun_dm: FREE pdm[0m
+[0;32mI (789402) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (789462) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (789462) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (794412) app_main: now app_light_state is 0[0m
+[0;32mI (794412) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (794412) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (794422) app_main: delete dm[0m
+[0;32mI (794422) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (794432) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (794432) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (794442) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (794442) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (794452) aliyun_dm: FREE pdm[0m
+[0;32mI (794452) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (794592) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (794592) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (799462) app_main: now app_light_state is 1[0m
+[0;32mI (799462) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (799462) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (799472) app_main: delete dm[0m
+[0;32mI (799472) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (799482) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (799482) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (799492) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (799492) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (799502) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (799502) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (799542) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (799542) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (804502) app_main: now app_light_state is 0[0m
+[0;32mI (804502) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (804502) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (804512) app_main: delete dm[0m
+[0;32mI (804512) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (804522) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (804522) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (804532) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (804532) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (804542) aliyun_dm: FREE pdm[0m
+[0;32mI (804542) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (804722) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (804722) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (809552) app_main: now app_light_state is 1[0m
+[0;32mI (809552) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (809552) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (809562) app_main: delete dm[0m
+[0;32mI (809562) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (809572) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (809572) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (809582) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (809582) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (809592) aliyun_dm: FREE pdm[0m
+eventid = 5
+[0;32mI (809592) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (809802) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (809802) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (814592) app_main: now app_light_state is 0[0m
+[0;32mI (814592) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (814592) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (814602) app_main: delete dm[0m
+[0;32mI (814602) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (814612) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (814612) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (814622) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (814622) aliyun_dm: FREE pdm->obj successful[0m
+eventid = 5
+[0;32mI (814632) aliyun_dm: FREE pdm[0m
+[0;32mI (814632) aliyun_dm: FREE pdm successful[0m
+eventid = 6
+[0;32mI (814672) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (814672) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (819632) app_main: now app_light_state is 1[0m
+[0;32mI (819632) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (819632) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (819642) app_main: delete dm[0m
+[0;32mI (819642) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (819652) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (819652) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (819662) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (819662) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (819672) aliyun_dm: FREE pdm[0m
+[0;32mI (819672) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (819722) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (819722) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (824682) app_main: now app_light_state is 0[0m
+[0;32mI (824682) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (824682) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (824692) app_main: delete dm[0m
+[0;32mI (824692) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (824702) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (824702) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (824712) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (824712) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (824722) aliyun_dm: FREE pdm[0m
+[0;32mI (824722) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (824772) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (824772) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (829732) app_main: now app_light_state is 1[0m
+[0;32mI (829732) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (829732) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (829742) app_main: delete dm[0m
+[0;32mI (829742) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (829752) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (829752) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (829762) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (829762) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (829772) aliyun_dm: FREE pdm[0m
+[0;32mI (829772) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (829822) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (829822) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (834782) app_main: now app_light_state is 0[0m
+[0;32mI (834782) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (834782) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (834792) app_main: delete dm[0m
+[0;32mI (834792) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (834802) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (834802) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (834812) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (834812) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (834822) aliyun_dm: FREE pdm[0m
+[0;32mI (834822) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (834872) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (834872) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (839832) app_main: now app_light_state is 1[0m
+[0;32mI (839832) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (839832) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (839842) app_main: delete dm[0m
+[0;32mI (839842) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (839852) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (839852) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (839862) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (839862) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (839872) aliyun_dm: FREE pdm[0m
+[0;32mI (839872) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (840052) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (840052) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (844882) app_main: now app_light_state is 0[0m
+[0;32mI (844882) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (844882) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (844892) app_main: delete dm[0m
+[0;32mI (844892) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (844902) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (844902) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (844912) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (844912) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (844922) aliyun_dm: FREE pdm[0m
+[0;32mI (844922) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (845012) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (845012) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (849932) app_main: now app_light_state is 1[0m
+[0;32mI (849932) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (849932) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (849942) app_main: delete dm[0m
+[0;32mI (849942) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (849952) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (849952) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (849962) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (849962) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (849972) aliyun_dm: FREE pdm[0m
+[0;32mI (849972) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (850082) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (850082) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (854982) app_main: now app_light_state is 0[0m
+[0;32mI (854982) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (854982) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (854992) app_main: delete dm[0m
+[0;32mI (854992) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (855002) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (855002) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (855012) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (855012) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (855022) aliyun_dm: FREE pdm[0m
+[0;32mI (855022) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (855412) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (855412) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (860032) app_main: now app_light_state is 1[0m
+[0;32mI (860032) app_main: after toggle, app_light_state is 0[0m
+[0;32mI (860032) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (860042) app_main: delete dm[0m
+[0;32mI (860042) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (860052) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (860052) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (860062) aliyun_dm: FREE pdm->obj[0m
+[0;32mI (860062) aliyun_dm: FREE pdm->obj successful[0m
+[0;32mI (860072) aliyun_dm: FREE pdm[0m
+[0;32mI (860072) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (860122) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (860122) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (865082) app_main: now app_light_state is 0[0m
+[0;32mI (865082) app_main: after toggle, app_light_state is 1[0m
+[0;32mI (865082) app_main: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (865092) app_main: delete dm[0m
+[0;32mI (865092) aliyun_dm: enter aliyun_dm_info_delet[0m
+[0;32mI (865102) aliyun_dm: FREE pdm->outbuf[0m
+[0;32mI (865102) aliyun_dm: FREE pdm->outbuf successful[0m
+[0;32mI (865112) aliy

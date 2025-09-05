@@ -1,0 +1,85 @@
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[2/10] Linking C static library esp-idf\main\libmain.a
+[3/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Administrator\Desktop\project\aliot_mqtt\build\bootloader\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Administrator/Desktop/project/aliot_mqtt/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5490 bytes. 0x2b70 bytes (34%) free.
+[4/10] No install step for 'bootloader'
+[5/10] Completed 'bootloader'
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable aliot_mqtt.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/Administrator/Desktop/project/aliot_mqtt/build/aliot_mqtt.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Administrator\Desktop\project\aliot_mqtt\build\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Administrator/Desktop/project/aliot_mqtt/build/partition_table/partition-table.bin C:/Users/Administrator/Desktop/project/aliot_mqtt/build/aliot_mqtt.bin"
+aliot_mqtt.bin binary size 0xe3d70 bytes. Smallest app partition is 0x100000 bytes. 0x1c290 bytes (11%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Administrator\esp\v5.3.2\esp-idf\components\esptool_py && C:\Users\Administrator\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/Administrator/esp/v5.3.2/esp-idf -D SERIAL_TOOL=C:/Users/Administrator/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Administrator/Desktop/project/aliot_mqtt/build -P C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 aliot_mqtt.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM6
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: e8:06:90:98:bd:d4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21648 bytes to 13303...
+Writing at 0x00000000... (100 %)
+Wrote 21648 bytes (13303 compressed) at 0x00000000 in 0.6 seconds (effective 269.1 kbit/s)...
+Hash of data verified.
+Compressed 933232 bytes to 573158...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d514... (5 %)
+Writing at 0x000284d6... (8 %)
+Writing at 0x00032f34... (11 %)
+Writing at 0x0003abb4... (14 %)
+Writing at 0x00040b84... (17 %)
+Writing at 0x00047065... (20 %)
+Writing at 0x0004d359... (22 %)
+Writing at 0x00053798... (25 %)
+Writing at 0x00059cc1... (28 %)
+Writing at 0x0005fdee... (31 %)
+Writing at 0x000658bd... (34 %)
+Writing at 0x0006b820... (37 %)
+Writing at 0x00071e6d... (40 %)
+Writing at 0x00077e8b... (42 %)
+Writing at 0x0007d02a... (45 %)
+Writing at 0x00081f57... (48 %)
+Writing at 0x00087321... (51 %)
+Writing at 0x0008c78d... (54 %)
+Writing at 0x000918e1... (57 %)
+Writing at 0x00096ae6... (60 %)
+Writing at 0x0009c711... (62 %)
+Writing at 0x000a248d... (65 %)
+Writing at 0x000a7e6a... (68 %)
+Writing at 0x000ada4d... (71 %)
+Writing at 0x000b3787... (74 %)
+Writing at 0x000b8fdf... (77 %)
+Writing at 0x000bece4... (80 %)
+Writing at 0x000c49c1... (82 %)
+Writing at 0x000c9d9e... (85 %)
+Writing at 0x000cfb2c... (88 %)
+Writing at 0x000da172... (91 %)
+Writing at 0x000e23ad... (94 %)
+Writing at 0x000e8219... (97 %)
+Writing at 0x000ee56b... (100 %)
+Wrote 933232 bytes (573158 compressed) at 0x00010000 in 13.1 seconds (effective 570.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 396.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

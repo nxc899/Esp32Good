@@ -1,0 +1,38 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Administrator\Desktop\project\aliot_mqtt\build\bootloader\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Administrator/Desktop/project/aliot_mqtt/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5490 bytes. 0x2b70 bytes (34%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/aliot_mqtt.c.obj
+C:/Users/Administrator/Desktop/project/aliot_mqtt/main/aliot_mqtt.c: In function 'aliot_mqtt_start':
+C:/Users/Administrator/Desktop/project/aliot_mqtt/main/aliot_mqtt.c:79:11: warning: assignment to 'esp_mqtt_event_handle_t' {aka 'esp_mqtt_event_t *'} from incompatible pointer type 'esp_mqtt_client_handle_t' {aka 'struct esp_mqtt_client *'} [-Wincompatible-pointer-types]
+   79 |     event = esp_mqtt_client_init(&mqtt_cfg);
+      |           ^
+C:/Users/Administrator/Desktop/project/aliot_mqtt/main/aliot_mqtt.c:80:36: warning: passing argument 1 of 'esp_mqtt_client_register_event' from incompatible pointer type [-Wincompatible-pointer-types]
+   80 |     esp_mqtt_client_register_event(event,MQTT_EVENT_ANY,mqtt_callback,NULL);
+      |                                    ^~~~~
+      |                                    |
+      |                                    esp_mqtt_event_handle_t {aka esp_mqtt_event_t *}
+In file included from C:/Users/Administrator/Desktop/project/aliot_mqtt/main/aliot_mqtt.c:2:
+C:/Users/Administrator/esp/v5.3.2/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:627:67: note: expected 'esp_mqtt_client_handle_t' {aka 'struct esp_mqtt_client *'} but argument is of type 'esp_mqtt_event_handle_t' {aka 'esp_mqtt_event_t *'}
+  627 | esp_err_t esp_mqtt_client_register_event(esp_mqtt_client_handle_t client,
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+C:/Users/Administrator/Desktop/project/aliot_mqtt/main/aliot_mqtt.c:81:27: warning: passing argument 1 of 'esp_mqtt_client_start' from incompatible pointer type [-Wincompatible-pointer-types]
+   81 |     esp_mqtt_client_start(event);
+      |                           ^~~~~
+      |                           |
+      |                           esp_mqtt_event_handle_t {aka esp_mqtt_event_t *}
+C:/Users/Administrator/esp/v5.3.2/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:407:58: note: expected 'esp_mqtt_client_handle_t' {aka 'struct esp_mqtt_client *'} but argument is of type 'esp_mqtt_event_handle_t' {aka 'esp_mqtt_event_t *'}
+  407 | esp_err_t esp_mqtt_client_start(esp_mqtt_client_handle_t client);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable aliot_mqtt.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/Administrator/Desktop/project/aliot_mqtt/build/aliot_mqtt.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Administrator\Desktop\project\aliot_mqtt\build\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Administrator/Desktop/project/aliot_mqtt/build/partition_table/partition-table.bin C:/Users/Administrator/Desktop/project/aliot_mqtt/build/aliot_mqtt.bin"
+aliot_mqtt.bin binary size 0xb56c0 bytes. Smallest app partition is 0x100000 bytes. 0x4a940 bytes (29%) free.

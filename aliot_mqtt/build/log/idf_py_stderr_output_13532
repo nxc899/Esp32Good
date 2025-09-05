@@ -1,0 +1,97 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+[0m
+[0;33m--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b72: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037c8d9: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40384b61: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+--- 0x4200b557: i2c_read_ath20_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:56
+--- 0x4200af0e: read_i2c_device_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/main.c:69
+--- 0x4037d46d: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aac: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+[0m
+[0;33m--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b72: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037c8d9: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40384b61: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+--- 0x4200b557: i2c_read_ath20_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:56
+--- 0x4200af0e: read_i2c_device_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/main.c:69
+--- 0x4037d46d: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aac: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+[0m
+[0;33m--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b72: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037c8d9: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40384b61: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+--- 0x4200b557: i2c_read_ath20_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:56
+--- 0x4200af0e: read_i2c_device_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/main.c:69
+--- 0x4037d46d: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aac: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+[0m
+[0;33m--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b72: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037c8d9: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40384b61: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+--- 0x4200b557: i2c_read_ath20_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:56
+--- 0x4200af0e: read_i2c_device_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/main.c:69
+--- 0x4037d46d: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aac: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+[0m
+[0;33m--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b72: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037c8d9: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40384b61: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+--- 0x4200b557: i2c_read_ath20_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:56
+--- 0x4200af0e: read_i2c_device_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/main.c:69
+--- 0x4037d46d: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aac: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+[0m
+[0;33m--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b72: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037c8d9: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40384b61: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037c8cf: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b4b5: read_ath20_status at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:119 (discriminator 1)
+--- 0x4200b557: i2c_read_ath20_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/bsp_i2c.c:56
+--- 0x4200af0e: read_i2c_device_data at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/main.c:69
+--- 0x4037d46d: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aac: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[1;31m--- Error: GetOverlappedResult failed (PermissionError(13, '拒绝访问。', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

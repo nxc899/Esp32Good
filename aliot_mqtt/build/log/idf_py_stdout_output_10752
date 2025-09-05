@@ -1,0 +1,765 @@
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x29 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (27) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 25 2025 20:09:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=217b4h (137140) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=000317dc vaddr=3fc9a100 size=049ach ( 18860) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00036190 vaddr=40374000 size=09e88h ( 40584) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a7e84h (687748) map[0m
+[0;32mI (264) esp_image: segment 4: paddr=000e7eac vaddr=4037de88 size=0c178h ( 49528) load[0m
+[0;32mI (284) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (284) boot: Disabling RNG early entropy source...[0m
+[0;32mI (296) cpu_start: Multicore app[0m
+[0;32mI (305) cpu_start: Pro cpu start user code[0m
+[0;32mI (306) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (306) app_init: Application information:[0m
+[0;32mI (308) app_init: Project name:     aliot_mqtt[0m
+[0;32mI (314) app_init: App version:      1[0m
+[0;32mI (318) app_init: Compile time:     Jul 25 2025 20:08:48[0m
+[0;32mI (324) app_init: ELF file SHA256:  94632f0a1...[0m
+[0;32mI (329) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (334) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (339) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (344) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (349) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (356) heap_init: At 3FCA2D18 len 000469F8 (282 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (374) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (382) spi_flash: detected chip: generic[0m
+[0;32mI (385) spi_flash: flash io: dio[0m
+[0;33mW (389) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (403) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (409) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (417) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (437) app_main: create event group succeed![0m
+[0;32mI (457) pp: pp rom version: e7ae62f[0m
+[0;32mI (457) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (467) wifi:wifi driver task: 3fcad120, prio:23, stack:6656, core=0[0m
+[0;32mI (477) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (477) wifi:wifi certification version: v7.0[0m
+[0;32mI (477) wifi:config NVS flash: enabled[0m
+[0;32mI (477) wifi:config nano formating: disabled[0m
+[0;32mI (477) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (487) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (487) wifi:Init management short buffer num: 32[0m
+[0;32mI (487) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (497) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (497) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (507) wifi:Init static rx buffer num: 10[0m
+[0;32mI (507) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (507) wifi_init: rx ba win: 6[0m
+[0;32mI (517) wifi_init: accept mbox: 6[0m
+[0;32mI (517) wifi_init: tcpip mbox: 32[0m
+[0;32mI (527) wifi_init: udp mbox: 6[0m
+[0;32mI (527) wifi_init: tcp mbox: 6[0m
+[0;32mI (527) wifi_init: tcp tx win: 5760[0m
+[0;32mI (537) wifi_init: tcp rx win: 5760[0m
+[0;32mI (537) wifi_init: tcp mss: 1440[0m
+[0;32mI (547) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (547) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (557) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (597) wifi:mode : sta (e8:06:90:98:bd:d4)[0m
+[0;32mI (597) wifi:enable tsf[0m
+[0;32mI (597) app_wifi: STA START,CONNECTING WIFI![0m
+[0;32mI (607) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (607) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (627) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (647) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (667) wifi:<ba-add>idx:0 (ifx:0, 18:f2:2c:6d:f0:a8), tid:5, ssn:0, winSize:64[0m
+[0;32mI (757) wifi:connected with 502, aid = 14, channel 1, 40U, bssid = 18:f2:2c:6d:f0:a8[0m
+[0;32mI (757) wifi:security: WPA2-PSK, phy: bgn, rssi: -62[0m
+[0;32mI (767) wifi:pm start, type: 1[0m
+
+[0;32mI (767) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (767) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (777) app_wifi: WIFI CONNECTED![0m
+[0;32mI (787) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1777) esp_netif_handlers: sta ip: 192.168.1.118, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1777) app_wifi: ESP GOT IP![0m
+[0;32mI (1777) app_main: got ip succeed,event group bit = 1[0m
+eventid = 7
+[0;32mI (1927) wifi:<ba-add>idx:1 (ifx:0, 18:f2:2c:6d:f0:a8), tid:0, ssn:0, winSize:64[0m
+eventid = 1
+[0;32mI (2747) aliot_mqtt: connect to server success[0m
+[0;32mI (2747) app_main: got ip succeed,event group bit = 2[0m
+[0;32mI (2747) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2757) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2767) bsp_i2c: I2C bus opened successfully[0m
+[0;32mI (2767) main_task: Returned from app_main()[0m
+[0;32mI (2767) bsp_i2c: ath20 i2c probe succeed.[0m
+[0;32mI (2777) bsp_i2c: bmp280 i2c probe succeed.[0m
+eventid = 3
+eventid = 3
+eventid = 3
+[0;32mI (3187) bsp_i2c: after send 0x71,get:c[0m
+[0;31mE (3187) bsp_i2c: calib allocate failed[0m
+[0;32mI (3257) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (3257) app_main: humidity is 54.646969,temperate is 26.706123[0m
+[0;32mI (3747) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.646968841552734,"temperature":26.706123352050781},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (3757) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (3867) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (3867) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (4827) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (4827) app_main: humidity is 54.623795,temperate is 26.708031[0m
+[0;32mI (5257) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.623794555664062,"temperature":26.708030700683594},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (5267) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (5407) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (5407) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (6397) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (6397) app_main: humidity is 54.635906,temperate is 26.703262[0m
+[0;32mI (6767) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.635906219482422,"temperature":26.703262329101562},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (6777) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (6937) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (6937) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (7967) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (7967) app_main: humidity is 54.665852,temperate is 26.708412[0m
+[0;32mI (8277) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.665851593017578,"temperature":26.708412170410156},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (8287) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (8377) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (8377) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (9537) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (9537) app_main: humidity is 54.594707,temperate is 26.732826[0m
+[0;32mI (9787) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.594707489013672,"temperature":26.732826232910156},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (9797) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (9917) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (9917) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (11107) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (11107) app_main: humidity is 54.646969,temperate is 26.735497[0m
+[0;32mI (11297) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.646968841552734,"temperature":26.735496520996094},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (11307) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (11447) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (11447) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (12677) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (12677) app_main: humidity is 54.616356,temperate is 26.735115[0m
+[0;32mI (12807) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.6163558959961,"temperature":26.735115051269531},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (12817) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (13087) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (13087) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (14247) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (14247) app_main: humidity is 54.594421,temperate is 26.736641[0m
+[0;32mI (14317) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.59442138671875,"temperature":26.736640930175781},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (14327) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (14417) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (14417) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (15817) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (15817) app_main: humidity is 54.573441,temperate is 26.727104[0m
+[0;32mI (15827) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.573440551757812,"temperature":26.727104187011719},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (15837) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (15947) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (15947) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (17387) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (17387) app_main: humidity is 54.583263,temperate is 26.725769[0m
+[0;32mI (17387) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.5832633972168,"temperature":26.72576904296875},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (17397) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (17497) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (17497) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (18957) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (18957) app_main: humidity is 54.573631,temperate is 26.728439[0m
+[0;32mI (18957) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.5736312866211,"temperature":26.728439331054688},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (18967) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (19027) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (19027) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (20527) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (20527) app_main: humidity is 54.560089,temperate is 26.727676[0m
+[0;32mI (20527) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.560089111328125,"temperature":26.727676391601562},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (20537) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (20967) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (20967) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (22097) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (22097) app_main: humidity is 54.538155,temperate is 26.745033[0m
+[0;32mI (22097) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.538154602050781,"temperature":26.745033264160156},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (22107) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (22157) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (22157) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (23667) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (23667) app_main: humidity is 54.587078,temperate is 26.730347[0m
+[0;32mI (23667) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.587078094482422,"temperature":26.7303466796875},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (23677) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (23837) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (23837) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (25237) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (25237) app_main: humidity is 54.592419,temperate is 26.742554[0m
+[0;32mI (25237) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.5924186706543,"temperature":26.7425537109375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (25247) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (25377) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (25377) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (26807) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (26807) app_main: humidity is 54.534054,temperate is 26.744080[0m
+[0;32mI (26807) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.534053802490234,"temperature":26.74407958984375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (26817) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (26907) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (26907) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (28377) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (28377) app_main: humidity is 54.631901,temperate is 26.742172[0m
+[0;32mI (28377) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.631900787353516,"temperature":26.742172241210938},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (28387) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (28547) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (28547) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (29947) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (29947) app_main: humidity is 54.559612,temperate is 26.752090[0m
+[0;32mI (29947) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.559612274169922,"temperature":26.752090454101562},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (29957) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (30077) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (30087) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (31517) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (31517) app_main: humidity is 54.533672,temperate is 26.754379[0m
+[0;32mI (31517) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.533672332763672,"temperature":26.754379272460938},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (31527) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (31827) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (31827) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (33087) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (33087) app_main: humidity is 54.533863,temperate is 26.748276[0m
+[0;32mI (33087) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.533863067626953,"temperature":26.748275756835938},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (33097) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (33157) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (33157) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (34657) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (34657) app_main: humidity is 54.517078,temperate is 26.743507[0m
+[0;32mI (34657) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.5170783996582,"temperature":26.743507385253906},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (34667) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (34727) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (34727) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (36227) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (36227) app_main: humidity is 54.535198,temperate is 26.741219[0m
+[0;32mI (36227) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.535198211669922,"temperature":26.741218566894531},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (36237) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (36337) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (36337) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (37797) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (37797) app_main: humidity is 54.485607,temperate is 26.747894[0m
+[0;32mI (37797) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.4856071472168,"temperature":26.747894287109375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (37807) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (37967) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (37967) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (39367) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (39367) app_main: humidity is 54.481506,temperate is 26.732826[0m
+[0;32mI (39367) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.48150634765625,"temperature":26.732826232910156},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (39377) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (39607) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (39607) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (40937) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (40937) app_main: humidity is 54.499531,temperate is 26.732826[0m
+[0;32mI (40937) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.499530792236328,"temperature":26.732826232910156},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (40947) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (41007) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (41007) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (42507) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (42507) app_main: humidity is 54.608059,temperate is 26.738548[0m
+[0;32mI (42507) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.608058929443359,"temperature":26.738548278808594},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (42517) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (42677) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (42677) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (44077) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (44077) app_main: humidity is 54.679012,temperate is 26.727676[0m
+[0;32mI (44077) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.679012298583984,"temperature":26.727676391601562},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (44087) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (44147) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (44147) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (45647) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (45647) app_main: humidity is 54.654121,temperate is 26.731300[0m
+[0;32mI (45647) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.654121398925781,"temperature":26.731300354003906},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (45657) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (45857) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (45857) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (47217) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (47217) app_main: humidity is 54.651642,temperate is 26.735687[0m
+[0;32mI (47217) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.651641845703125,"temperature":26.735687255859375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (47227) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (47497) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (47497) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (48787) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (48787) app_main: humidity is 54.613113,temperate is 26.746750[0m
+[0;32mI (48787) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.613113403320312,"temperature":26.746749877929688},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (48797) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (48927) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (48927) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (50357) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (50357) app_main: humidity is 54.558182,temperate is 26.733780[0m
+[0;32mI (50357) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.558181762695312,"temperature":26.733779907226562},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (50367) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (50667) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (50667) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (51927) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (51927) app_main: humidity is 54.601860,temperate is 26.743698[0m
+[0;32mI (51927) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.601860046386719,"temperature":26.743698120117188},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (51937) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (52097) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (52097) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (53497) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (53497) app_main: humidity is 54.630089,temperate is 26.740646[0m
+[0;32mI (53497) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.630088806152344,"temperature":26.740646362304688},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (53507) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (53637) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (53637) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (55067) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (55067) app_main: humidity is 54.590893,temperate is 26.746750[0m
+[0;32mI (55067) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.590892791748047,"temperature":26.746749877929688},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (55077) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (55137) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (55137) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (56637) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (56637) app_main: humidity is 54.589462,temperate is 26.728439[0m
+[0;32mI (56637) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.589462280273438,"temperature":26.728439331054688},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (56647) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (56807) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (56807) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (58207) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (58207) app_main: humidity is 54.618645,temperate is 26.747704[0m
+[0;32mI (58207) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.618644714355469,"temperature":26.747703552246094},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (58217) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (58347) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (58347) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (59777) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (59777) app_main: humidity is 54.561138,temperate is 26.739311[0m
+[0;32mI (59777) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.561138153076172,"temperature":26.739311218261719},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (59797) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (59847) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (59847) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (61347) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (61347) app_main: humidity is 54.522038,temperate is 26.736069[0m
+[0;32mI (61347) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.522037506103516,"temperature":26.736068725585938},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (61357) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (61517) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (61517) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (62917) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (62917) app_main: humidity is 54.572201,temperate is 26.751900[0m
+[0;32mI (62917) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.572200775146484,"temperature":26.751899719238281},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (62927) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (63057) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (63057) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (64487) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (64487) app_main: humidity is 54.530907,temperate is 26.737404[0m
+[0;32mI (64487) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.5309066772461,"temperature":26.737403869628906},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (64497) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (64587) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (64587) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (66057) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (66057) app_main: humidity is 54.511166,temperate is 26.742744[0m
+[0;32mI (66057) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.511165618896484,"temperature":26.742744445800781},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (66067) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (66227) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (66227) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (67627) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (67627) app_main: humidity is 54.476738,temperate is 26.731491[0m
+[0;32mI (67627) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.476737976074219,"temperature":26.731491088867188},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (67637) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (67767) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (67767) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (69197) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (69197) app_main: humidity is 54.475021,temperate is 26.713943[0m
+[0;32mI (69197) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.475021362304688,"temperature":26.713943481445312},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (69207) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (69267) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (69267) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (70767) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (70767) app_main: humidity is 54.479885,temperate is 26.741791[0m
+[0;32mI (70767) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.479885101318359,"temperature":26.741790771484375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (70777) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (70937) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (70937) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (72337) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (72337) app_main: humidity is 54.495621,temperate is 26.747894[0m
+[0;32mI (72337) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.495620727539062,"temperature":26.747894287109375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (72347) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (72477) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (72477) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (73907) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (73907) app_main: humidity is 54.452515,temperate is 26.742172[0m
+[0;32mI (73907) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.4525146484375,"temperature":26.742172241210938},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (73917) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (74017) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (74017) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x29 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (27) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 25 2025 20:09:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=217b4h (137140) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=000317dc vaddr=3fc9a100 size=049ach ( 18860) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00036190 vaddr=40374000 size=09e88h ( 40584) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a7e84h (687748) map[0m
+[0;32mI (264) esp_image: segment 4: paddr=000e7eac vaddr=4037de88 size=0c178h ( 49528) load[0m
+[0;32mI (284) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (284) boot: Disabling RNG early entropy source...[0m
+[0;32mI (296) cpu_start: Multicore app[0m
+[0;32mI (305) cpu_start: Pro cpu start user code[0m
+[0;32mI (306) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (306) app_init: Application information:[0m
+[0;32mI (308) app_init: Project name:     aliot_mqtt[0m
+[0;32mI (314) app_init: App version:      1[0m
+[0;32mI (318) app_init: Compile time:     Jul 25 2025 20:08:48[0m
+[0;32mI (324) app_init: ELF file SHA256:  94632f0a1...[0m
+[0;32mI (329) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (334) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (339) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (344) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (349) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (356) heap_init: At 3FCA2D18 len 000469F8 (282 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (374) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (382) spi_flash: detected chip: generic[0m
+[0;32mI (385) spi_flash: flash io: dio[0m
+[0;33mW (389) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (403) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (409) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (417) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (437) app_main: create event group succeed![0m
+[0;32mI (457) pp: pp rom version: e7ae62f[0m
+[0;32mI (457) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (467) wifi:wifi driver task: 3fcad120, prio:23, stack:6656, core=0[0m
+[0;32mI (477) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (477) wifi:wifi certification version: v7.0[0m
+[0;32mI (477) wifi:config NVS flash: enabled[0m
+[0;32mI (477) wifi:config nano formating: disabled[0m
+[0;32mI (477) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (487) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (487) wifi:Init management short buffer num: 32[0m
+[0;32mI (487) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (497) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (497) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (507) wifi:Init static rx buffer num: 10[0m
+[0;32mI (507) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (507) wifi_init: rx ba win: 6[0m
+[0;32mI (517) wifi_init: accept mbox: 6[0m
+[0;32mI (517) wifi_init: tcpip mbox: 32[0m
+[0;32mI (527) wifi_init: udp mbox: 6[0m
+[0;32mI (527) wifi_init: tcp mbox: 6[0m
+[0;32mI (527) wifi_init: tcp tx win: 5760[0m
+[0;32mI (537) wifi_init: tcp rx win: 5760[0m
+[0;32mI (537) wifi_init: tcp mss: 1440[0m
+[0;32mI (547) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (547) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (557) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (597) wifi:mode : sta (e8:06:90:98:bd:d4)[0m
+[0;32mI (597) wifi:enable tsf[0m
+[0;32mI (597) app_wifi: STA START,CONNECTING WIFI![0m
+[0;32mI (607) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (607) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (627) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (647) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (677) wifi:<ba-add>idx:0 (ifx:0, 18:f2:2c:6d:f0:a8), tid:5, ssn:0, winSize:64[0m
+[0;32mI (767) wifi:connected with 502, aid = 14, channel 1, 40U, bssid = 18:f2:2c:6d:f0:a8[0m
+[0;32mI (767) wifi:security: WPA2-PSK, phy: bgn, rssi: -61[0m
+[0;32mI (767) wifi:pm start, type: 1[0m
+
+[0;32mI (767) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (777) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (787) app_wifi: WIFI CONNECTED![0m
+[0;32mI (787) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1787) esp_netif_handlers: sta ip: 192.168.1.118, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1787) app_wifi: ESP GOT IP![0m
+[0;32mI (1787) app_main: got ip succeed,event group bit = 1[0m
+eventid = 7
+[0;32mI (1867) wifi:<ba-add>idx:1 (ifx:0, 18:f2:2c:6d:f0:a8), tid:0, ssn:1, winSize:64[0m
+eventid = 1
+[0;32mI (2547) aliot_mqtt: connect to server success[0m
+[0;32mI (2547) app_main: got ip succeed,event group bit = 2[0m
+[0;32mI (2547) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2557) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2567) bsp_i2c: I2C bus opened successfully[0m
+[0;32mI (2567) main_task: Returned from app_main()[0m
+[0;32mI (2567) bsp_i2c: ath20 i2c probe succeed.[0m
+eventid = 3
+[0;32mI (2577) bsp_i2c: bmp280 i2c probe succeed.[0m
+eventid = 3
+eventid = 3
+[0;32mI (2987) bsp_i2c: after send 0x71,get:c[0m
+[0;31mE (2987) bsp_i2c: calib allocate failed[0m
+[0;32mI (3057) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (3057) app_main: humidity is 54.638004,temperate is 26.739502[0m
+[0;32mI (3547) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.638004302978516,"temperature":26.739501953125},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (3557) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (3717) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (3717) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (4627) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (4627) app_main: humidity is 54.673576,temperate is 26.744652[0m
+[0;32mI (5057) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.673576354980469,"temperature":26.744651794433594},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (5067) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (5197) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (5197) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (6197) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (6197) app_main: humidity is 54.679775,temperate is 26.733398[0m
+[0;32mI (6567) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.6797752380371,"temperature":26.7333984375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (6577) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (6737) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (6737) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (7767) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (7767) app_main: humidity is 54.644680,temperate is 26.735687[0m
+[0;32mI (8077) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.644680023193359,"temperature":26.735687255859375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (8087) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (8167) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (8167) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (9337) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (9337) app_main: humidity is 54.587936,temperate is 26.747894[0m
+[0;32mI (9587) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.587936401367188,"temperature":26.747894287109375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (9597) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (9707) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (9707) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (10907) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (10907) app_main: humidity is 54.525375,temperate is 26.731491[0m
+[0;32mI (11097) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.525375366210938,"temperature":26.731491088867188},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (11107) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (11237) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (11237) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (12477) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (12477) app_main: humidity is 54.541016,temperate is 26.722527[0m
+[0;32mI (12607) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.541015625,"temperature":26.722526550292969},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (12617) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (12777) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (12777) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (14047) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (14047) app_main: humidity is 54.477787,temperate is 26.722145[0m
+[0;32mI (14117) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.477787017822266,"temperature":26.722145080566406},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (14127) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (14207) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (14207) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (15617) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (15617) app_main: humidity is 54.490662,temperate is 26.712227[0m
+[0;32mI (15627) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.49066162109375,"temperature":26.712226867675781},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (15637) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (15747) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (15747) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (17187) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (17187) app_main: humidity is 54.461479,temperate is 26.742744[0m
+[0;32mI (17187) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.461479187011719,"temperature":26.742744445800781},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (17197) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (17387) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (17387) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (18757) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (18757) app_main: humidity is 54.499245,temperate is 26.716423[0m
+[0;32mI (18757) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.4992446899414,"temperature":26.716423034667969},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (18767) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (18847) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (18847) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (20327) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (20327) app_main: humidity is 54.489422,temperate is 26.737022[0m
+[0;32mI (20327) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.489421844482422,"temperature":26.737022399902344},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (20337) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (20457) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (20457) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (21897) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (21897) app_main: humidity is 54.483223,temperate is 26.738548[0m
+[0;32mI (21897) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.483222961425781,"temperature":26.738548278808594},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (21907) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (22097) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (22097) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (23467) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (23467) app_main: humidity is 54.431438,temperate is 26.736450[0m
+[0;32mI (23467) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.431438446044922,"temperature":26.7364501953125},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (23477) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (23627) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (23627) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (25037) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (25037) app_main: humidity is 54.492664,temperate is 26.740265[0m
+[0;32mI (25037) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.4926643371582,"temperature":26.740264892578125},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (25047) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (25577) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (25577) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (26607) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (26607) app_main: humidity is 54.515457,temperate is 26.742554[0m
+[0;32mI (26607) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.515457153320312,"temperature":26.7425537109375},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (26617) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (26707) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (26707) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (28177) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (28177) app_main: humidity is 54.577351,temperate is 26.742172[0m
+[0;32mI (28177) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.577350616455078,"temperature":26.742172241210938},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (28187) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (28957) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (28957) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (29747) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (29747) app_main: humidity is 54.659653,temperate is 26.745415[0m
+[0;32mI (29747) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.659652709960938,"temperature":26.745414733886719},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (29757) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (29877) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (29877) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (31317) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (31317) app_main: humidity is 54.668617,temperate is 26.727295[0m
+[0;32mI (31317) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.668617248535156,"temperature":26.727294921875},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (31327) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (31417) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (31417) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (32887) bsp_i2c: ath20 data not busy ,status:c[0m
+[0;32mI (32887) app_main: humidity is 54.695129,temperate is 26.741600[0m
+[0;32mI (32887) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"Humidity":54.69512939453125,"temperature":26.741600036621094},"method":"thing.event.property.post"}
+has been posted![0m
+[0;32mI (32897) aliyun_dm: delete dm[0m
+eventid = 6
+[0;32mI (33157) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (33157) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m

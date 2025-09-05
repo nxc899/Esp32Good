@@ -1,0 +1,130 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42008107: uart_ll_get_txfifo_len at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:390
+---  (inlined by) uart_tx_char at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+[0m
+[0;33m--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+[0m
+[0;33m--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40386499: abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/abort.c:38
+--- 0x4037d79b: _esp_error_check_failed at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b48a: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:25 (discriminator 1)
+--- 0x4200b5b9: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

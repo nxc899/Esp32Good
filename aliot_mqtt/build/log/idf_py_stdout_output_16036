@@ -1,0 +1,76 @@
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Administrator\Desktop\project\aliot_mqtt\build\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Administrator/Desktop/project/aliot_mqtt/build/partition_table/partition-table.bin C:/Users/Administrator/Desktop/project/aliot_mqtt/build/aliot_mqtt.bin"
+aliot_mqtt.bin binary size 0xe4090 bytes. Smallest app partition is 0x100000 bytes. 0x1bf70 bytes (11%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Administrator\Desktop\project\aliot_mqtt\build\bootloader\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Administrator/Desktop/project/aliot_mqtt/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5490 bytes. 0x2b70 bytes (34%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Administrator\esp\v5.3.2\esp-idf\components\esptool_py && C:\Users\Administrator\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/Administrator/esp/v5.3.2/esp-idf -D SERIAL_TOOL=C:/Users/Administrator/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Administrator/Desktop/project/aliot_mqtt/build -P C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 aliot_mqtt.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM6
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: e8:06:90:98:bd:d4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f4fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21648 bytes to 13303...
+Writing at 0x00000000... (100 %)
+Wrote 21648 bytes (13303 compressed) at 0x00000000 in 0.6 seconds (effective 268.6 kbit/s)...
+Hash of data verified.
+Compressed 934032 bytes to 573597...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d583... (5 %)
+Writing at 0x000285af... (8 %)
+Writing at 0x00032f60... (11 %)
+Writing at 0x0003ac68... (13 %)
+Writing at 0x00040c5d... (16 %)
+Writing at 0x00047148... (19 %)
+Writing at 0x0004d43b... (22 %)
+Writing at 0x00053884... (25 %)
+Writing at 0x00059da3... (27 %)
+Writing at 0x0005fec1... (30 %)
+Writing at 0x00065972... (33 %)
+Writing at 0x0006b8c3... (36 %)
+Writing at 0x00071f22... (38 %)
+Writing at 0x00077f70... (41 %)
+Writing at 0x0007d11e... (44 %)
+Writing at 0x0008204c... (47 %)
+Writing at 0x000873fd... (50 %)
+Writing at 0x0008c861... (52 %)
+Writing at 0x000919c3... (55 %)
+Writing at 0x00096bfe... (58 %)
+Writing at 0x0009c7ce... (61 %)
+Writing at 0x000a255b... (63 %)
+Writing at 0x000a7f24... (66 %)
+Writing at 0x000adb03... (69 %)
+Writing at 0x000b37fd... (72 %)
+Writing at 0x000b9014... (75 %)
+Writing at 0x000bed3c... (77 %)
+Writing at 0x000c4a99... (80 %)
+Writing at 0x000c9e8b... (83 %)
+Writing at 0x000cfbca... (86 %)
+Writing at 0x000da239... (88 %)
+Writing at 0x000e24af... (91 %)
+Writing at 0x000e823e... (94 %)
+Writing at 0x000ee68c... (97 %)
+Writing at 0x000f3fc9... (100 %)
+Wrote 934032 bytes (573597 compressed) at 0x00010000 in 13.1 seconds (effective 571.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 400.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

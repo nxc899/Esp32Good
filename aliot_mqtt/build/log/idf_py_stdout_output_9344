@@ -1,0 +1,407 @@
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (27) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 25 2025 20:09:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=1ff64h (130916) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=0002ff8c vaddr=3fc99d00 size=0008ch (   140) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=a3a98h (670360) map[0m
+[0;32mI (251) esp_image: segment 3: paddr=000d3ac0 vaddr=3fc99d8c size=04910h ( 18704) load[0m
+[0;32mI (255) esp_image: segment 4: paddr=000d83d8 vaddr=40374000 size=15c40h ( 89152) load[0m
+[0;32mI (285) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (285) boot: Disabling RNG early entropy source...[0m
+[0;32mI (297) cpu_start: Multicore app[0m
+[0;32mI (306) cpu_start: Pro cpu start user code[0m
+[0;32mI (306) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (306) app_init: Application information:[0m
+[0;32mI (309) app_init: Project name:     aliot_mqtt[0m
+[0;32mI (314) app_init: App version:      1[0m
+[0;32mI (318) app_init: Compile time:     Jul 25 2025 20:08:48[0m
+[0;32mI (324) app_init: ELF file SHA256:  2a9e5519a...[0m
+[0;32mI (330) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (334) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (339) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (344) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (349) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (356) heap_init: At 3FCA28C8 len 00046E48 (283 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (375) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (382) spi_flash: detected chip: generic[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;33mW (389) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (403) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (410) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (417) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (437) app_main: create event group succeed![0m
+[0;32mI (457) pp: pp rom version: e7ae62f[0m
+[0;32mI (457) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (467) wifi:wifi driver task: 3fcaccd0, prio:23, stack:6656, core=0[0m
+[0;32mI (477) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (477) wifi:wifi certification version: v7.0[0m
+[0;32mI (477) wifi:config NVS flash: enabled[0m
+[0;32mI (477) wifi:config nano formating: disabled[0m
+[0;32mI (477) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (487) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (487) wifi:Init management short buffer num: 32[0m
+[0;32mI (487) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (497) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (497) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (507) wifi:Init static rx buffer num: 10[0m
+[0;32mI (507) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (507) wifi_init: rx ba win: 6[0m
+[0;32mI (517) wifi_init: accept mbox: 6[0m
+[0;32mI (517) wifi_init: tcpip mbox: 32[0m
+[0;32mI (527) wifi_init: udp mbox: 6[0m
+[0;32mI (527) wifi_init: tcp mbox: 6[0m
+[0;32mI (527) wifi_init: tcp tx win: 5760[0m
+[0;32mI (537) wifi_init: tcp rx win: 5760[0m
+[0;32mI (537) wifi_init: tcp mss: 1440[0m
+[0;32mI (547) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (547) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (557) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (597) wifi:mode : sta (e8:06:90:98:bd:d4)[0m
+[0;32mI (597) wifi:enable tsf[0m
+[0;32mI (597) app_wifi: STA START,CONNECTING WIFI![0m
+[0;32mI (627) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (627) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (657) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (677) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (687) wifi:<ba-add>idx:0 (ifx:0, 18:f2:2c:6d:f0:a8), tid:5, ssn:0, winSize:64[0m
+[0;32mI (787) wifi:connected with 502, aid = 12, channel 1, 40U, bssid = 18:f2:2c:6d:f0:a8[0m
+[0;32mI (787) wifi:security: WPA2-PSK, phy: bgn, rssi: -62[0m
+[0;32mI (797) wifi:pm start, type: 1[0m
+
+[0;32mI (797) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (807) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (817) app_wifi: WIFI CONNECTED![0m
+[0;32mI (837) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2317) esp_netif_handlers: sta ip: 192.168.1.112, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2317) app_wifi: ESP GOT IP![0m
+[0;32mI (2317) app_main: got ip succeed,event group bit = 1[0m
+eventid = 7
+[0;32mI (2337) wifi:<ba-add>idx:1 (ifx:0, 18:f2:2c:6d:f0:a8), tid:0, ssn:1, winSize:64[0m
+eventid = 1
+[0;32mI (3077) aliot_mqtt: connect to server success[0m
+[0;32mI (3077) app_main: got ip succeed,event group bit = 2[0m
+eventid = 3
+[0;32mI (3117) aliot_mqtt: subscribe success, msgid:0[0m
+eventid = 3
+[0;32mI (3167) aliot_mqtt: subscribe success, msgid:0[0m
+eventid = 3
+[0;32mI (3167) aliot_mqtt: subscribe success, msgid:0[0m
+[0;32mI (8077) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (8077) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (8077) aliyun_dm: delete dm[0m
+[0;32mI (8087) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (8217) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (8217) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (13587) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (13587) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (13587) aliyun_dm: delete dm[0m
+[0;32mI (13597) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (13667) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (13667) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (18097) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (18097) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (18097) aliyun_dm: delete dm[0m
+[0;32mI (18107) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (18177) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (18177) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (23087) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (23087) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (23087) aliyun_dm: delete dm[0m
+[0;32mI (23097) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (23167) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (23167) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (28087) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (28087) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (28087) aliyun_dm: delete dm[0m
+[0;32mI (28097) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (28167) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (28167) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (33597) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (33597) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (33597) aliyun_dm: delete dm[0m
+[0;32mI (33607) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (33677) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (33677) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (38107) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (38107) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (38107) aliyun_dm: delete dm[0m
+[0;32mI (38117) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (38187) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (38187) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (43097) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (43097) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (43097) aliyun_dm: delete dm[0m
+[0;32mI (43107) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (43177) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (43177) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (48607) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (48607) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (48607) aliyun_dm: delete dm[0m
+[0;32mI (48617) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (48677) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (48677) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+eventid = 6
+[0;32mI (51637) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/service/property/set[0m
+[0;32mI (51647) aliot_mqtt: mqtt data arrive,topic is {"method":"thing.service.property.set","id":"1088775447","params":{"LightSwitch":0},"version":"1.0.0"}[0m
+[0;32mI (51657) aliot_mqtt: Property params:0[0m
+[0;32mI (52117) app_main: send reply message![0m
+[0;32mI (52117) aliyun_dm: post message is {"id":"0","version":"1.0","code":"200","message":"success","data":{}}
+has been posted![0m
+[0;32mI (52117) aliyun_dm: delete dm[0m
+[0;32mI (52117) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+[0;32mI (53107) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (53107) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (53107) aliyun_dm: delete dm[0m
+[0;32mI (53117) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (53187) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (53187) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (58617) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (58617) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (58617) aliyun_dm: delete dm[0m
+[0;32mI (58627) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (58707) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (58707) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (63127) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (63127) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (63127) aliyun_dm: delete dm[0m
+[0;32mI (63137) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (63207) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (63207) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (68117) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (68117) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (68117) aliyun_dm: delete dm[0m
+[0;32mI (68127) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (68207) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (68207) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (73627) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (73627) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (73627) aliyun_dm: delete dm[0m
+[0;32mI (73637) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (73737) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (73737) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+eventid = 6
+[0;32mI (78067) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/service/property/set[0m
+[0;32mI (78067) aliot_mqtt: mqtt data arrive,topic is {"method":"thing.service.property.set","id":"1303071897","params":{"LightSwitch":0},"version":"1.0.0"}[0m
+[0;32mI (78087) aliot_mqtt: Property params:0[0m
+[0;32mI (83127) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (83127) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (83127) aliyun_dm: delete dm[0m
+[0;32mI (83137) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (83197) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (83197) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (88637) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (88637) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (88637) aliyun_dm: delete dm[0m
+[0;32mI (88647) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (88707) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (88707) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (93147) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (93147) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (93147) aliyun_dm: delete dm[0m
+[0;32mI (93157) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (93227) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (93227) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (98137) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (98137) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (98137) aliyun_dm: delete dm[0m
+[0;32mI (98147) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (98227) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (98227) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (103647) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (103647) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (103647) aliyun_dm: delete dm[0m
+[0;32mI (103657) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (103737) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (103737) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (108157) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (108157) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (108157) aliyun_dm: delete dm[0m
+[0;32mI (108167) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (108237) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (108237) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (113147) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (113147) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (113147) aliyun_dm: delete dm[0m
+[0;32mI (113157) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (113227) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (113227) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (118657) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (118657) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (118657) aliyun_dm: delete dm[0m
+[0;32mI (118667) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (118917) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (118917) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (123167) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (123167) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (123167) aliyun_dm: delete dm[0m
+[0;32mI (123177) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (123237) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (123237) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (128157) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (128157) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (128157) aliyun_dm: delete dm[0m
+[0;32mI (128167) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (128257) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (128257) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (133667) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (133667) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (133667) aliyun_dm: delete dm[0m
+[0;32mI (133677) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (133747) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (133747) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (138177) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (138177) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (138177) aliyun_dm: delete dm[0m
+[0;32mI (138187) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (138267) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (138267) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (143167) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (143167) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (143167) aliyun_dm: delete dm[0m
+[0;32mI (143177) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (143247) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (143247) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (148677) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (148677) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (148677) aliyun_dm: delete dm[0m
+[0;32mI (148687) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (148797) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (148797) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (153187) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (153187) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (153187) aliyun_dm: delete dm[0m
+[0;32mI (153197) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (153267) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (153277) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (158177) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (158177) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":0},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (158177) aliyun_dm: delete dm[0m
+[0;32mI (158187) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (158247) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (158247) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m
+[0;32mI (163687) app_main: send message of LightSwitch to cloud[0m
+[0;32mI (163687) aliyun_dm: post message is {"id":"0","version":"1.0","params":{"LightSwitch":1},"method":"thing.event.LightSwitch.post"}
+has been posted![0m
+[0;32mI (163687) aliyun_dm: delete dm[0m
+[0;32mI (163697) aliyun_dm: FREE pdm successful[0m
+eventid = 5
+eventid = 6
+[0;32mI (163767) aliot_mqtt: mqtt data arrive,topic is /sys/k1wfjO3sesH/myesp32/thing/event/property/post_reply[0m
+[0;32mI (163767) aliot_mqtt: mqtt data arrive,topic is {"code":200,"data":{},"id":"0","message":"success","method":"thing.event.property.post","version":"1.0"}[0m

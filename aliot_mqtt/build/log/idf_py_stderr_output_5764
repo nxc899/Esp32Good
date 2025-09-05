@@ -1,0 +1,60 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403865d5: __assert_func at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/assert.c:80
+--- 0x4037db43: xQueueGenericCreate at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:573 (discriminator 1)
+--- 0x42018efb: spi_bus_add_device at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:490
+--- 0x4200b4b6: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:34
+--- 0x4200b5bb: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403865d5: __assert_func at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/assert.c:80
+--- 0x4037db43: xQueueGenericCreate at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:573 (discriminator 1)
+--- 0x42018efb: spi_bus_add_device at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:490
+--- 0x4200b4b6: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:34
+--- 0x4200b5bb: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403865d5: __assert_func at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/assert.c:80
+--- 0x4037db43: xQueueGenericCreate at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:573 (discriminator 1)
+--- 0x42018efb: spi_bus_add_device at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:490
+--- 0x4200b4b6: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:34
+--- 0x4200b5bb: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403865d5: __assert_func at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/assert.c:80
+--- 0x4037db43: xQueueGenericCreate at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:573 (discriminator 1)
+--- 0x42018efb: spi_bus_add_device at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:490
+--- 0x4200b4b6: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:34
+--- 0x4200b5bb: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40375c2a: panic_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+--- 0x4037d7a5: esp_system_abort at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403865d5: __assert_func at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/newlib/assert.c:80
+--- 0x4037db43: xQueueGenericCreate at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:573 (discriminator 1)
+--- 0x42018efb: spi_bus_add_device at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:490
+--- 0x4200b4b6: w25q64_init at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:34
+--- 0x4200b5bb: w25q64_task at C:/Users/Administrator/Desktop/project/aliot_mqtt/main/w25q64_driver.c:75
+--- 0x4037e339: vPortTaskWrapper at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b64: esp_restart_noos at C:/Users/Administrator/esp/v5.3.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

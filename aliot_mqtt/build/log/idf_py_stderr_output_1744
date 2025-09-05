@@ -1,0 +1,6 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 5a062bac59d993db6047b36003c85bb4f63c388a72e7061eb563b8f920542f9d[0m
+[0m
