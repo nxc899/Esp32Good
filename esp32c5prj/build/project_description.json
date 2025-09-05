@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "esp32c5prj",
-    "project_version":    "1",
+    "project_version":    "f8ce7ed-dirty",
     "project_path":       "C:/Users/Administrator/Desktop/project/esp32c5prj",
     "idf_path":           "C:/Users/Administrator/esp/v5.3.2/esp-idf",
     "build_dir":          "C:/Users/Administrator/Desktop/project/esp32c5prj/build",
