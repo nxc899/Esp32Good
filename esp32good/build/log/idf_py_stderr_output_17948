@@ -1,0 +1,22 @@
+Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM15 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace C:\Users\Administrator\Desktop\project\esp32good\build\esp32good.elf C:\Users\Administrator\Desktop\project\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM15 instead...[0m
+[0;33m--- esp-idf-monitor 1.7.0 on \\.\COM15 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[1;31m--- esp_idf_monitor (1.7.0) - ESP-IDF Monitor tool
+--- based on miniterm from pySerial
+---
+--- Ctrl+]   Exit program
+--- Ctrl+T   Menu escape key, followed by:
+--- Menu keys:
+---    Ctrl+T         Send the menu character itself to remote
+---    Ctrl+]         Send the exit character itself to remote
+---    Ctrl+R         Reset target board via RTS line
+---    Ctrl+F         Build & flash project
+---    Ctrl+A (or A)  Build & flash app only
+---    Ctrl+Y         Toggle output display
+---    Ctrl+L         Toggle saving output into file
+---    Ctrl+I (or I)  Toggle printing timestamps
+---    Ctrl+P         Reset target into bootloader via the DTR/RTS lines
+---    Ctrl+X (or X)  Exit program[0m
+[0m

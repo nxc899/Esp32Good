@@ -1,0 +1,133 @@
+Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM15 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace C:\Users\Administrator\Desktop\project\esp32good\build\esp32good.elf C:\Users\Administrator\Desktop\project\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM15 instead...[0m
+[0;33m--- esp-idf-monitor 1.7.0 on \\.\COM15 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x420168ee: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/hal/esp32c5/include/hal/uart_ll.h[0m[0m:[1;31m641[0m
+[0m--- (inlined by) [0;33mpanic_print_char_uart[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m96[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpt4rf_uin"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpt4rf_uin\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpfyq3_h53"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpfyq3_h53\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpg_3q3nhr"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpg_3q3nhr\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmp_fp2f9l9"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmp_fp2f9l9\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmp11tle5rk"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmp11tle5rk\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpv6sfz5kw"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpv6sfz5kw\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpvngrq_5c"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpvngrq_5c\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpwxnvpaq1"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpwxnvpaq1\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, '设备不识别此命令。', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmptdwg5cud"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmptdwg5cud\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080637a: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40806338: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\esp32good.elf', '-ex', 'add-symbol-file C:\\Users\\Administrator\\Desktop\\project\\esp32good\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c5 "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpd1ej_z3f"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "C:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf"\r\nC:UsersAdministratorDesktopprojectesp32goodbuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\Administrator\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c5 C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmpd1ej_z3f\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0;33m.[0m[0m--- 0x40806470: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m144[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/Administrator/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m.[0m[0;33m[0m
+[0m
