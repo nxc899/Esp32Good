@@ -1,0 +1,93 @@
+Command: ninja all
+[1/89] Linking C static library esp-idf\wear_levelling\libwear_levelling.a
+[2/89] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_crc.c.obj
+[3/89] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/xtensa/core_dump_port.c.obj
+[4/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj
+[5/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj
+[6/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj
+[7/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj
+[8/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj
+[9/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj
+[10/89] Linking C static library esp-idf\json\libjson.a
+[11/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj
+[12/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj
+[13/89] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/rgb/esp_lcd_panel_rgb.c.obj
+[14/89] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_masks.c.obj
+[15/89] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_access.c.obj
+[16/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj
+[17/89] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj
+[18/89] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj
+[19/89] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj
+[20/89] Building C object esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj
+[21/89] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_apis.c.obj
+[22/89] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj
+[23/89] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
+[24/89] Building C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_utils.c.obj
+[25/89] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
+[26/89] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
+[27/89] Building C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_mqueue.c.obj
+[28/89] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
+[29/89] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
+[30/89] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
+[31/89] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj
+[32/89] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
+[33/89] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj
+[34/89] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj
+[35/89] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj
+[36/89] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj
+[37/89] Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj
+[38/89] Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj
+[39/89] Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj
+[40/89] Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj
+[41/89] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj
+[42/89] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj
+[43/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_config.c.obj
+[44/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_ctrl.c.obj
+[45/89] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj
+[46/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_scan.c.obj
+[47/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_config.pb-c.c.obj
+[48/89] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj
+[49/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_scan.pb-c.c.obj
+[50/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/handlers.c.obj
+[51/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_console.c.obj
+[52/89] Linking C static library esp-idf\app_trace\libapp_trace.a
+[53/89] Linking C static library esp-idf\cmock\libcmock.a
+[54/89] Linking C static library esp-idf\esp_driver_cam\libesp_driver_cam.a
+[55/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_constants.pb-c.c.obj
+[56/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_ctrl.pb-c.c.obj
+[57/89] Linking C static library esp-idf\esp_driver_touch_sens\libesp_driver_touch_sens.a
+[58/89] Linking C static library esp-idf\esp_hid\libesp_hid.a
+[59/89] Linking C static library esp-idf\esp_eth\libesp_eth.a
+[60/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/manager.c.obj
+[61/89] Linking C static library esp-idf\esp_local_ctrl\libesp_local_ctrl.a
+[62/89] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[63/89] Linking C static library esp-idf\espcoredump\libespcoredump.a
+[64/89] Linking C static library esp-idf\nvs_sec_provider\libnvs_sec_provider.a
+[65/89] Linking C static library esp-idf\perfmon\libperfmon.a
+[66/89] Linking C static library esp-idf\fatfs\libfatfs.a
+[67/89] Linking C static library esp-idf\rt\librt.a
+[68/89] Linking C static library esp-idf\mqtt\libmqtt.a
+[69/89] Linking C static library esp-idf\spiffs\libspiffs.a
+[70/89] Linking C static library esp-idf\touch_element\libtouch_element.a
+[71/89] Linking C static library esp-idf\usb\libusb.a
+[72/89] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_softap.c.obj
+[73/89] Linking C static library esp-idf\wifi_provisioning\libwifi_provisioning.a
+[74/89] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/w25q64_driver.c.obj
+[75/89] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bsp_i2c.c.obj
+[76/89] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_wifi.c.obj
+[77/89] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_global.c.obj
+[78/89] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/aliot_dm.c.obj
+[79/89] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[80/89] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/aliot_mqtt.c.obj
+[81/89] Linking C static library esp-idf\main\libmain.a
+[82/89] Performing build step for 'bootloader'
+[1/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj
+[2/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj
+[3/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj
+[4/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj
+[5/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj
+[6/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj
+[7/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj
+[8/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj
+[9/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[10/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj
