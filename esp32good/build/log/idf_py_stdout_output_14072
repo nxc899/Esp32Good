@@ -1,6 +1,0 @@
-Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM15 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace C:\Users\Administrator\Desktop\project\esp32good\build\esp32good.elf C:\Users\Administrator\Desktop\project\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
-ESP-ROM:esp32c5-eco2-20250121
-Build:Jan 21 2025
-rst:0x15 (USB_UART_HPSYS),boot:0x6b (DOWNLOAD(UART0/USB))
-Core0 Saved PC:0x4001bfbc
-waiting for download
