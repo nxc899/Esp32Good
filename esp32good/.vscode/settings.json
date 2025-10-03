@@ -28,7 +28,13 @@
     "sdkconfig.h": "c",
     "stdio.h": "c",
     "gpio.h": "c",
-    "stdbool.h": "c"
+    "stdbool.h": "c",
+    "compare": "c",
+    "cstdint": "c",
+    "lvgl.h": "c",
+    "lv_port_indev.h": "c",
+    "lv_port_disp.h": "c",
+    "esp_err.h": "c"
   },
   "idf.flashType": "JTAG"
 }

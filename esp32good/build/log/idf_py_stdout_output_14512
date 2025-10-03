@@ -1,0 +1,84 @@
+Command: ninja all
+[1/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[2/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lv_port/lv_port_indev.c.obj
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:33:13: warning: 'mouse_init' used but never defined
+   33 | static void mouse_init(void);
+      |             ^~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:34:13: warning: 'mouse_read' used but never defined
+   34 | static void mouse_read(lv_indev_t * indev, lv_indev_data_t * data);
+      |             ^~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:35:13: warning: 'mouse_is_pressed' declared 'static' but never defined [-Wunused-function]
+   35 | static bool mouse_is_pressed(void);
+      |             ^~~~~~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:36:13: warning: 'mouse_get_xy' declared 'static' but never defined [-Wunused-function]
+   36 | static void mouse_get_xy(int32_t * x, int32_t * y);
+      |             ^~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:38:13: warning: 'keypad_init' used but never defined
+   38 | static void keypad_init(void);
+      |             ^~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:39:13: warning: 'keypad_read' used but never defined
+   39 | static void keypad_read(lv_indev_t * indev, lv_indev_data_t * data);
+      |             ^~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:40:17: warning: 'keypad_get_key' declared 'static' but never defined [-Wunused-function]
+   40 | static uint32_t keypad_get_key(void);
+      |                 ^~~~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:42:13: warning: 'encoder_init' used but never defined
+   42 | static void encoder_init(void);
+      |             ^~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:43:13: warning: 'encoder_read' used but never defined
+   43 | static void encoder_read(lv_indev_t * indev, lv_indev_data_t * data);
+      |             ^~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:44:13: warning: 'encoder_handler' declared 'static' but never defined [-Wunused-function]
+   44 | static void encoder_handler(void);
+      |             ^~~~~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:46:13: warning: 'button_init' used but never defined
+   46 | static void button_init(void);
+      |             ^~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:47:13: warning: 'button_read' used but never defined
+   47 | static void button_read(lv_indev_t * indev, lv_indev_data_t * data);
+      |             ^~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:48:15: warning: 'button_get_pressed_id' declared 'static' but never defined [-Wunused-function]
+   48 | static int8_t button_get_pressed_id(void);
+      |               ^~~~~~~~~~~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:49:13: warning: 'button_is_pressed' declared 'static' but never defined [-Wunused-function]
+   49 | static bool button_is_pressed(uint8_t id);
+      |             ^~~~~~~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:61:25: warning: 'encoder_state' defined but not used [-Wunused-variable]
+   61 | static lv_indev_state_t encoder_state;
+      |                         ^~~~~~~~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:60:16: warning: 'encoder_diff' defined but not used [-Wunused-variable]
+   60 | static int32_t encoder_diff;
+      |                ^~~~~~~~~~~~
+[3/12] Performing build step for 'bootloader'
+[1/1] C:\Windows\SYSTEM32\cmd.exe /C "cd /D E:\project\Esp32Good\esp32good\build\bootloader\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 E:/project/Esp32Good/esp32good/build/bootloader/bootloader.bin"
+Bootloader binary size 0x56a0 bytes. 0x960 bytes (10%) free.
+[4/12] No install step for 'bootloader'
+[5/12] Completed 'bootloader'
+[6/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lv_port/lv_port_disp.c.obj
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_disp.c:21:6: warning: #warning Please define or replace the macro MY_DISP_HOR_RES with the actual screen width, default value 320 is used for now. [-Wcpp]
+   21 |     #warning Please define or replace the macro MY_DISP_HOR_RES with the actual screen width, default value 320 is used for now.
+      |      ^~~~~~~
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_disp.c:26:6: warning: #warning Please define or replace the macro MY_DISP_VER_RES with the actual screen height, default value 240 is used for now. [-Wcpp]
+   26 |     #warning Please define or replace the macro MY_DISP_VER_RES with the actual screen height, default value 240 is used for now.
+      |      ^~~~~~~
+[7/12] Linking C static library esp-idf\main\libmain.a
+[8/12] Generating esp-idf/esp_system/ld/sections.ld
+[9/12] Building C object CMakeFiles/esp32good.elf.dir/project_elf_src_esp32c5.c.obj
+[10/12] Linking CXX executable esp32good.elf
+FAILED: esp32good.elf 
+cmd.exe /C "cd . && C:\Users\Administrator\.espressif\tools\riscv32-esp-elf\esp-14.2.0_20241119\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe -march=rv32imac_zicsr_zifencei -nostartfiles -march=rv32imac_zicsr_zifencei    -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32C5=0 -Wl,--Map=E:/project/Esp32Good/esp32good/build/esp32good.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=warn -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T rom.api.ld -T esp32c5.peripherals.ld -T esp32c5.rom.ld -T esp32c5.rom.api.ld -T esp32c5.rom.rvfp.ld -T esp32c5.rom.wdt.ld -T esp32c5.rom.systimer.ld -T esp32c5.rom.version.ld -T esp32c5.rom.phy.ld -T esp32c5.rom.coexist.ld -T esp32c5.rom.net80211.ld -T esp32c5.rom.pp.ld -T esp32c5.rom.libc.ld -T esp32c5.rom.libc-suboptimal_for_misaligned_mem.ld -T esp32c5.rom.newlib.ld -T esp32c5.rom.heap.ld -T memory.ld -T sections.ld @CMakeFiles\esp32good.elf.rsp -o esp32good.elf && cd ."
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(lv_port_indev.c.obj): in function `lv_port_indev_init':
+E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:95:(.text.lv_port_indev_init+0x2c): undefined reference to `mouse_init'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:105:(.text.lv_port_indev_init+0x46): undefined reference to `mouse_read'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:105:(.text.lv_port_indev_init+0x4a): undefined reference to `mouse_read'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:110:(.text.lv_port_indev_init+0x76): undefined reference to `keypad_init'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:111:(.text.lv_port_indev_init+0x90): undefined reference to `keypad_read'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:111:(.text.lv_port_indev_init+0x94): undefined reference to `keypad_read'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:112:(.text.lv_port_indev_init+0xa0): undefined reference to `encoder_init'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:122:(.text.lv_port_indev_init+0xba): undefined reference to `encoder_read'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:123:(.text.lv_port_indev_init+0xbe): undefined reference to `encoder_read'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:124:(.text.lv_port_indev_init+0xca): undefined reference to `button_init'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:139:(.text.lv_port_indev_init+0xe4): undefined reference to `button_read'
+C:/Users/Administrator/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:139:(.text.lv_port_indev_init+0xe8): undefined reference to `button_read'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,285 @@
+Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace E:\project\Esp32Good\esp32good\build\esp32good.elf E:\project\Esp32Good\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;32mI (147) esp_image: segment 3: paddr=0007034c vaddr=40801068 sizeESP-ROM:esp32c5-eco2-20250121[0m
+Build:Jan 21 2025
+rst:0x15 (USB_UART_HPSYS),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080415e
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (27) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef88h ( 61320) map[0m
+[0;32mI (92) esp_image: segment 1: paddr=0001efb0 vaddr=40800000 size=01068h (  4200) load[0m
+[0;32mI (94) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=50324h (328484) map[0m
+[0;32mI (147) esp_image: segment 3: paddr=0007034c vaddr=40801068 size=0cf2ch ( 53036) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0007d280 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (177) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (177) cpu_start: Unicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     esp32good[0m
+[0;32mI (193) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (198) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (203) app_init: ELF file SHA256:  8575aee65...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (234) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (239) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (245) spi_flash: detected chip: generic[0m
+[0;32mI (248) spi_flash: flash io: dio[0m
+[0;33mW (251) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (263) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (269) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (276) main_task: Started on CPU0[0m
+[0;32mI (276) main_task: Calling app_main()[0m
+[0;32mI (476) my_lcd: LCD id:0000[0m
+[0;32mI (676) my_lcd: Lcd init Finish[0m
+[0;32mI (1416) TOUCH: Touch I2C device found![0m
+[0;32mI (3066) LVGLTAG: xpos:192,ypos:40[0m
+[0;32mI (3106) LVGLTAG: xpos:192,ypos:40[0m
+[0;32mI (3136) LVGLTAG: xpos:192,ypos:40[0m
+[0;32mI (3166) LVGLTAG: xpos:192,ypos:40[0m
+[0;32mI (3206) LVGLTAG: xpos:192,ypos:40[0m
+[0;32mI (3236) LVGLTAG: xpos:192,ypos:40[0m
+[0;32mI (3266) LVGLTAG: xpos:192,ypos:40[0m
+[0;32mI (3306) LVGLTAG: xpos:192,ypos:48[0m
+[0;32mI (3336) LVGLTAG: xpos:192,ypos:56[0m
+[0;32mI (3366) LVGLTAG: xpos:192,ypos:64[0m
+[0;32mI (3396) LVGLTAG: xpos:192,ypos:71[0m
+[0;32mI (3436) LVGLTAG: xpos:192,ypos:87[0m
+[0;32mI (3466) LVGLTAG: xpos:192,ypos:98[0m
+[0;32mI (3496) LVGLTAG: xpos:192,ypos:109[0m
+[0;32mI (3536) LVGLTAG: xpos:192,ypos:117[0m
+[0;32mI (3566) LVGLTAG: xpos:192,ypos:125[0m
+[0;32mI (3596) LVGLTAG: xpos:192,ypos:131[0m
+[0;32mI (3636) LVGLTAG: xpos:192,ypos:137[0m
+[0;32mI (3666) LVGLTAG: xpos:192,ypos:141[0m
+[0;32mI (3696) LVGLTAG: xpos:192,ypos:147[0m
+[0;32mI (3726) LVGLTAG: xpos:192,ypos:151[0m
+[0;32mI (3766) LVGLTAG: xpos:192,ypos:154[0m
+[0;32mI (3796) LVGLTAG: xpos:192,ypos:160[0m
+[0;32mI (3826) LVGLTAG: xpos:192,ypos:167[0m
+[0;32mI (3866) LVGLTAG: xpos:192,ypos:173[0m
+[0;32mI (3896) LVGLTAG: xpos:192,ypos:179[0m
+[0;32mI (3926) LVGLTAG: xpos:192,ypos:185[0m
+[0;32mI (3966) LVGLTAG: xpos:192,ypos:189[0m
+[0;32mI (3996) LVGLTAG: xpos:192,ypos:194[0m
+[0;32mI (4026) LVGLTAG: xpos:192,ypos:200[0m
+[0;32mI (4056) LVGLTAG: xpos:192,ypos:207[0m
+[0;32mI (4096) LVGLTAG: xpos:192,ypos:212[0m
+[0;32mI (4126) LVGLTAG: xpos:192,ypos:219[0m
+[0;32mI (4156) LVGLTAG: xpos:192,ypos:225[0m
+[0;32mI (4196) LVGLTAG: xpos:192,ypos:231[0m
+[0;32mI (4226) LVGLTAG: xpos:192,ypos:237[0m
+[0;32mI (4256) LVGLTAG: xpos:192,ypos:244[0m
+[0;32mI (4296) LVGLTAG: xpos:192,ypos:251[0m
+[0;32mI (4326) LVGLTAG: xpos:192,ypos:257[0m
+[0;32mI (4356) LVGLTAG: xpos:192,ypos:261[0m
+[0;32mI (4386) LVGLTAG: xpos:192,ypos:263[0m
+[0;32mI (4426) LVGLTAG: xpos:192,ypos:265[0m
+[0;32mI (4456) LVGLTAG: xpos:192,ypos:267[0m
+[0;32mI (4486) LVGLTAG: xpos:192,ypos:268[0m
+[0;32mI (4526) LVGLTAG: xpos:192,ypos:270[0m
+[0;32mI (4556) LVGLTAG: xpos:192,ypos:272[0m
+[0;32mI (6176) LVGLTAG: xpos:156,ypos:294[0m
+[0;32mI (6206) LVGLTAG: xpos:156,ypos:294[0m
+[0;32mI (6636) LVGLTAG: xpos:135,ypos:171[0m
+[0;32mI (6666) LVGLTAG: xpos:135,ypos:171[0m
+[0;32mI (7326) LVGLTAG: xpos:48,ypos:273[0m
+[0;32mI (7356) LVGLTAG: xpos:48,ypos:273[0m
+[0;32mI (7396) LVGLTAG: xpos:48,ypos:273[0m
+[0;32mI (7426) LVGLTAG: xpos:48,ypos:273[0m
+[0;32mI (7456) LVGLTAG: xpos:48,ypos:273[0m
+[0;32mI (7496) LVGLTAG: xpos:48,ypos:273[0m
+[0;32mI (7526) LVGLTAG: xpos:48,ypos:273[0m
+[0;32mI (7556) LVGLTAG: xpos:59,ypos:273[0m
+[0;32mI (7596) LVGLTAG: xpos:64,ypos:273[0m
+[0;32mI (7626) LVGLTAG: xpos:78,ypos:273[0m
+[0;32mI (7656) LVGLTAG: xpos:81,ypos:273[0m
+[0;32mI (7686) LVGLTAG: xpos:94,ypos:273[0m
+[0;32mI (7726) LVGLTAG: xpos:104,ypos:273[0m
+[0;32mI (7756) LVGLTAG: xpos:111,ypos:273[0m
+[0;32mI (7786) LVGLTAG: xpos:120,ypos:273[0m
+[0;32mI (7826) LVGLTAG: xpos:128,ypos:273[0m
+[0;32mI (7856) LVGLTAG: xpos:134,ypos:273[0m
+[0;32mI (7886) LVGLTAG: xpos:141,ypos:273[0m
+[0;32mI (7926) LVGLTAG: xpos:150,ypos:273[0m
+[0;32mI (7956) LVGLTAG: xpos:157,ypos:273[0m
+[0;32mI (7986) LVGLTAG: xpos:163,ypos:273[0m
+[0;32mI (8016) LVGLTAG: xpos:168,ypos:273[0m
+[0;32mI (8056) LVGLTAG: xpos:171,ypos:273[0m
+[0;32mI (8086) LVGLTAG: xpos:174,ypos:273[0m
+[0;32mI (8416) LVGLTAG: xpos:82,ypos:279[0m
+[0;32mI (8446) LVGLTAG: xpos:82,ypos:279[0m
+[0;32mI (8486) LVGLTAG: xpos:82,ypos:279[0m
+[0;32mI (8516) LVGLTAG: xpos:82,ypos:279[0m
+[0;32mI (8546) LVGLTAG: xpos:82,ypos:279[0m
+[0;32mI (8586) LVGLTAG: xpos:82,ypos:279[0m
+[0;32mI (8616) LVGLTAG: xpos:94,ypos:277[0m
+[0;32mI (8646) LVGLTAG: xpos:109,ypos:274[0m
+[0;32mI (8676) LVGLTAG: xpos:116,ypos:273[0m
+[0;32mI (8716) LVGLTAG: xpos:130,ypos:269[0m
+[0;32mI (8746) LVGLTAG: xpos:143,ypos:266[0m
+[0;32mI (8776) LVGLTAG: xpos:153,ypos:266[0m
+[0;32mI (8816) LVGLTAG: xpos:162,ypos:261[0m
+[0;32mI (8846) LVGLTAG: xpos:167,ypos:251[0m
+[0;32mI (8876) LVGLTAG: xpos:171,ypos:241[0m
+[0;32mI (8916) LVGLTAG: xpos:174,ypos:229[0m
+[0;32mI (8946) LVGLTAG: xpos:177,ypos:217[0m
+[0;32mI (8976) LVGLTAG: xpos:178,ypos:210[0m
+[0;32mI (9006) LVGLTAG: xpos:178,ypos:198[0m
+[0;32mI (9046) LVGLTAG: xpos:178,ypos:184[0m
+[0;32mI (9076) LVGLTAG: xpos:178,ypos:172[0m
+[0;32mI (9106) LVGLTAG: xpos:178,ypos:157[0m
+[0;32mI (9146) LVGLTAG: xpos:178,ypos:142[0m
+[0;32mI (9176) LVGLTAG: xpos:178,ypos:129[0m
+[0;32mI (9206) LVGLTAG: xpos:178,ypos:115[0m
+[0;32mI (9246) LVGLTAG: xpos:177,ypos:101[0m
+[0;32mI (9276) LVGLTAG: xpos:174,ypos:93[0m
+[0;32mI (9306) LVGLTAG: xpos:166,ypos:84[0m
+[0;32mI (9336) LVGLTAG: xpos:158,ypos:77[0m
+[0;32mI (9376) LVGLTAG: xpos:150,ypos:74[0m
+[0;32mI (9406) LVGLTAG: xpos:140,ypos:75[0m
+[0;32mI (9436) LVGLTAG: xpos:126,ypos:80[0m
+[0;32mI (9476) LVGLTAG: xpos:114,ypos:87[0m
+[0;32mI (9506) LVGLTAG: xpos:102,ypos:98[0m
+[0;32mI (9536) LVGLTAG: xpos:93,ypos:109[0m
+[0;32mI (9576) LVGLTAG: xpos:88,ypos:116[0m
+[0;32mI (9606) LVGLTAG: xpos:82,ypos:129[0m
+[0;32mI (9636) LVGLTAG: xpos:77,ypos:142[0m
+[0;32mI (9666) LVGLTAG: xpos:75,ypos:155[0m
+[0;32mI (9706) LVGLTAG: xpos:74,ypos:170[0m
+[0;32mI (9736) LVGLTAG: xpos:74,ypos:184[0m
+[0;32mI (9766) LVGLTAG: xpos:74,ypos:199[0m
+[0;32mI (9806) LVGLTAG: xpos:74,ypos:211[0m
+[0;32mI (9836) LVGLTAG: xpos:74,ypos:221[0m
+[0;32mI (9866) LVGLTAG: xpos:74,ypos:224[0m
+[0;32mI (9906) LVGLTAG: xpos:74,ypos:225[0m
+[0;32mI (9936) LVGLTAG: xpos:74,ypos:230[0m
+[0;32mI (9966) LVGLTAG: xpos:75,ypos:236[0m
+[0;32mI (9996) LVGLTAG: xpos:82,ypos:251[0m
+[0;32mI (10036) LVGLTAG: xpos:86,ypos:257[0m
+[0;32mI (10066) LVGLTAG: xpos:96,ypos:262[0m
+[0;32mI (10096) LVGLTAG: xpos:101,ypos:264[0m
+[0;32mI (10136) LVGLTAG: xpos:112,ypos:265[0m
+[0;32mI (10166) LVGLTAG: xpos:117,ypos:265[0m
+[0;32mI (10196) LVGLTAG: xpos:125,ypos:265[0m
+[0;32mI (10236) LVGLTAG: xpos:136,ypos:264[0m
+[0;32mI (10266) LVGLTAG: xpos:146,ypos:261[0m
+[0;32mI (10296) LVGLTAG: xpos:158,ypos:256[0m
+[0;32mI (10326) LVGLTAG: xpos:169,ypos:251[0m
+[0;32mI (10366) LVGLTAG: xpos:178,ypos:243[0m
+[0;32mI (10396) LVGLTAG: xpos:184,ypos:237[0m
+[0;32mI (10426) LVGLTAG: xpos:188,ypos:233[0m
+[0;32mI (10956) LVGLTAG: xpos:46,ypos:196[0m
+[0;32mI (10986) LVGLTAG: xpos:46,ypos:196[0m
+[0;32mI (11026) LVGLTAG: xpos:46,ypos:196[0m
+[0;32mI (11056) LVGLTAG: xpos:46,ypos:196[0m
+[0;32mI (11086) LVGLTAG: xpos:46,ypos:196[0m
+[0;32mI (11126) LVGLTAG: xpos:56,ypos:196[0m
+[0;32mI (11156) LVGLTAG: xpos:68,ypos:196[0m
+[0;32mI (11186) LVGLTAG: xpos:80,ypos:191[0m
+[0;32mI (11226) LVGLTAG: xpos:94,ypos:182[0m
+[0;32mI (11256) LVGLTAG: xpos:105,ypos:172[0m
+[0;32mI (11286) LVGLTAG: xpos:113,ypos:167[0m
+[0;32mI (11316) LVGLTAG: xpos:116,ypos:163[0m
+[0;32mI (11586) LVGLTAG: xpos:92,ypos:203[0m
+[0;32mI (11616) LVGLTAG: xpos:92,ypos:203[0m
+[0;32mI (11646) LVGLTAG: xpos:92,ypos:203[0m
+[0;32mI (11686) LVGLTAG: xpos:92,ypos:203[0m
+[0;32mI (11716) LVGLTAG: xpos:92,ypos:203[0m
+[0;32mI (11746) LVGLTAG: xpos:92,ypos:210[0m
+[0;32mI (11786) LVGLTAG: xpos:92,ypos:219[0m
+[0;32mI (11816) LVGLTAG: xpos:92,ypos:231[0m
+[0;32mI (11846) LVGLTAG: xpos:92,ypos:239[0m
+[0;32mI (11886) LVGLTAG: xpos:92,ypos:252[0m
+[0;32mI (12116) LVGLTAG: xpos:132,ypos:161[0m
+[0;32mI (12146) LVGLTAG: xpos:132,ypos:161[0m
+[0;32mI (12176) LVGLTAG: xpos:132,ypos:161[0m
+[0;32mI (12216) LVGLTAG: xpos:132,ypos:165[0m
+[0;32mI (12246) LVGLTAG: xpos:132,ypos:188[0m
+[0;32mI (12276) LVGLTAG: xpos:132,ypos:224[0m
+[0;32mI (12306) LVGLTAG: xpos:132,ypos:246[0m
+[0;32mI (12346) LVGLTAG: xpos:132,ypos:257[0m
+[0;32mI (12376) LVGLTAG: xpos:132,ypos:268[0m
+[0;32mI (12406) LVGLTAG: xpos:132,ypos:274[0m
+[0;32mI (12636) LVGLTAG: xpos:62,ypos:232[0m
+[0;32mI (12676) LVGLTAG: xpos:62,ypos:232[0m
+[0;32mI (12706) LVGLTAG: xpos:62,ypos:232[0m
+[0;32mI (12736) LVGLTAG: xpos:70,ypos:232[0m
+[0;32mI (12776) LVGLTAG: xpos:82,ypos:232[0m
+[0;32mI (12806) LVGLTAG: xpos:96,ypos:232[0m
+[0;32mI (12836) LVGLTAG: xpos:116,ypos:232[0m
+[0;32mI (12876) LVGLTAG: xpos:130,ypos:232[0m
+[0;32mI (12906) LVGLTAG: xpos:142,ypos:232[0m
+[0;32mI (12936) LVGLTAG: xpos:150,ypos:232[0m
+[0;32mI (12966) LVGLTAG: xpos:162,ypos:232[0m
+[0;32mI (13006) LVGLTAG: xpos:172,ypos:232[0m
+[0;32mI (13036) LVGLTAG: xpos:183,ypos:232[0m
+[0;32mI (13066) LVGLTAG: xpos:195,ypos:231[0m
+[0;32mI (13106) LVGLTAG: xpos:210,ypos:230[0m
+[0;32mI (13136) LVGLTAG: xpos:220,ypos:230[0m
+[0;32mI (13166) LVGLTAG: xpos:232,ypos:230[0m
+[0;32mI (13536) LVGLTAG: xpos:70,ypos:221[0m
+[0;32mI (13566) LVGLTAG: xpos:70,ypos:221[0m
+[0;32mI (13596) LVGLTAG: xpos:70,ypos:221[0m
+[0;32mI (13626) LVGLTAG: xpos:70,ypos:221[0m
+[0;32mI (13666) LVGLTAG: xpos:77,ypos:221[0m
+[0;32mI (13696) LVGLTAG: xpos:89,ypos:221[0m
+[0;32mI (13726) LVGLTAG: xpos:104,ypos:221[0m
+[0;32mI (13766) LVGLTAG: xpos:123,ypos:221[0m
+[0;32mI (13796) LVGLTAG: xpos:137,ypos:221[0m
+[0;32mI (13826) LVGLTAG: xpos:147,ypos:221[0m
+[0;32mI (13866) LVGLTAG: xpos:152,ypos:221[0m
+[0;32mI (14056) LVGLTAG: xpos:59,ypos:231[0m
+[0;32mI (14096) LVGLTAG: xpos:59,ypos:231[0m
+[0;32mI (14126) LVGLTAG: xpos:59,ypos:231[0m
+[0;32mI (14156) LVGLTAG: xpos:59,ypos:235[0m
+[0;32mI (14196) LVGLTAG: xpos:60,ypos:247[0m
+[0;32mI (14226) LVGLTAG: xpos:67,ypos:269[0m
+[0;32mI (14256) LVGLTAG: xpos:74,ypos:283[0m
+[0;32mI (14286) LVGLTAG: xpos:80,ypos:289[0m
+[0;32mI (14326) LVGLTAG: xpos:87,ypos:290[0m
+[0;32mI (14356) LVGLTAG: xpos:98,ypos:285[0m
+[0;32mI (14386) LVGLTAG: xpos:108,ypos:277[0m
+[0;32mI (14426) LVGLTAG: xpos:118,ypos:272[0m
+[0;32mI (14456) LVGLTAG: xpos:126,ypos:265[0m
+[0;32mI (14486) LVGLTAG: xpos:128,ypos:261[0m
+[0;32mI (14526) LVGLTAG: xpos:129,ypos:256[0m
+[0;32mI (14556) LVGLTAG: xpos:129,ypos:255[0m
+[0;32mI (14586) LVGLTAG: xpos:129,ypos:257[0m
+[0;32mI (14616) LVGLTAG: xpos:129,ypos:262[0m
+[0;32mI (14656) LVGLTAG: xpos:129,ypos:273[0m
+[0;32mI (14686) LVGLTAG: xpos:131,ypos:285[0m
+[0;32mI (14716) LVGLTAG: xpos:134,ypos:293[0m
+[0;32mI (14756) LVGLTAG: xpos:139,ypos:296[0m
+[0;32mI (14786) LVGLTAG: xpos:144,ypos:297[0m
+[0;32mI (14816) LVGLTAG: xpos:154,ypos:295[0m
+[0;32mI (14856) LVGLTAG: xpos:166,ypos:287[0m
+[0;32mI (14886) LVGLTAG: xpos:176,ypos:274[0m
+[0;32mI (14916) LVGLTAG: xpos:184,ypos:256[0m
+[0;32mI (14946) LVGLTAG: xpos:189,ypos:238[0m
+[0;32mI (14986) LVGLTAG: xpos:192,ypos:222[0m
+[0;32mI (15016) LVGLTAG: xpos:201,ypos:195[0m

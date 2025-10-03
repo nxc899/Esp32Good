@@ -14,20 +14,26 @@
 #define FT_ID_G_LIB_VERSION      0xA1         //版本
 #define FT_ID_G_CIPHER_HIGH      0xA3         //芯片代号（高字节） 默认0x64 
 #define FT_ID_G_MODE             0xA4         //FT6636中断模式控制寄存器
+#define FT_ID_G_PMODE            0XA5         //设置功耗
 #define FT_ID_G_FOCALTECH_ID     0xA8         //VENDOR ID 默认值为0x11
 #define FT_ID_G_THGROUP          0x80         //触摸有效值设置寄存器
 #define FT_ID_G_PERIODACTIVE     0x88         //激活状态周期设置寄存器
 
+//#define ENABLE_TOUCH_TEST
+
+#define ARR_SIZE(a) sizeof(a)/sizeof(a[0])
+
 typedef struct{
+    uint8_t sta;    //从触摸状态寄存器读取的值
     uint16_t x;
     uint16_t y;
-    uint8_t (*touch_scan)(void);
+    uint8_t (*touch_status)(void);
     void (*touch_init)(void);
 }touch_dev_t;
 
 extern touch_dev_t touch_dev;
 
-uint8_t touch_scan(void);
+void touch_status(void);
 void touch_init(void);
 void get_touch_pos(void);
 

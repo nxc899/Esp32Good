@@ -1,3 +1,14 @@
-idf_component_register(SRCS "my_lcd.c" "main.c" "FT6336G.c"
-                       PRIV_REQUIRES spi_flash esp_driver_spi esp_driver_gpio
-                       INCLUDE_DIRS ".")
+idf_component_register(SRCS 
+                        "my_lcd.c" 
+                        "main.c" 
+                        "FT6336G.c" 
+                        "./lv_port/lv_port_disp.c"
+                        "./lv_port/lv_port_indev.c"
+                       PRIV_REQUIRES 
+                        spi_flash 
+                        esp_driver_spi 
+                        esp_driver_gpio 
+                        esp_driver_i2c
+                       INCLUDE_DIRS 
+                        "." 
+                        "./lv_port")

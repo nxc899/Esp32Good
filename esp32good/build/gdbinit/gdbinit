@@ -1,0 +1,2 @@
+source E:/project/Esp32Good/esp32good/build/gdbinit/symbols
+source E:/project/Esp32Good/esp32good/build/gdbinit/connect

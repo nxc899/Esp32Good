@@ -75,6 +75,7 @@ typedef struct
 void lcd_init(void);
 void draw_rect(spi_device_handle_t spi,int xpos, int ypos, int width, int height, uint16_t *linedata);
 void draw_finish(spi_device_handle_t spi);
+void lvgl_tick_timer_init(void);
 
 extern _lcd_dev lcd_dev;
 extern spi_device_handle_t spi2;

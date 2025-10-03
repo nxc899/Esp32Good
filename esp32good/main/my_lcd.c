@@ -7,11 +7,33 @@
 #include "driver/spi_master.h"
 #include <stdbool.h>
 #include <math.h>
+#include "esp_timer.h"
+#include "lvgl.h"
 
 uint16_t drawbuf[320*240];
 
+
+static esp_timer_handle_t lvgl_tick_timer = NULL;
 spi_device_handle_t spi2;
 _lcd_dev lcd_dev;
+
+static void lv_tick_task(void* arg)
+{
+    lv_tick_inc(1);
+}
+
+void lvgl_tick_timer_init(void)
+{
+    const esp_timer_create_args_t timer_arg = {
+        .arg = NULL,
+        .callback = lv_tick_task,
+        .name = "lv_tick_timer",
+        .dispatch_method = ESP_TIMER_TASK,
+    };
+
+    esp_timer_create(&timer_arg,&lvgl_tick_timer);
+    esp_timer_start_periodic(lvgl_tick_timer,1000);
+}
 
 void spi_transfer_hook(spi_transaction_t *trans)
 {
@@ -98,7 +120,7 @@ void spi_init(void)
 
     spi_device_interface_config_t devcfg = {
         .mode = 0,
-        .clock_source = SPI_CLK_SRC_DEFAULT,
+        .clock_source = SPI_CLK_SRC_PLL_F160M,
         .spics_io_num = PIN_NUM_CS,
         .queue_size = 7,
         .pre_cb = spi_transfer_hook,
@@ -177,7 +199,7 @@ DRAM_ATTR static const lcd_init_cmd_t ili_init_cmds[] = {
     /* VCOM control 2, VCOMH=VMH-2, VCOML=VML-2 */
     {0xC7, {0xBE}, 1},
     /* Memory access control, MX=MY=0, MV=1, ML=0, BGR=1, MH=0 */
-    {0x36, {0x08}, 1},
+    {0x36, {0x28}, 1},
     /* Pixel format, 16bits/pixel for RGB/MCU interface */
     {0x3A, {0x55}, 1},
     /* Frame rate control, f=fosc, 70Hz fps */

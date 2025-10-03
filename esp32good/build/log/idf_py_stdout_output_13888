@@ -1,0 +1,363 @@
+Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace E:\project\Esp32Good\esp32good\build\esp32good.elf E:\project\Esp32Good\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;32mI (115) esp_image: segment 3: paddr=0003c9f4 vaddr=40805d88 sizeESP-ROM:esp32c5-eco2-20250121[0m
+Build:Jan 21 2025
+rst:0x15 (USB_UART_HPSYS),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080409c
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (27) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=0a268h ( 41576) map[0m
+[0;32mI (89) esp_image: segment 1: paddr=0001a290 vaddr=40800000 size=05d88h ( 23944) load[0m
+[0;32mI (94) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c9cch (117196) map[0m
+[0;32mI (115) esp_image: segment 3: paddr=0003c9f4 vaddr=40805d88 size=0813ch ( 33084) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00044b38 vaddr=4080df00 size=01b20h (  6944) load[0m
+[0;32mI (127) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (127) boot: Disabling RNG early entropy source...[0m
+[0;32mI (141) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (141) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (142) cpu_start: Unicore app[0m
+[0;32mI (153) cpu_start: Pro cpu start user code[0m
+[0;32mI (153) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (154) app_init: Application information:[0m
+[0;32mI (154) app_init: Project name:     esp32good[0m
+[0;32mI (157) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (162) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (167) app_init: ELF file SHA256:  4d605e8e9...[0m
+[0;32mI (171) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (175) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (179) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (183) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (187) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (193) heap_init: At 40810CA0 len 0004B900 (302 KiB): RAM[0m
+[0;32mI (198) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (203) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (209) spi_flash: detected chip: generic[0m
+[0;32mI (212) spi_flash: flash io: dio[0m
+[0;33mW (215) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (228) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (234) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (240) main_task: Started on CPU0[0m
+[0;32mI (240) main_task: Calling app_main()[0m
+[0;32mI (440) my_lcd: LCD id:0000[0m
+[0;32mI (640) my_lcd: Lcd init Finish[0m
+[0;32mI (1370) TOUCH: Touch I2C device found![0m
+[1;31mE (1390) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1390) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1410) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1410) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1440) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1440) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1460) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1460) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1480) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1480) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1500) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1500) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1520) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1520) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1540) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1540) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1560) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1560) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1580) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1580) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1600) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1600) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1620) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1620) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1640) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1640) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1660) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1660) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1680) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1680) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1700) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1700) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1720) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1720) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1740) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1740) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1760) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1760) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1780) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1780) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1800) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1800) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1820) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1820) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1840) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1840) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1860) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1860) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1880) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1880) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1900) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1900) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1920) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1920) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1940) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1940) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1960) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1960) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (1980) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1980) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2000) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2000) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2020) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2020) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2040) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2040) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2060) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2060) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2080) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2080) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2100) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2100) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2120) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2120) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2140) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2140) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2160) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2160) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2180) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2180) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2200) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2200) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2220) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2220) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2240) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2240) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2260) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2260) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2280) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2280) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2300) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2300) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2320) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2320) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2340) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2340) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2360) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2360) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2380) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2380) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2420) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2420) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2440) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2440) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2460) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2460) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2480) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2480) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2500) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2500) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2520) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2520) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2540) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2540) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2560) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2560) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2580) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2580) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2600) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2600) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2620) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2620) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2640) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2640) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2660) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2660) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2680) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2680) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2700) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2700) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2720) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2720) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2740) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2740) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2760) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2760) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2780) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2780) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2800) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2800) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2820) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2820) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2840) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2840) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2860) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2860) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2880) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2880) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2900) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2900) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2920) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2920) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2940) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2940) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2960) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2960) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (2980) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2980) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3000) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3000) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3020) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3020) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3040) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3040) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3060) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3060) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3080) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3080) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3100) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3100) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3120) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3120) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3140) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3140) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3160) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3160) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3180) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3180) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3200) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3200) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3220) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3220) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3240) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3240) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3260) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3260) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3280) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3280) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3300) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3300) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3320) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3320) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3340) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3340) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3360) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3360) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3380) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3380) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3420) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3420) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3440) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3440) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3460) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3460) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3480) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3480) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3500) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3500) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3520) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3520) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3540) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3540) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3560) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3560) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3580) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3580) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3600) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3600) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3620) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3620) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3640) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3640) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3660) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3660) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3680) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3680) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3700) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3700) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3720) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3720) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3740) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3740) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3760) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3760) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3780) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3780) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3800) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3800) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3820) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3820) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3840) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3840) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3860) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3860) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3880) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3880) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3900) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3900) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3920) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3920) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3940) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3940) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3960) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3960) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (3980) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3980) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4000) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4000) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4020) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4020) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4040) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4040) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4060) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4060) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4080) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4080) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4100) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4100) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4120) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4120) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4140) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4140) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4160) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4160) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4180) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4180) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4200) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4200) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4220) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4220) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4240) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4240) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4260) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4260) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4280) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4280) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4300) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4300) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4320) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4320) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4340) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4340) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4360) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4360) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4380) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4380) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (4400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m

@@ -1,0 +1,994 @@
+Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace E:\project\Esp32Good\esp32good\build\esp32good.elf E:\project\Esp32Good\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;32mI (147) esp_image: segment 3: paddr=000702b4 vaddr=40801090 sizeESP-ROM:esp32c5-eco2-20250121[0m
+Build:Jan 21 2025
+rst:0x15 (USB_UART_HPSYS),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080415e
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (27) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (92) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (94) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (147) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (177) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (177) cpu_start: Unicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     esp32good[0m
+[0;32mI (193) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (197) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (202) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (234) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (239) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (245) spi_flash: detected chip: generic[0m
+[0;32mI (248) spi_flash: flash io: dio[0m
+[0;33mW (251) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (263) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (269) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (276) main_task: Started on CPU0[0m
+[0;32mI (276) main_task: Calling app_main()[0m
+[0;32mI (476) my_lcd: LCD id:0000[0m
+[0;32mI (676) my_lcd: Lcd init Finish[0m
+[0;32mI (1406) TOUCH: Touch I2C device found![0m
+[1;31mE (1406) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+
+abort() was called at PC 0x408068ff on core 0
+Core  0 register dump:
+MEPC    : 0x4080694a  RA      : 0x40806908  SP      : 0x4081cfd0  GP      : 0x4080e804  
+TP      : 0x4081d1a0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4081d034  A0      : 0x4081cffc  A1      : 0x4081d032  
+A2      : 0x00000000  A3      : 0x4081d029  A4      : 0x00000001  A5      : 0x4081a000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x4081db40  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4081cfd0: 0x42062b7c 0x42006d94 0x4081d030 0x4080c1bc 0x00000003 0x4081d01c 0x42062f04 0x4080f184
+4081cff0: 0x4081d034 0x4080f1a0 0x4081d030 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4081d010: 0x43502074 0x34783020 0x36303830 0x20666638 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4081d030: 0x00000030 0x30383034 0x66663836 0x4081db00 0x00000000 0x00000003 0x42062000 0x40806902
+4081d050: 0x00000000 0x00000003 0x42062000 0x42006d94 0x00001800 0x00000000 0x4081adf0 0x408007de
+4081d070: 0x00001800 0x00002800 0x42062000 0x408008cc 0x408122a4 0x00001800 0x00002800 0x00000004
+4081d090: 0x4081d0b8 0x00002800 0x00000009 0x00000006 0x00000008 0xffffffff 0xffffffff 0x00000000
+4081d0b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00002808 0x00000000 0x00000000 0x00000000
+4081d0d0: 0x00000000 0x00000003 0x408121bc 0x4200715a 0x00000000 0x00000000 0x408121bc 0x4201d4f2
+4081d0f0: 0x42017cd0 0x00000000 0x42017c6e 0x4201a282 0x00000000 0x00000003 0x40812000 0x00000000
+4081d110: 0x00000000 0x00000003 0x42062000 0x420069de 0x00000000 0x00000003 0x40812000 0x420069ec
+4081d130: 0x00000000 0x00000003 0x42062000 0x420066a2 0x42061cbc 0x00000114 0x42062000 0x4204f822
+4081d150: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x40807b66
+4081d170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d190: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x4081cea0 0x00000072
+4081d1b0: 0x4080fdfc 0x4080fdfc 0x4081d1a8 0x4080fdf4 0x00000018 0x4085cbb4 0x4085cbb4 0x4081d1a8
+4081d1d0: 0x00000000 0x00000001 0x4081c1a4 0x6e69616d 0x00000000 0x00000000 0x00000000 0x4081d1a0
+4081d1f0: 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4081a438 0x4081a4a0 0x4081a508
+4081d210: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+4081d230: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d250: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d270: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d290: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2f0: 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d310: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d330: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d350: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d370: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d390: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d3b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: d6482d24f
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40806a40
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (201) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     esp32good[0m
+[0;32mI (217) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (221) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (226) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (235) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (258) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (263) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (500) my_lcd: LCD id:0000[0m
+[0;32mI (700) my_lcd: Lcd init Finish[0m
+[0;32mI (1430) TOUCH: Touch I2C device found![0m
+[1;31mE (1430) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+
+abort() was called at PC 0x408068ff on core 0
+Core  0 register dump:
+MEPC    : 0x4080694a  RA      : 0x40806908  SP      : 0x4081cfd0  GP      : 0x4080e804  
+TP      : 0x4081d1a0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4081d034  A0      : 0x4081cffc  A1      : 0x4081d032  
+A2      : 0x00000000  A3      : 0x4081d029  A4      : 0x00000001  A5      : 0x4081a000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x4081db40  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4081cfd0: 0x42062b7c 0x42006d94 0x4081d030 0x4080c1bc 0x00000003 0x4081d01c 0x42062f04 0x4080f184
+4081cff0: 0x4081d034 0x4080f1a0 0x4081d030 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4081d010: 0x43502074 0x34783020 0x36303830 0x20666638 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4081d030: 0x00000030 0x30383034 0x66663836 0x4081db00 0x00000000 0x00000003 0x42062000 0x40806902
+4081d050: 0x00000000 0x00000003 0x42062000 0x42006d94 0x00001800 0x00000000 0x4081adf0 0x408007de
+4081d070: 0x00001800 0x00002800 0x42062000 0x408008cc 0x408122a4 0x00001800 0x00002800 0x00000004
+4081d090: 0x4081d0b8 0x00002800 0x00000009 0x00000006 0x00000008 0xffffffff 0xffffffff 0x00000000
+4081d0b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00002808 0x00000000 0x00000000 0x00000000
+4081d0d0: 0x00000000 0x00000003 0x408121bc 0x4200715a 0x00000000 0x00000000 0x408121bc 0x4201d4f2
+4081d0f0: 0x42017cd0 0x00000000 0x42017c6e 0x4201a282 0x00000000 0x00000003 0x40812000 0x00000000
+4081d110: 0x00000000 0x00000003 0x42062000 0x420069de 0x00000000 0x00000003 0x40812000 0x420069ec
+4081d130: 0x00000000 0x00000003 0x42062000 0x420066a2 0x42061cbc 0x0000012c 0x42062000 0x4204f822
+4081d150: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x40807b66
+4081d170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d190: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x4081cea0 0x00000072
+4081d1b0: 0x4080fdfc 0x4080fdfc 0x4081d1a8 0x4080fdf4 0x00000018 0x4085cbb4 0x4085cbb4 0x4081d1a8
+4081d1d0: 0x00000000 0x00000001 0x4081c1a4 0x6e69616d 0x00000000 0x00000000 0x00000000 0x4081d1a0
+4081d1f0: 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4081a438 0x4081a4a0 0x4081a508
+4081d210: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+4081d230: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d250: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d270: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d290: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2f0: 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d310: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d330: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d350: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d370: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d390: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d3b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: d6482d24f
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40806a40
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (201) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     esp32good[0m
+[0;32mI (217) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (221) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (226) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (235) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (258) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (263) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (500) my_lcd: LCD id:0000[0m
+[0;32mI (700) my_lcd: Lcd init Finish[0m
+[0;32mI (1430) TOUCH: Touch I2C device found![0m
+[1;31mE (1430) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+
+abort() was called at PC 0x408068ff on core 0
+Core  0 register dump:
+MEPC    : 0x4080694a  RA      : 0x40806908  SP      : 0x4081cfd0  GP      : 0x4080e804  
+TP      : 0x4081d1a0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4081d034  A0      : 0x4081cffc  A1      : 0x4081d032  
+A2      : 0x00000000  A3      : 0x4081d029  A4      : 0x00000001  A5      : 0x4081a000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x4081db40  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4081cfd0: 0x42062b7c 0x42006d94 0x4081d030 0x4080c1bc 0x00000003 0x4081d01c 0x42062f04 0x4080f184
+4081cff0: 0x4081d034 0x4080f1a0 0x4081d030 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4081d010: 0x43502074 0x34783020 0x36303830 0x20666638 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4081d030: 0x00000030 0x30383034 0x66663836 0x4081db00 0x00000000 0x00000003 0x42062000 0x40806902
+4081d050: 0x00000000 0x00000003 0x42062000 0x42006d94 0x00001800 0x00000000 0x4081adf0 0x408007de
+4081d070: 0x00001800 0x00002800 0x42062000 0x408008cc 0x408122a4 0x00001800 0x00002800 0x00000004
+4081d090: 0x4081d0b8 0x00002800 0x00000009 0x00000006 0x00000008 0xffffffff 0xffffffff 0x00000000
+4081d0b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00002808 0x00000000 0x00000000 0x00000000
+4081d0d0: 0x00000000 0x00000003 0x408121bc 0x4200715a 0x00000000 0x00000000 0x408121bc 0x4201d4f2
+4081d0f0: 0x42017cd0 0x00000000 0x42017c6e 0x4201a282 0x00000000 0x00000003 0x40812000 0x00000000
+4081d110: 0x00000000 0x00000003 0x42062000 0x420069de 0x00000000 0x00000003 0x40812000 0x420069ec
+4081d130: 0x00000000 0x00000003 0x42062000 0x420066a2 0x42061cbc 0x0000012c 0x42062000 0x4204f822
+4081d150: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x40807b66
+4081d170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d190: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x4081ce90 0x00000072
+4081d1b0: 0x4080fdfc 0x4080fdfc 0x4081d1a8 0x4080fdf4 0x00000018 0x4085cbb4 0x4085cbb4 0x4081d1a8
+4081d1d0: 0x00000000 0x00000001 0x4081c1a4 0x6e69616d 0x00000000 0x00000000 0x00000000 0x4081d1a0
+4081d1f0: 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4081a438 0x4081a4a0 0x4081a508
+4081d210: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+4081d230: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d250: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d270: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d290: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2f0: 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d310: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d330: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d350: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d370: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d390: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d3b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: d6482d24f
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40806a40
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (201) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     esp32good[0m
+[0;32mI (217) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (221) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (226) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (235) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (258) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (263) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (500) my_lcd: LCD id:0000[0m
+[0;32mI (700) my_lcd: Lcd init Finish[0m
+[0;32mI (1430) TOUCH: Touch I2C device found![0m
+[1;31mE (1430) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+
+abort() was called at PC 0x408068ff on core 0
+Core  0 register dump:
+MEPC    : 0x4080694a  RA      : 0x40806908  SP      : 0x4081cfd0  GP      : 0x4080e804  
+TP      : 0x4081d1a0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4081d034  A0      : 0x4081cffc  A1      : 0x4081d032  
+A2      : 0x00000000  A3      : 0x4081d029  A4      : 0x00000001  A5      : 0x4081a000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x4081db40  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4081cfd0: 0x42062b7c 0x42006d94 0x4081d030 0x4080c1bc 0x00000003 0x4081d01c 0x42062f04 0x4080f184
+4081cff0: 0x4081d034 0x4080f1a0 0x4081d030 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4081d010: 0x43502074 0x34783020 0x36303830 0x20666638 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4081d030: 0x00000030 0x30383034 0x66663836 0x4081db00 0x00000000 0x00000003 0x42062000 0x40806902
+4081d050: 0x00000000 0x00000003 0x42062000 0x42006d94 0x00001800 0x00000000 0x4081adf0 0x408007de
+4081d070: 0x00001800 0x00002800 0x42062000 0x408008cc 0x408122a4 0x00001800 0x00002800 0x00000004
+4081d090: 0x4081d0b8 0x00002800 0x00000009 0x00000006 0x00000008 0xffffffff 0xffffffff 0x00000000
+4081d0b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00002808 0x00000000 0x00000000 0x00000000
+4081d0d0: 0x00000000 0x00000003 0x408121bc 0x4200715a 0x00000000 0x00000000 0x408121bc 0x4201d4f2
+4081d0f0: 0x42017cd0 0x00000000 0x42017c6e 0x4201a282 0x00000000 0x00000003 0x40812000 0x00000000
+4081d110: 0x00000000 0x00000003 0x42062000 0x420069de 0x00000000 0x00000003 0x40812000 0x420069ec
+4081d130: 0x00000000 0x00000003 0x42062000 0x420066a2 0x42061cbc 0x0000012c 0x42062000 0x4204f822
+4081d150: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x40807b66
+4081d170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d190: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x4081ce90 0x00000072
+4081d1b0: 0x4080fdfc 0x4080fdfc 0x4081d1a8 0x4080fdf4 0x00000018 0x4085cbb4 0x4085cbb4 0x4081d1a8
+4081d1d0: 0x00000000 0x00000001 0x4081c1a4 0x6e69616d 0x00000000 0x00000000 0x00000000 0x4081d1a0
+4081d1f0: 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4081a438 0x4081a4a0 0x4081a508
+4081d210: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+4081d230: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d250: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d270: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d290: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2f0: 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d310: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d330: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d350: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d370: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d390: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d3b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: d6482d24f
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40806a40
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (201) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     esp32good[0m
+[0;32mI (217) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (221) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (226) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (235) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (258) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (263) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (500) my_lcd: LCD id:0000[0m
+[0;32mI (700) my_lcd: Lcd init Finish[0m
+[0;32mI (1430) TOUCH: Touch I2C device found![0m
+[1;31mE (1430) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+
+abort() was called at PC 0x408068ff on core 0
+Core  0 register dump:
+MEPC    : 0x4080694a  RA      : 0x40806908  SP      : 0x4081cfd0  GP      : 0x4080e804  
+TP      : 0x4081d1a0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4081d034  A0      : 0x4081cffc  A1      : 0x4081d032  
+A2      : 0x00000000  A3      : 0x4081d029  A4      : 0x00000001  A5      : 0x4081a000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x4081db40  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4081cfd0: 0x42062b7c 0x42006d94 0x4081d030 0x4080c1bc 0x00000003 0x4081d01c 0x42062f04 0x4080f184
+4081cff0: 0x4081d034 0x4080f1a0 0x4081d030 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4081d010: 0x43502074 0x34783020 0x36303830 0x20666638 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4081d030: 0x00000030 0x30383034 0x66663836 0x4081db00 0x00000000 0x00000003 0x42062000 0x40806902
+4081d050: 0x00000000 0x00000003 0x42062000 0x42006d94 0x00001800 0x00000000 0x4081adf0 0x408007de
+4081d070: 0x00001800 0x00002800 0x42062000 0x408008cc 0x408122a4 0x00001800 0x00002800 0x00000004
+4081d090: 0x4081d0b8 0x00002800 0x00000009 0x00000006 0x00000008 0xffffffff 0xffffffff 0x00000000
+4081d0b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00002808 0x00000000 0x00000000 0x00000000
+4081d0d0: 0x00000000 0x00000003 0x408121bc 0x4200715a 0x00000000 0x00000000 0x408121bc 0x4201d4f2
+4081d0f0: 0x42017cd0 0x00000000 0x42017c6e 0x4201a282 0x00000000 0x00000003 0x40812000 0x00000000
+4081d110: 0x00000000 0x00000003 0x42062000 0x420069de 0x00000000 0x00000003 0x40812000 0x420069ec
+4081d130: 0x00000000 0x00000003 0x42062000 0x420066a2 0x42061cbc 0x0000012c 0x42062000 0x4204f822
+4081d150: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x40807b66
+4081d170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d190: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x4081ce90 0x00000072
+4081d1b0: 0x4080fdfc 0x4080fdfc 0x4081d1a8 0x4080fdf4 0x00000018 0x4085cbb4 0x4085cbb4 0x4081d1a8
+4081d1d0: 0x00000000 0x00000001 0x4081c1a4 0x6e69616d 0x00000000 0x00000000 0x00000000 0x4081d1a0
+4081d1f0: 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4081a438 0x4081a4a0 0x4081a508
+4081d210: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+4081d230: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d250: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d270: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d290: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2f0: 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d310: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d330: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d350: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d370: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d390: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d3b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: d6482d24f
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40806a40
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (201) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     esp32good[0m
+[0;32mI (217) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (221) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (226) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (235) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (258) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (263) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (502) my_lcd: LCD id:0000[0m
+[0;32mI (702) my_lcd: Lcd init Finish[0m
+[0;32mI (1432) TOUCH: Touch I2C device found![0m
+[1;31mE (1432) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+
+abort() was called at PC 0x408068ff on core 0
+Core  0 register dump:
+MEPC    : 0x4080694a  RA      : 0x40806908  SP      : 0x4081cfd0  GP      : 0x4080e804  
+TP      : 0x4081d1a0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4081d034  A0      : 0x4081cffc  A1      : 0x4081d032  
+A2      : 0x00000000  A3      : 0x4081d029  A4      : 0x00000001  A5      : 0x4081a000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x4081db40  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4081cfd0: 0x42062b7c 0x42006d94 0x4081d030 0x4080c1bc 0x00000003 0x4081d01c 0x42062f04 0x4080f184
+4081cff0: 0x4081d034 0x4080f1a0 0x4081d030 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4081d010: 0x43502074 0x34783020 0x36303830 0x20666638 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4081d030: 0x00000030 0x30383034 0x66663836 0x4081db00 0x00000000 0x00000003 0x42062000 0x40806902
+4081d050: 0x00000000 0x00000003 0x42062000 0x42006d94 0x00001800 0x00000000 0x4081adf0 0x408007de
+4081d070: 0x00001800 0x00002800 0x42062000 0x408008cc 0x408122a4 0x00001800 0x00002800 0x00000004
+4081d090: 0x4081d0b8 0x00002800 0x00000009 0x00000006 0x00000008 0xffffffff 0xffffffff 0x00000000
+4081d0b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00002808 0x00000000 0x00000000 0x00000000
+4081d0d0: 0x00000000 0x00000003 0x408121bc 0x4200715a 0x00000000 0x00000000 0x408121bc 0x4201d4f2
+4081d0f0: 0x42017cd0 0x00000000 0x42017c6e 0x4201a282 0x00000000 0x00000003 0x40812000 0x00000000
+4081d110: 0x00000000 0x00000003 0x42062000 0x420069de 0x00000000 0x00000003 0x40812000 0x420069ec
+4081d130: 0x00000000 0x00000003 0x42062000 0x420066a2 0x42061cbc 0x0000012e 0x42062000 0x4204f822
+4081d150: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x40807b66
+4081d170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d190: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x4081ce90 0x00000072
+4081d1b0: 0x4080fdfc 0x4080fdfc 0x4081d1a8 0x4080fdf4 0x00000018 0x4085cbb4 0x4085cbb4 0x4081d1a8
+4081d1d0: 0x00000000 0x00000001 0x4081c1a4 0x6e69616d 0x00000000 0x00000000 0x00000000 0x4081d1a0
+4081d1f0: 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4081a438 0x4081a4a0 0x4081a508
+4081d210: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+4081d230: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d250: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d270: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d290: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2f0: 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d310: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d330: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d350: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d370: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d390: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d3b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: d6482d24f
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x7e (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40806a40
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (201) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     esp32good[0m
+[0;32mI (217) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (221) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (226) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (235) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (258) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (263) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (500) my_lcd: LCD id:0000[0m
+[0;32mI (700) my_lcd: Lcd init Finish[0m
+[0;32mI (1430) TOUCH: Touch I2C device found![0m
+[1;31mE (1430) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+
+abort() was called at PC 0x408068ff on core 0
+Core  0 register dump:
+MEPC    : 0x4080694a  RA      : 0x40806908  SP      : 0x4081cfd0  GP      : 0x4080e804  
+TP      : 0x4081d1a0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4081d034  A0      : 0x4081cffc  A1      : 0x4081d032  
+A2      : 0x00000000  A3      : 0x4081d029  A4      : 0x00000001  A5      : 0x4081a000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x4081db40  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4081cfd0: 0x42062b7c 0x42006d94 0x4081d030 0x4080c1bc 0x00000003 0x4081d01c 0x42062f04 0x4080f184
+4081cff0: 0x4081d034 0x4080f1a0 0x4081d030 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4081d010: 0x43502074 0x34783020 0x36303830 0x20666638 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4081d030: 0x00000030 0x30383034 0x66663836 0x4081db00 0x00000000 0x00000003 0x42062000 0x40806902
+4081d050: 0x00000000 0x00000003 0x42062000 0x42006d94 0x00001800 0x00000000 0x4081adf0 0x408007de
+4081d070: 0x00001800 0x00002800 0x42062000 0x408008cc 0x408122a4 0x00001800 0x00002800 0x00000004
+4081d090: 0x4081d0b8 0x00002800 0x00000009 0x00000006 0x00000008 0xffffffff 0xffffffff 0x00000000
+4081d0b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00002808 0x00000000 0x00000000 0x00000000
+4081d0d0: 0x00000000 0x00000003 0x408121bc 0x4200715a 0x00000000 0x00000000 0x408121bc 0x4201d4f2
+4081d0f0: 0x42017cd0 0x00000000 0x42017c6e 0x4201a282 0x00000000 0x00000003 0x40812000 0x00000000
+4081d110: 0x00000000 0x00000003 0x42062000 0x420069de 0x00000000 0x00000003 0x40812000 0x420069ec
+4081d130: 0x00000000 0x00000003 0x42062000 0x420066a2 0x42061cbc 0x0000012c 0x42062000 0x4204f822
+4081d150: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x40807b66
+4081d170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d190: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x4081ce90 0x00000072
+4081d1b0: 0x4080fdfc 0x4080fdfc 0x4081d1a8 0x4080fdf4 0x00000018 0x4085cbb4 0x4085cbb4 0x4081d1a8
+4081d1d0: 0x00000000 0x00000001 0x4081c1a4 0x6e69616d 0x00000000 0x00000000 0x00000000 0x4081d1a0
+4081d1f0: 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4081a438 0x4081a4a0 0x4081a508
+4081d210: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+4081d230: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d250: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d270: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d290: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2f0: 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d310: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d330: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d350: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d370: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d390: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d3b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: d6482d24f
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x7e (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40806a40
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (201) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     esp32good[0m
+[0;32mI (217) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (221) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (226) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (235) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (258) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (263) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (500) my_lcd: LCD id:0000[0m
+[0;32mI (700) my_lcd: Lcd init Finish[0m
+[0;32mI (1430) TOUCH: Touch I2C device found![0m
+[1;31mE (1430) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+[0;32mI (502) my_lcd: LCD id:0000[0m
+[0;32mI (702) my_lcd: Lcd init Finish[0m
+[0;32mI (1432) TOUCH: Touch I2C device found![0m
+[1;31mE (1432) spi: spi_bus_initialize(809): SPI bus already initialized.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42006d90
+file: "./main/my_lcd.c" line 119
+func: spi_init
+expression: ret
+
+abort() was called at PC 0x408068ff on core 0
+Core  0 register dump:
+MEPC    : 0x4080694a  RA      : 0x40806908  SP      : 0x4081cfd0  GP      : 0x4080e804  
+TP      : 0x4081d1a0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4081d034  A0      : 0x4081cffc  A1      : 0x4081d032  
+A2      : 0x00000000  A3      : 0x4081d029  A4      : 0x00000001  A5      : 0x4081a000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x4081db40  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4081cfd0: 0x42062b7c 0x42006d94 0x4081d030 0x4080c1bc 0x00000003 0x4081d01c 0x42062f04 0x4080f184
+4081cff0: 0x4081d034 0x4080f1a0 0x4081d030 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4081d010: 0x43502074 0x34783020 0x36303830 0x20666638 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4081d030: 0x00000030 0x30383034 0x66663836 0x4081db00 0x00000000 0x00000003 0x42062000 0x40806902
+4081d050: 0x00000000 0x00000003 0x42062000 0x42006d94 0x00001800 0x00000000 0x4081adf0 0x408007de
+4081d070: 0x00001800 0x00002800 0x42062000 0x408008cc 0x408122a4 0x00001800 0x00002800 0x00000004
+4081d090: 0x4081d0b8 0x00002800 0x00000009 0x00000006 0x00000008 0xffffffff 0xffffffff 0x00000000
+4081d0b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00002808 0x00000000 0x00000000 0x00000000
+4081d0d0: 0x00000000 0x00000003 0x408121bc 0x4200715a 0x00000000 0x00000000 0x408121bc 0x4201d4f2
+4081d0f0: 0x42017cd0 0x00000000 0x42017c6e 0x4201a282 0x00000000 0x00000003 0x40812000 0x00000000
+4081d110: 0x00000000 0x00000003 0x42062000 0x420069de 0x00000000 0x00000003 0x40812000 0x420069ec
+4081d130: 0x00000000 0x00000003 0x42062000 0x420066a2 0x42061cbc 0x0000012e 0x42062000 0x4204f822
+4081d150: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x40807b66
+4081d170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d190: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x4081ce90 0x00000072
+4081d1b0: 0x4080fdfc 0x4080fdfc 0x4081d1a8 0x4080fdf4 0x00000018 0x4085cbb4 0x4085cbb4 0x4081d1a8
+4081d1d0: 0x00000000 0x00000001 0x4081c1a4 0x6e69616d 0x00000000 0x00000000 0x00000000 0x4081d1a0
+4081d1f0: 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4081a438 0x4081a4a0 0x4081a508
+4081d210: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+4081d230: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d250: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d270: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d290: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4081d2f0: 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d310: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d330: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d350: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d370: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d390: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4081d3b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: d6482d24f
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x7e (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40806a40
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 13:56:00[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42060020 size=0ef60h ( 61280) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ef88 vaddr=40800000 size=01090h (  4240) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=5028ch (328332) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=000702b4 vaddr=40801090 size=0cf04h ( 52996) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0007d1c0 vaddr=4080e000 size=01b70h (  7024) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (201) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     esp32good[0m
+[0;32mI (217) app_init: App version:      f94ef83-dirty[0m
+[0;32mI (221) app_init: Compile time:     Oct  3 2025 13:53:32[0m
+[0;32mI (226) app_init: ELF file SHA256:  d6482d24f...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (235) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 4081A700 len 00041EA0 (263 KiB): RAM[0m
+[0;32mI (258) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (263) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (500) my_lcd: LCD id:0000[0m
+[0;32mI (700) my_lcd: Lcd init Finish[0m
