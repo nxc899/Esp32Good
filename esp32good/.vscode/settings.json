@@ -34,7 +34,8 @@
     "lvgl.h": "c",
     "lv_port_indev.h": "c",
     "lv_port_disp.h": "c",
-    "esp_err.h": "c"
+    "esp_err.h": "c",
+    "my_lvgl.h": "c"
   },
   "idf.flashType": "JTAG"
 }

@@ -7,6 +7,8 @@
 #include "lvgl.h"
 #include "lv_port_disp.h"
 #include "lv_port_indev.h"
+#include "my_wifi.h"
+#include "my_lvgl.h"
 
 
 void app_main(void)
@@ -18,12 +20,9 @@ void app_main(void)
     lv_init();
     lv_port_disp_init();
     lv_port_indev_init();
+    lv_src1_create();
 
-    
-     /*在屏幕中间创建一个120*50大小的按钮*/
-    lv_obj_t* switch_obj = lv_switch_create(lv_scr_act());
-    lv_obj_set_size(switch_obj, 120, 50);
-    lv_obj_align(switch_obj, LV_ALIGN_CENTER, 0, 0);
+    my_wifi_start();
 
     while(1)
     {

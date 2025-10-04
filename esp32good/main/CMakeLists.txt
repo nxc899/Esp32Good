@@ -1,7 +1,9 @@
 idf_component_register(SRCS 
-                        "my_lcd.c" 
                         "main.c" 
-                        "FT6336G.c" 
+                        "my_wifi.c"
+                        "./display/my_lcd.c" 
+                        "./display/FT6336G.c" 
+                        "./display/my_lvgl.c"
                         "./lv_port/lv_port_disp.c"
                         "./lv_port/lv_port_indev.c"
                        PRIV_REQUIRES 
@@ -9,6 +11,9 @@ idf_component_register(SRCS
                         esp_driver_spi 
                         esp_driver_gpio 
                         esp_driver_i2c
+                        esp_wifi
+                        nvs_flash
                        INCLUDE_DIRS 
                         "." 
-                        "./lv_port")
+                        "./lv_port"
+                        "./display")

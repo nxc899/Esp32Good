@@ -1,0 +1,893 @@
+Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace E:\project\Esp32Good\esp32good\build\esp32good.elf E:\project\Esp32Good\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;32mI (105) esp_image: segment 1: paddr=00033fc0 vaddr=40800000 sizeheap_init: AtESP-ROM:esp32c5-eco2-20250121[0m
+Build:Jan 21 2025
+rst:0x15 (USB_UART_HPSYS),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4003af4e
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  4 2025 13:52:25[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (27) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=420e0020 size=23f98h (147352) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00033fc0 vaddr=40800000 size=0c058h ( 49240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=dcd78h (904568) map[0m
+[0;32mI (254) esp_image: segment 3: paddr=0011cda0 vaddr=4080c058 size=0c1dch ( 49628) load[0m
+[0;32mI (264) esp_image: segment 4: paddr=00128f84 vaddr=40818280 size=0422ch ( 16940) load[0m
+[0;32mI (274) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (274) boot: Disabling RNG early entropy source...[0m
+[0;32mI (285) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (285) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (286) cpu_start: Unicore app[0m
+[0;32mI (274) esp_image: segment 3: paddr=0011cda0 vaddr=4080c058 sizeI (632) my_lcd: LCD id:0000[0m
+[0;32mI (832) my_lcd: Lcd init Finish[0m
+[0;32mI (1442) TOUCH: Touch I2C device found![0m
+[0;32mI (1452) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (1452) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (1462) wifi:wifi driver task: 40839cd8, prio:23, stack:6656, core=0[0m
+[0;32mI (1462) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1462) wifi:wifi certification version: v7.0[0m
+[0;32mI (1462) wifi:config NVS flash: enabled[0m
+[0;32mI (1472) wifi:config nano formatting: disabled[0m
+[0;32mI (1472) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (1482) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1482) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1492) wifi:Init management short buffer num: 32[0m
+[0;32mI (1492) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1502) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1502) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1512) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1512) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1522) wifi_init: rx ba win: 6[0m
+[0;32mI (1522) wifi_init: accept mbox: 6[0m
+[0;32mI (1522) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1522) wifi_init: udp mbox: 6[0m
+[0;32mI (1532) wifi_init: tcp mbox: 6[0m
+[0;32mI (1532) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1532) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1542) wifi_init: tcp mss: 1440[0m
+[0;32mI (1542) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1542) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1552) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1552) phy_init: phy_version 106,706cee23,Aug 27 2025,19:17:04[0m
+[0;33mW (2172) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (2172) wifi:WDEV_RXOFDM_DELAY:263[0m
+[0;33mW (2172) wifi:WDEV_RX_11G_OFDM_DELAY:264[0m
+[0;33mW (2172) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (2182) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (2182) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2192) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2202) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (2202) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (2212) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (2222) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (2222) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (2232) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2232) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2242) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2252) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2252) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2262) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2262) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (2272) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (2272) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (2282) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (2282) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (2292) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (2292) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (2302) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (2302) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2312) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2322) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2332) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2342) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2342) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2352) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2362) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2372) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (2382) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (2392) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2392) wifi:11ax coex: WDEVAX_PTI0(0x040000a0), WDEVAX_PTI1(0x000092e3).[0m
+
+[0;32mI (2402) wifi:mode : sta (d0:cf:13:e0:b2:44)[0m
+[0;32mI (2412) wifi:enable tsf[0m
+[0;33mW (2412) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (2422) wifi:(cap)capinfo:0x1031, Spectrum Management:0 [0m
+[0;33mW (2422) wifi:(vht)vhtcap:0x3c00191, sgi_rx(80mhz:0, 160/80+80mhz:0), stbc(tx:1, rx:1), ldpc_rx:1, bfmer(su:0, mu:0, nsts:0)[0m
+[0;33mW (2432) wifi:(vht)max.RxMPDULen:1(7991), max.RxAMPDULenExponent:7, max.RxAMPDUpre-EOFpaddingBytes:1048575(0xfffff)[0m
+[0;33mW (2442) wifi:(vht)rx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), tx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), max_rate:144[0m
+[0;33mW (2452) wifi:(vht)bandwidth:0, chan_center_frq_seg0:0, chan_center_frq_seg1:0[0m
+[0;33mW (2462) wifi:(ht)primary_chann:149, ht2ndchan:1[0m
+[0;33mW (2462) wifi:(vht)BSS bandwidth:40MHz[0m
+[0;32mI (2472) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2482) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2482) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2492) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2492) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2502) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2512) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2522) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2532) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2542) wifi:new:<149,0>, old:<1,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x10[0m
+[0;32mI (2552) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (2552) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2562) wifi:state: auth -> init (0xe00)[0m
+[0;32mI (2572) wifi:new:<149,0>, old:<149,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2572) wfii_log: WIFI DISCONNECTED[0m
+[1;31mE (16212) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (16212) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (16212) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (16272) LVGLTAG: xpos:219,ypos:15[0m
+[0;32mI (16302) LVGLTAG: xpos:219,ypos:15[0m
+[0;32mI (16342) LVGLTAG: xpos:219,ypos:15[0m
+[0;32mI (16372) LVGLTAG: xpos:219,ypos:15[0m
+[0;32mI (16402) LVGLTAG: xpos:219,ypos:20[0m
+[0;32mI (16442) LVGLTAG: xpos:219,ypos:31[0m
+[0;32mI (16472) LVGLTAG: xpos:219,ypos:36[0m
+[0;32mI (16502) LVGLTAG: xpos:219,ypos:42[0m
+[1;31mE (16542) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (16542) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (16542) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (16602) LVGLTAG: xpos:217,ypos:72[0m
+[0;32mI (16632) LVGLTAG: xpos:216,ypos:79[0m
+[0;32mI (16672) LVGLTAG: xpos:215,ypos:84[0m
+[0;32mI (16702) LVGLTAG: xpos:215,ypos:86[0m
+[0;32mI (16732) LVGLTAG: xpos:215,ypos:89[0m
+[0;32mI (16772) LVGLTAG: xpos:215,ypos:92[0m
+[0;32mI (16802) LVGLTAG: xpos:214,ypos:95[0m
+[0;32mI (16832) LVGLTAG: xpos:214,ypos:99[0m
+[1;31mE (16872) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (16872) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (16872) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (16932) LVGLTAG: xpos:214,ypos:110[0m
+[0;32mI (16962) LVGLTAG: xpos:214,ypos:114[0m
+[0;32mI (17002) LVGLTAG: xpos:214,ypos:116[0m
+[0;32mI (17032) LVGLTAG: xpos:214,ypos:119[0m
+[0;32mI (17062) LVGLTAG: xpos:214,ypos:122[0m
+[0;32mI (17102) LVGLTAG: xpos:213,ypos:126[0m
+[0;32mI (17132) LVGLTAG: xpos:213,ypos:129[0m
+[0;32mI (17162) LVGLTAG: xpos:213,ypos:131[0m
+[1;31mE (17202) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (17202) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (17202) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (17922) LVGLTAG: xpos:75,ypos:65[0m
+[0;32mI (17952) LVGLTAG: xpos:75,ypos:65[0m
+[0;32mI (17992) LVGLTAG: xpos:75,ypos:65[0m
+[0;32mI (18022) LVGLTAG: xpos:75,ypos:65[0m
+[0;32mI (18052) LVGLTAG: xpos:75,ypos:65[0m
+[0;32mI (18092) LVGLTAG: xpos:75,ypos:65[0m
+[0;32mI (18122) LVGLTAG: xpos:75,ypos:65[0m
+[0;32mI (18152) LVGLTAG: xpos:75,ypos:65[0m
+[1;31mE (18192) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (18192) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (18192) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (18252) LVGLTAG: xpos:84,ypos:65[0m
+[0;32mI (18282) LVGLTAG: xpos:86,ypos:65[0m
+[0;32mI (18322) LVGLTAG: xpos:92,ypos:65[0m
+[0;32mI (18352) LVGLTAG: xpos:96,ypos:65[0m
+[0;32mI (18382) LVGLTAG: xpos:97,ypos:65[0m
+[0;32mI (18422) LVGLTAG: xpos:105,ypos:65[0m
+[0;32mI (18452) LVGLTAG: xpos:109,ypos:65[0m
+[0;32mI (18482) LVGLTAG: xpos:109,ypos:65[0m
+[1;31mE (18522) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (18522) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (18522) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (18582) LVGLTAG: xpos:120,ypos:65[0m
+
+assert failed: tlsf_free tlsf/tlsf.c:1123 (!block_is_free(block) && "block already marked as free")
+Core  0 register dump:
+MEPC    : 0x4080ab4c  RA      : 0x4080ab0a  SP      : 0x40835c90  GP      : 0x40818a84  
+TP      : 0x40835f80  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000064  S1      : 0x00000001  A0      : 0x40835ccc  A1      : 0x4081b375  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x40833000  
+A6      : 0x0000000c  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x40835e03  
+S4      : 0x4081b374  S5      : 0x40835e50  S6      : 0x40835e58  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+40835c90: 0x0000001a 0x0000003b 0x4004e16c 0x40811e9e 0x4081b35c 0x4004e16c 0x4081ba44 0x4004e1b8
+40835cb0: 0x4081b36c 0x40835cc4 0x4081b370 0x4004e2ec 0x4081b374 0x33323131 0x40820200 0x65737361
+40835cd0: 0x66207472 0x656c6961 0x74203a64 0x5f66736c 0x65657266 0x736c7420 0x6c742f66 0x632e6673
+40835cf0: 0x3231313a 0x21282033 0x636f6c62 0x73695f6b 0x6572665f 0x6c622865 0x296b636f 0x20262620
+40835d10: 0x6f6c6222 0x61206b63 0x6165726c 0x6d207964 0x656b7261 0x73612064 0x65726620 0x00292265
+40835d30: 0x000000ff 0x4081f680 0x408202d4 0x42016fd4 0x00000000 0x40835d6c 0x40820598 0x00000008
+40835d50: 0x4080bff6 0x4080c08c 0x40835dd0 0x40818a84 0x40835f80 0x4200c4e8 0x00000000 0x00000000
+40835d70: 0x00000000 0x4085cae8 0x0000001f 0x60010134 0x00000017 0x00000000 0x00000000 0x40833000
+40835d90: 0x0000000c 0x00000000 0x00000000 0xff000000 0x4085cae8 0x0000001a 0x40835ec0 0x00000001
+40835db0: 0x40860000 0x40835e58 0x40833434 0x40026cdc 0x40860000 0x40835e58 0x40833434 0x4002eb6c
+40835dd0: 0x0000001a 0x0000003b 0x40835ec0 0x0000001a 0x40860000 0x40835e58 0x40833420 0x4002d776
+40835df0: 0x4081d010 0x4081e398 0x40835e34 0x40800888 0x4081d010 0x0000001a 0x4085cae8 0x40811f68
+40835e10: 0x4081e398 0x4085cae8 0x00000000 0x40802578 0x4081d010 0x00000001 0x40835e5c 0x4200e4ae
+40835e30: 0x0000003d 0x4081e398 0x40835e58 0x00000000 0x00000000 0x4085cae8 0x00000005 0x4200c436
+40835e50: 0x0000001a 0x0000003b 0x40835ec0 0x4081e370 0x4081d010 0x40833000 0x4081f348 0x4200be92
+40835e70: 0x4081d010 0x4081f680 0x4081f348 0x4201660c 0x00000072 0x00000022 0x000000cd 0x0000003b
+40835e90: 0x00000000 0x4081f680 0x4081f348 0x42016ae2 0x0000003c 0x00000000 0x00000000 0x42017816
+40835eb0: 0x00000072 0x00000022 0x000000cd 0x00000050 0x00000072 0x00000022 0x000000cd 0x0000003b
+40835ed0: 0x00000000 0x00000000 0x00000000 0x00000000 0x000046e3 0xffffffff 0x4081e3e4 0x42017b08
+40835ef0: 0x00000000 0x40835e48 0x4081f6dc 0x42023a44 0x00000000 0x4081f250 0x4081f6dc 0x42023afc
+40835f10: 0x00000000 0x00000003 0x420e2000 0x4200b9cc 0x420e2034 0x000001a6 0x00000000 0x420dc288
+40835f30: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4080be42
+40835f50: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40835f70: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x40835d50 0x00000719
+40835f90: 0x4081c748 0x4081c748 0x40835f88 0x4081c740 0x00000018 0x4085d124 0x4085d124 0x40835f88
+40835fb0: 0x00000000 0x00000001 0x40834f84 0x6e69616d 0x00000000 0x00000000 0x00000000 0x40835f80
+40835fd0: 0x00000001 0x00000000 0x40839e2c 0x420072ce 0x00000000 0x40833a38 0x40833aa0 0x40833b08
+40835ff0: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+40836010: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836030: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836050: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836070: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: ceffa5997
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080ac42
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  4 2025 13:52:25[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=420e0020 size=23f98h (147352) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00033fc0 vaddr=40800000 size=0c058h ( 49240) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=dcd78h (904568) map[0m
+[0;32mI (313) esp_image: segment 3: paddr=0011cda0 vaddr=4080c058 size=0c1dch ( 49628) load[0m
+[0;32mI (327) esp_image: segment 4: paddr=00128f84 vaddr=40818280 size=0422ch ( 16940) load[0m
+[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (342) boot: Disabling RNG early entropy source...[0m
+[0;32mI (353) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (353) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (354) cpu_start: Unicore app[0m
+[0;32mI (365) cpu_start: Pro cpu start user code[0m
+[0;32mI (365) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (366) app_init: Application information:[0m
+[0;32mI (366) app_init: Project name:     esp32good[0m
+[0;32mI (369) app_init: App version:      19d941c-dirty[0m
+[0;32mI (374) app_init: Compile time:     Oct  4 2025 13:52:06[0m
+[0;32mI (379) app_init: ELF file SHA256:  ceffa5997...[0m
+[0;32mI (383) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (387) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (391) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (395) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (399) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (405) heap_init: At 40833420 len 00029180 (164 KiB): RAM[0m
+[0;32mI (410) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (415) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (421) spi_flash: detected chip: generic[0m
+[0;32mI (424) spi_flash: flash io: dio[0m
+[0;33mW (427) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (446) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (453) main_task: Started on CPU0[0m
+[0;32mI (453) main_task: Calling app_main()[0m
+[0;32mI (653) my_lcd: LCD id:0000[0m
+[0;32mI (853) my_lcd: Lcd init Finish[0m
+[0;32mI (1463) TOUCH: Touch I2C device found![0m
+[0;32mI (1473) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (1473) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (1483) wifi:wifi driver task: 40839cd8, prio:23, stack:6656, core=0[0m
+[0;32mI (1483) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1483) wifi:wifi certification version: v7.0[0m
+[0;32mI (1483) wifi:config NVS flash: enabled[0m
+[0;32mI (1493) wifi:config nano formatting: disabled[0m
+[0;32mI (1493) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (1503) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1503) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1513) wifi:Init management short buffer num: 32[0m
+[0;32mI (1513) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1523) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1523) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1533) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1533) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1543) wifi_init: rx ba win: 6[0m
+[0;32mI (1543) wifi_init: accept mbox: 6[0m
+[0;32mI (1543) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1543) wifi_init: udp mbox: 6[0m
+[0;32mI (1553) wifi_init: tcp mbox: 6[0m
+[0;32mI (1553) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1553) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1563) wifi_init: tcp mss: 1440[0m
+[0;32mI (1563) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1563) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1573) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1573) phy_init: phy_version 106,706cee23,Aug 27 2025,19:17:04[0m
+[0;33mW (2193) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (2193) wifi:WDEV_RXOFDM_DELAY:263[0m
+[0;33mW (2193) wifi:WDEV_RX_11G_OFDM_DELAY:264[0m
+[0;33mW (2193) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (2203) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (2203) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2213) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2223) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (2223) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (2233) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (2243) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (2253) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (2253) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2263) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2263) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2273) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2273) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2283) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2283) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (2293) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (2293) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (2303) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (2303) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (2313) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (2313) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (2323) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (2323) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2333) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2343) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2353) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2363) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2363) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2373) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2383) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2393) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (2403) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (2413) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2423) wifi:11ax coex: WDEVAX_PTI0(0x040000a0), WDEVAX_PTI1(0x000092e3).[0m
+
+[0;32mI (2423) wifi:mode : sta (d0:cf:13:e0:b2:44)[0m
+[0;32mI (2433) wifi:enable tsf[0m
+[0;33mW (2433) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (2443) wifi:(cap)capinfo:0x1031, Spectrum Management:0 [0m
+[0;33mW (2443) wifi:(vht)vhtcap:0x3c00191, sgi_rx(80mhz:0, 160/80+80mhz:0), stbc(tx:1, rx:1), ldpc_rx:1, bfmer(su:0, mu:0, nsts:0)[0m
+[0;33mW (2453) wifi:(vht)max.RxMPDULen:1(7991), max.RxAMPDULenExponent:7, max.RxAMPDUpre-EOFpaddingBytes:1048575(0xfffff)[0m
+[0;33mW (2463) wifi:(vht)rx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), tx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), max_rate:144[0m
+[0;33mW (2473) wifi:(vht)bandwidth:0, chan_center_frq_seg0:0, chan_center_frq_seg1:0[0m
+[0;33mW (2483) wifi:(ht)primary_chann:149, ht2ndchan:1[0m
+[0;33mW (2483) wifi:(vht)BSS bandwidth:40MHz[0m
+[0;32mI (2493) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2503) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2503) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2513) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2513) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2523) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2533) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2543) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2553) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2563) wifi:new:<149,0>, old:<1,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x10[0m
+[0;32mI (2573) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (2573) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2593) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2593) wifi:(assoc)RESP, Extended Capabilities length:12, operating_mode_notification:1[0m
+[0;32mI (2593) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:1, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0[0m
+[0;32mI (2603) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2613) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2613) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2623) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2633) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2643) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2643) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2663) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2663) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2673) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2673) wifi:(he)ppe_thresholds_present:0, nominal_packet_padding(rx:2, cfg:2)[0m
+[0;32mI (2683) wifi:(trc)phytype:CBW20-SGI, snr:32, maxRate:172, highestRateIdx:0[0m
+[0;33mW (2693) wifi:(trc)band:5G, phymode:3, highestRateIdx:0, lowestRateIdx:9, dataSchedTableSize:10[0m
+[0;32mI (2703) wifi:(trc)band:5G, rate(L-MCS6, rateIdx:2), ampdu(rate:L-MCS6, schedIdx(2, stop:8)), snr:32, ampduState:wait operational[0m
+[0;32mI (2713) wifi:ifidx:0, rssi:-65, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x7, 11ax), max_rate:172, he:1, vht:1, ht:1[0m
+[0;32mI (2723) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (2743) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 1[0m
+[0;32mI (2743) wifi:connected with HUAWEI-1CADZ0, aid = 1, channel 149, BW20(ABOVE, C0), bssid = 42:78:d7:ac:a6:93[0m
+[0;32mI (2753) wifi:security: WPA2-PSK, phy:ax, rssi:-65, cipher(pairwise:0x3, group:0x3), pmf:0, [0m
+[0;32mI (2763) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (2763) wifi:pm start, type:1, aid:0x1, trans-BSSID:42:78:d7:ac:a6:93, BSSID[5]:0x93, mbssid(max-indicator:0, index:0), he:1[0m
+[0;32mI (2773) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2783) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2793) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2803) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2813) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2823) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2833) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2843) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2853) wfii_log: WIFI CONNECTED[0m
+[0;32mI (3863) esp_netif_handlers: sta ip: 192.168.3.29, mask: 255.255.255.0, gw: 192.168.3.1[0m
+[0;32mI (3863) wfii_log: ESP GOT IP![0m
+[0;32mI (8583) LVGLTAG: xpos:197,ypos:173[0m
+[0;32mI (8613) LVGLTAG: xpos:197,ypos:173[0m
+[0;32mI (8653) LVGLTAG: xpos:197,ypos:173[0m
+[0;32mI (8683) LVGLTAG: xpos:197,ypos:173[0m
+[0;32mI (8713) LVGLTAG: xpos:197,ypos:169[0m
+[1;31mE (8753) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8753) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (8753) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (8813) LVGLTAG: xpos:196,ypos:117[0m
+[0;32mI (8843) LVGLTAG: xpos:196,ypos:102[0m
+[0;32mI (8883) LVGLTAG: xpos:196,ypos:84[0m
+[0;32mI (8913) LVGLTAG: xpos:196,ypos:70[0m
+[0;32mI (10103) LVGLTAG: xpos:207,ypos:169[0m
+[0;32mI (10133) LVGLTAG: xpos:207,ypos:169[0m
+[0;32mI (10163) LVGLTAG: xpos:207,ypos:169[0m
+[0;32mI (10203) LVGLTAG: xpos:207,ypos:169[0m
+[0;32mI (10233) LVGLTAG: xpos:207,ypos:169[0m
+[0;32mI (10263) LVGLTAG: xpos:207,ypos:169[0m
+[0;32mI (10303) LVGLTAG: xpos:207,ypos:169[0m
+[0;32mI (10333) LVGLTAG: xpos:207,ypos:169[0m
+[0;32mI (10363) LVGLTAG: xpos:207,ypos:159[0m
+[1;31mE (10403) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10403) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (10403) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (10463) LVGLTAG: xpos:207,ypos:137[0m
+[0;32mI (10493) LVGLTAG: xpos:207,ypos:130[0m
+[0;32mI (10533) LVGLTAG: xpos:207,ypos:112[0m
+[0;32mI (10563) LVGLTAG: xpos:207,ypos:96[0m
+[0;32mI (10593) LVGLTAG: xpos:207,ypos:86[0m
+[0;32mI (10633) LVGLTAG: xpos:207,ypos:80[0m
+[0;32mI (10663) LVGLTAG: xpos:207,ypos:74[0m
+[0;32mI (10693) LVGLTAG: xpos:207,ypos:69[0m
+[1;31mE (10733) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10733) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (10733) LVGLTAG: xpos:240,ypos:0[0m
+[1;31mE (20303) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (20303) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (20303) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (20363) LVGLTAG: xpos:201,ypos:258[0m
+[0;32mI (20393) LVGLTAG: xpos:201,ypos:258[0m
+[0;32mI (20433) LVGLTAG: xpos:201,ypos:258[0m
+[0;32mI (20463) LVGLTAG: xpos:201,ypos:258[0m
+[0;32mI (20493) LVGLTAG: xpos:201,ypos:258[0m
+[0;32mI (20533) LVGLTAG: xpos:201,ypos:258[0m
+[0;32mI (20563) LVGLTAG: xpos:201,ypos:258[0m
+[0;32mI (20593) LVGLTAG: xpos:201,ypos:258[0m
+[1;31mE (20633) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (20633) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (20633) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (20693) LVGLTAG: xpos:201,ypos:241[0m
+[0;32mI (20723) LVGLTAG: xpos:201,ypos:234[0m
+[0;32mI (20763) LVGLTAG: xpos:201,ypos:227[0m
+[0;32mI (20793) LVGLTAG: xpos:201,ypos:219[0m
+[0;32mI (20823) LVGLTAG: xpos:201,ypos:198[0m
+[0;32mI (20863) LVGLTAG: xpos:201,ypos:187[0m
+[0;32mI (20893) LVGLTAG: xpos:201,ypos:181[0m
+[0;32mI (20923) LVGLTAG: xpos:201,ypos:172[0m
+[1;31mE (20963) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (20963) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (20963) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (21023) LVGLTAG: xpos:201,ypos:152[0m
+[0;32mI (21053) LVGLTAG: xpos:201,ypos:147[0m
+[0;32mI (21093) LVGLTAG: xpos:201,ypos:139[0m
+[0;32mI (21123) LVGLTAG: xpos:201,ypos:132[0m
+[0;32mI (21153) LVGLTAG: xpos:201,ypos:125[0m
+[0;32mI (21193) LVGLTAG: xpos:201,ypos:121[0m
+[0;32mI (21223) LVGLTAG: xpos:202,ypos:115[0m
+[0;32mI (21253) LVGLTAG: xpos:202,ypos:108[0m
+[1;31mE (21293) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (21293) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (21293) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (21353) LVGLTAG: xpos:209,ypos:89[0m
+[0;32mI (21383) LVGLTAG: xpos:211,ypos:85[0m
+[0;32mI (21423) LVGLTAG: xpos:213,ypos:81[0m
+[0;32mI (21453) LVGLTAG: xpos:216,ypos:77[0m
+[0;32mI (21483) LVGLTAG: xpos:219,ypos:75[0m
+[0;32mI (21523) LVGLTAG: xpos:223,ypos:72[0m
+[0;32mI (21553) LVGLTAG: xpos:226,ypos:70[0m
+[0;32mI (21583) LVGLTAG: xpos:228,ypos:69[0m
+[1;31mE (21623) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (21623) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (21623) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (25643) LVGLTAG: xpos:188,ypos:314[0m
+[0;32mI (25673) LVGLTAG: xpos:188,ypos:314[0m
+[0;32mI (25713) LVGLTAG: xpos:188,ypos:314[0m
+[0;32mI (25743) LVGLTAG: xpos:188,ypos:314[0m
+[0;32mI (25773) LVGLTAG: xpos:188,ypos:314[0m
+[0;32mI (25813) LVGLTAG: xpos:188,ypos:314[0m
+[0;32mI (25843) LVGLTAG: xpos:188,ypos:314[0m
+[0;32mI (25873) LVGLTAG: xpos:188,ypos:314[0m
+[1;31mE (25913) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (25913) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (25913) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (25973) LVGLTAG: xpos:192,ypos:295[0m
+[0;32mI (26003) LVGLTAG: xpos:193,ypos:289[0m
+[0;32mI (26043) LVGLTAG: xpos:195,ypos:271[0m
+[0;32mI (26073) LVGLTAG: xpos:199,ypos:257[0m
+[0;32mI (26103) LVGLTAG: xpos:199,ypos:247[0m
+[0;32mI (26143) LVGLTAG: xpos:200,ypos:237[0m
+[0;32mI (26173) LVGLTAG: xpos:200,ypos:228[0m
+[0;32mI (26203) LVGLTAG: xpos:204,ypos:220[0m
+[1;31mE (26243) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (26243) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (26243) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (26303) LVGLTAG: xpos:210,ypos:195[0m
+[0;32mI (26333) LVGLTAG: xpos:213,ypos:188[0m
+[0;32mI (26373) LVGLTAG: xpos:218,ypos:178[0m
+[0;32mI (26403) LVGLTAG: xpos:222,ypos:167[0m
+[0;32mI (26433) LVGLTAG: xpos:227,ypos:158[0m
+[0;32mI (26473) LVGLTAG: xpos:231,ypos:152[0m
+[0;32mI (26503) LVGLTAG: xpos:234,ypos:145[0m
+[0;32mI (26533) LVGLTAG: xpos:236,ypos:136[0m
+[1;31mE (26573) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (26573) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (26573) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (26633) LVGLTAG: xpos:237,ypos:117[0m
+[0;32mI (26663) LVGLTAG: xpos:237,ypos:110[0m
+[0;32mI (26703) LVGLTAG: xpos:237,ypos:102[0m
+[0;32mI (26733) LVGLTAG: xpos:237,ypos:94[0m
+[0;32mI (26763) LVGLTAG: xpos:237,ypos:88[0m
+[0;32mI (26803) LVGLTAG: xpos:237,ypos:84[0m
+[0;32mI (26833) LVGLTAG: xpos:237,ypos:79[0m
+[0;32mI (26863) LVGLTAG: xpos:237,ypos:75[0m
+[1;31mE (26903) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (26903) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (26903) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (26963) LVGLTAG: xpos:237,ypos:55[0m
+[0;32mI (26993) LVGLTAG: xpos:237,ypos:48[0m
+[0;32mI (27033) LVGLTAG: xpos:237,ypos:43[0m
+[0;32mI (29273) LVGLTAG: xpos:201,ypos:112[0m
+[0;32mI (29303) LVGLTAG: xpos:201,ypos:112[0m
+[0;32mI (29343) LVGLTAG: xpos:201,ypos:112[0m
+[0;32mI (29373) LVGLTAG: xpos:201,ypos:112[0m
+[0;32mI (29403) LVGLTAG: xpos:201,ypos:112[0m
+[0;32mI (29443) LVGLTAG: xpos:201,ypos:112[0m
+[0;32mI (29473) LVGLTAG: xpos:201,ypos:112[0m
+[0;32mI (29503) LVGLTAG: xpos:201,ypos:112[0m
+[1;31mE (29543) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (29543) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (29543) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (29603) LVGLTAG: xpos:201,ypos:105[0m
+[0;32mI (29633) LVGLTAG: xpos:201,ypos:101[0m
+[0;32mI (29673) LVGLTAG: xpos:201,ypos:98[0m
+[0;32mI (29703) LVGLTAG: xpos:201,ypos:92[0m
+[0;32mI (29733) LVGLTAG: xpos:201,ypos:87[0m
+[0;32mI (29773) LVGLTAG: xpos:201,ypos:81[0m
+[0;32mI (29803) LVGLTAG: xpos:201,ypos:78[0m
+[0;32mI (29833) LVGLTAG: xpos:201,ypos:71[0m
+[1;31mE (29873) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (29873) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (29873) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (29933) LVGLTAG: xpos:201,ypos:46[0m
+[0;32mI (29963) LVGLTAG: xpos:201,ypos:43[0m
+[0;32mI (30003) LVGLTAG: xpos:201,ypos:42[0m
+[0;32mI (30033) LVGLTAG: xpos:201,ypos:41[0m
+[0;32mI (30063) LVGLTAG: xpos:202,ypos:39[0m
+[0;32mI (30103) LVGLTAG: xpos:202,ypos:38[0m
+[0;32mI (30133) LVGLTAG: xpos:202,ypos:37[0m
+[0;32mI (30163) LVGLTAG: xpos:202,ypos:35[0m
+[1;31mE (30203) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (30203) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (30203) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (30263) LVGLTAG: xpos:203,ypos:32[0m
+[0;32mI (30293) LVGLTAG: xpos:203,ypos:31[0m
+[0;32mI (30333) LVGLTAG: xpos:203,ypos:30[0m
+[0;32mI (30363) LVGLTAG: xpos:203,ypos:28[0m
+[0;32mI (30393) LVGLTAG: xpos:203,ypos:25[0m
+[0;32mI (30433) LVGLTAG: xpos:203,ypos:20[0m
+[0;32mI (30463) LVGLTAG: xpos:203,ypos:16[0m
+[0;32mI (30493) LVGLTAG: xpos:203,ypos:12[0m
+[1;31mE (30533) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (30533) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (30533) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (30593) LVGLTAG: xpos:203,ypos:6[0m
+[0;32mI (30623) LVGLTAG: xpos:203,ypos:5[0m
+[0;32mI (31683) LVGLTAG: xpos:212,ypos:30[0m
+[0;32mI (31713) LVGLTAG: xpos:212,ypos:30[0m
+[0;32mI (31753) LVGLTAG: xpos:212,ypos:30[0m
+[0;32mI (31783) LVGLTAG: xpos:212,ypos:30[0m
+[0;32mI (31813) LVGLTAG: xpos:212,ypos:30[0m
+[1;31mE (31853) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (31853) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (31853) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (31913) LVGLTAG: xpos:212,ypos:30[0m
+[0;32mI (31943) LVGLTAG: xpos:212,ypos:33[0m
+[0;32mI (31983) LVGLTAG: xpos:212,ypos:39[0m
+[0;32mI (32013) LVGLTAG: xpos:212,ypos:42[0m
+[0;32mI (32043) LVGLTAG: xpos:212,ypos:47[0m
+[0;32mI (32083) LVGLTAG: xpos:212,ypos:53[0m
+[0;32mI (32113) LVGLTAG: xpos:212,ypos:56[0m
+[0;32mI (32143) LVGLTAG: xpos:212,ypos:62[0m
+[1;31mE (32183) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (32183) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (32183) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (32243) LVGLTAG: xpos:211,ypos:82[0m
+[0;32mI (32273) LVGLTAG: xpos:211,ypos:89[0m
+[0;32mI (32313) LVGLTAG: xpos:211,ypos:92[0m
+[0;32mI (32343) LVGLTAG: xpos:211,ypos:94[0m
+[0;32mI (32373) LVGLTAG: xpos:211,ypos:99[0m
+[0;32mI (32413) LVGLTAG: xpos:211,ypos:106[0m
+[0;32mI (32443) LVGLTAG: xpos:211,ypos:113[0m
+[0;32mI (32473) LVGLTAG: xpos:211,ypos:119[0m
+[1;31mE (32513) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (32513) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (32513) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (32573) LVGLTAG: xpos:211,ypos:141[0m
+[0;32mI (32603) LVGLTAG: xpos:211,ypos:147[0m
+[0;32mI (32643) LVGLTAG: xpos:211,ypos:151[0m
+[0;32mI (32673) LVGLTAG: xpos:211,ypos:156[0m
+[0;32mI (32703) LVGLTAG: xpos:211,ypos:161[0m
+[0;32mI (32743) LVGLTAG: xpos:211,ypos:164[0m
+[0;32mI (32773) LVGLTAG: xpos:211,ypos:168[0m
+[0;32mI (32803) LVGLTAG: xpos:211,ypos:172[0m
+[1;31mE (32843) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (32843) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (32843) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (32903) LVGLTAG: xpos:211,ypos:189[0m
+[0;32mI (32933) LVGLTAG: xpos:211,ypos:192[0m
+[0;32mI (32973) LVGLTAG: xpos:211,ypos:197[0m
+[0;32mI (33003) LVGLTAG: xpos:211,ypos:204[0m
+[0;32mI (33033) LVGLTAG: xpos:211,ypos:215[0m
+[0;32mI (33073) LVGLTAG: xpos:211,ypos:224[0m
+[0;32mI (33103) LVGLTAG: xpos:211,ypos:231[0m
+[0;32mI (33133) LVGLTAG: xpos:211,ypos:235[0m
+[1;31mE (33173) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (33173) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (33173) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (33233) LVGLTAG: xpos:211,ypos:245[0m
+[0;32mI (33263) LVGLTAG: xpos:211,ypos:250[0m
+[0;32mI (33303) LVGLTAG: xpos:211,ypos:255[0m
+[0;32mI (33333) LVGLTAG: xpos:211,ypos:260[0m
+[0;32mI (33363) LVGLTAG: xpos:211,ypos:265[0m
+[0;32mI (33403) LVGLTAG: xpos:211,ypos:269[0m
+[0;32mI (33433) LVGLTAG: xpos:211,ypos:272[0m
+[0;32mI (33463) LVGLTAG: xpos:211,ypos:275[0m
+[1;31mE (33503) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (33503) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (33503) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (33563) LVGLTAG: xpos:211,ypos:285[0m
+[0;32mI (33593) LVGLTAG: xpos:211,ypos:292[0m
+[0;32mI (33633) LVGLTAG: xpos:211,ypos:298[0m
+[0;32mI (33663) LVGLTAG: xpos:211,ypos:303[0m
+[0;32mI (33693) LVGLTAG: xpos:211,ypos:306[0m
+[0;32mI (33733) LVGLTAG: xpos:211,ypos:309[0m
+[0;32mI (33763) LVGLTAG: xpos:211,ypos:310[0m
+[0;32mI (33793) LVGLTAG: xpos:209,ypos:312[0m
+[0;32mI (44913) LVGLTAG: xpos:80,ypos:41[0m
+[0;32mI (44953) LVGLTAG: xpos:80,ypos:41[0m
+[0;32mI (44983) LVGLTAG: xpos:80,ypos:41[0m
+[0;32mI (45013) LVGLTAG: xpos:80,ypos:41[0m
+[1;31mE (45053) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (45053) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (45053) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (45113) LVGLTAG: xpos:90,ypos:41[0m
+[1;31mE (45153) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (45153) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (45153) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (45213) LVGLTAG: xpos:105,ypos:41[0m
+[0;32mI (45243) LVGLTAG: xpos:112,ypos:41[0m
+[0;32mI (45283) LVGLTAG: xpos:114,ypos:41[0m
+[0;32mI (45313) LVGLTAG: xpos:129,ypos:41[0m
+[0;32mI (45343) LVGLTAG: xpos:136,ypos:41[0m
+[1;31mE (45383) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (45383) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (45383) LVGLTAG: xpos:240,ypos:0[0m
+[0;32mI (45443) LVGLTAG: xpos:158,ypos:41[0m
+
+assert failed: tlsf_free tlsf/tlsf.c:1123 (!block_is_free(block) && "block already marked as free")
+Core  0 register dump:
+MEPC    : 0x4080ab4c  RA      : 0x4080ab0a  SP      : 0x40835c90  GP      : 0x40818a84  
+TP      : 0x40835f80  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000064  S1      : 0x00000001  A0      : 0x40835ccc  A1      : 0x4081b375  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x40833000  
+A6      : 0x0000000c  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x40835e03  
+S4      : 0x4081b374  S5      : 0x40835e50  S6      : 0x40835e58  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+40835c90: 0x0000001a 0x0000003b 0x4004e16c 0x40811e9e 0x4081b35c 0x4004e16c 0x4081ba44 0x4004e1b8
+40835cb0: 0x4081b36c 0x40835cc4 0x4081b370 0x4004e2ec 0x4081b374 0x33323131 0x40820200 0x65737361
+40835cd0: 0x66207472 0x656c6961 0x74203a64 0x5f66736c 0x65657266 0x736c7420 0x6c742f66 0x632e6673
+40835cf0: 0x3231313a 0x21282033 0x636f6c62 0x73695f6b 0x6572665f 0x6c622865 0x296b636f 0x20262620
+40835d10: 0x6f6c6222 0x61206b63 0x6165726c 0x6d207964 0x656b7261 0x73612064 0x65726620 0x00292265
+40835d30: 0x000000ff 0x4081f680 0x408202d4 0x42016fd4 0x00000000 0x40835d6c 0x40835e34 0x00000048
+40835d50: 0x4080bff6 0x4080c08c 0x40835dd0 0x40818a84 0x40835f80 0x4200c4e8 0x00000000 0x00000000
+40835d70: 0x00000000 0x4085cae8 0x0000001f 0x60010134 0x00000017 0x00000000 0x00000000 0x40833000
+40835d90: 0x0000000c 0x00000000 0x00000000 0xff000000 0x4085cae8 0x0000001a 0x40835ec0 0x00000001
+40835db0: 0x40860000 0x40835e58 0x40833434 0x40026cdc 0x40860000 0x40835e58 0x40833434 0x4002eb6c
+40835dd0: 0x0000001a 0x0000003b 0x40835ec0 0x0000001a 0x40860000 0x40835e58 0x40833420 0x4002d776
+40835df0: 0x4081d010 0x4081e398 0x40835e34 0x40800888 0x4081d010 0x0000001a 0x4085cae8 0x40811f68
+40835e10: 0x4081e398 0x4085cae8 0x00000000 0x40802578 0x4081d010 0x00000001 0x40835e5c 0x4200e4ae
+40835e30: 0x00000000 0x4081e398 0x40835e58 0x00000000 0x00000000 0x4085cae8 0x00000005 0x4200c436
+40835e50: 0x0000001a 0x0000003b 0x40835ec0 0x4081e370 0x4081d010 0x40833000 0x4081f348 0x4200be92
+40835e70: 0x4081d010 0x4081f680 0x4081f348 0x4201660c 0x00000072 0x00000022 0x000000cd 0x0000003b
+40835e90: 0x00000000 0x4081f680 0x4081f348 0x42016ae2 0x0000003c 0x00000000 0x00000000 0x42017816
+40835eb0: 0x00000072 0x00000022 0x000000cd 0x00000050 0x00000072 0x00000022 0x000000cd 0x0000003b
+40835ed0: 0x00000000 0x00000000 0x00000000 0x00000000 0x0000afbd 0xffffffff 0x4081e3e4 0x42017b08
+40835ef0: 0x00000000 0x40835e48 0x4081f6dc 0x42023a44 0x00000000 0x4081f250 0x4081f6dc 0x42023afc
+40835f10: 0x00000000 0x00000003 0x420e2000 0x4200b9cc 0x420e2034 0x000001c5 0x00000000 0x420dc288
+40835f30: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4080be42
+40835f50: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40835f70: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x40835d50 0x00001194
+40835f90: 0x4081c748 0x4081c748 0x40835f88 0x4081c740 0x00000018 0x4085d124 0x4085d124 0x40835f88
+40835fb0: 0x00000000 0x00000001 0x40834f84 0x6e69616d 0x00000000 0x00000000 0x00000000 0x40835f80
+40835fd0: 0x00000001 0x00000000 0x40839e2c 0x420072ce 0x00000000 0x40833a38 0x40833aa0 0x40833b08
+40835ff0: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+40836010: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836030: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836050: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836070: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: ceffa5997
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080ac42
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  4 2025 13:52:25[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=420e0020 size=23f98h (147352) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00033fc0 vaddr=40800000 size=0c058h ( 49240) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=dcd78h (904568) map[0m
+[0;32mI (313) esp_image: segment 3: paddr=0011cda0 vaddr=4080c058 size=0c1dch ( 49628) load[0m
+[0;32mI (327) esp_image: segment 4: paddr=00128f84 vaddr=40818280 size=0422ch ( 16940) load[0m
+[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (341) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (353) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (354) cpu_start: Unicore app[0m
+[0;32mI (365) cpu_start: Pro cpu start user code[0m
+[0;32mI (365) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (366) app_init: Application information:[0m
+[0;32mI (366) app_init: Project name:     esp32good[0m
+[0;32mI (369) app_init: App version:      19d941c-dirty[0m
+[0;32mI (374) app_init: Compile time:     Oct  4 2025 13:52:06[0m
+[0;32mI (379) app_init: ELF file SHA256:  ceffa5997...[0m
+[0;32mI (383) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (387) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (391) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (395) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (399) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (405) heap_init: At 40833420 len 00029180 (164 KiB): RAM[0m
+[0;32mI (410) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (415) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (421) spi_flash: detected chip: generic[0m
+[0;32mI (424) spi_flash: flash io: dio[0m
+[0;33mW (427) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (446) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (452) main_task: Started on CPU0[0m
+[0;32mI (452) main_task: Calling app_main()[0m
+[0;32mI (652) my_lcd: LCD id:0000[0m
+[0;32mI (852) my_lcd: Lcd init Finish[0m
+[0;32mI (1462) TOUCH: Touch I2C device found![0m
+[0;32mI (1472) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (1472) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (1482) wifi:wifi driver task: 40839cd8, prio:23, stack:6656, core=0[0m
+[0;32mI (1482) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1482) wifi:wifi certification version: v7.0[0m
+[0;32mI (1482) wifi:config NVS flash: enabled[0m
+[0;32mI (1492) wifi:config nano formatting: disabled[0m
+[0;32mI (1492) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (1502) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1502) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1512) wifi:Init management short buffer num: 32[0m
+[0;32mI (1512) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1522) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1522) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1532) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1532) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1542) wifi_init: rx ba win: 6[0m
+[0;32mI (1542) wifi_init: accept mbox: 6[0m
+[0;32mI (1542) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1542) wifi_init: udp mbox: 6[0m
+[0;32mI (1552) wifi_init: tcp mbox: 6[0m
+[0;32mI (1552) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1552) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1562) wifi_init: tcp mss: 1440[0m
+[0;32mI (1562) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1562) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1572) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1572) phy_init: phy_version 106,706cee23,Aug 27 2025,19:17:04[0m
+[0;33mW (2192) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (2192) wifi:WDEV_RXOFDM_DELAY:266[0m
+[0;33mW (2192) wifi:WDEV_RX_11G_OFDM_DELAY:267[0m
+[0;33mW (2192) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (2202) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (2202) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2212) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2222) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (2222) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (2232) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (2242) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (2252) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (2252) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2262) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2262) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2272) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2272) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2282) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2282) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (2292) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (2292) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (2302) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (2302) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (2312) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (2312) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (2322) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (2322) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2332) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2342) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2352) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2362) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2372) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2372) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2382) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2392) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (2402) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (2412) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2422) wifi:11ax coex: WDEVAX_PTI0(0x040000a0), WDEVAX_PTI1(0x000092e3).[0m
+
+[0;32mI (2422) wifi:mode : sta (d0:cf:13:e0:b2:44)[0m
+[0;32mI (2432) wifi:enable tsf[0m
+[0;33mW (2432) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (2442) wifi:(cap)capinfo:0x1031, Spectrum Management:0 [0m
+[0;33mW (2442) wifi:(vht)vhtcap:0x3c00191, sgi_rx(80mhz:0, 160/80+80mhz:0), stbc(tx:1, rx:1), ldpc_rx:1, bfmer(su:0, mu:0, nsts:0)[0m
+[0;33mW (2452) wifi:(vht)max.RxMPDULen:1(7991), max.RxAMPDULenExponent:7, max.RxAMPDUpre-EOFpaddingBytes:1048575(0xfffff)[0m
+[0;33mW (2462) wifi:(vht)rx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), tx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), max_rate:144[0m
+[0;33mW (2472) wifi:(vht)bandwidth:0, chan_center_frq_seg0:0, chan_center_frq_seg1:0[0m
+[0;33mW (2482) wifi:(ht)primary_chann:149, ht2ndchan:1[0m
+[0;33mW (2482) wifi:(vht)BSS bandwidth:40MHz[0m
+[0;32mI (2492) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2502) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2502) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2512) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2512) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2522) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2532) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2542) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2552) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2562) wifi:new:<149,0>, old:<1,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x10[0m
+[0;32mI (2572) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (2572) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2582) wifi:state: auth -> init (0xe00)[0m
+[0;32mI (2592) wifi:new:<149,0>, old:<149,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2592) wfii_log: WIFI DISCONNECTED[0m

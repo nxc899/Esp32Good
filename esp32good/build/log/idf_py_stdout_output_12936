@@ -1,48 +1,431 @@
-Command: ninja all
-[1/9] Performing build step for 'bootloader'
-[1/1] C:\Windows\SYSTEM32\cmd.exe /C "cd /D E:\project\Esp32Good\esp32good\build\bootloader\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 E:/project/Esp32Good/esp32good/build/bootloader/bootloader.bin"
-Bootloader binary size 0x56a0 bytes. 0x960 bytes (10%) free.
-[2/9] No install step for 'bootloader'
-[3/9] Completed 'bootloader'
-[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lv_port/lv_port_indev.c.obj
-FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/lv_port/lv_port_indev.c.obj 
-ccache C:\Users\Administrator\.espressif\tools\riscv32-esp-elf\esp-14.2.0_20241119\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5.1\" -DLV_CONF_INCLUDE_SIMPLE -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IE:/project/Esp32Good/esp32good/build/config -IE:/project/Esp32Good/esp32good/main -IE:/project/Esp32Good/esp32good/main/lv_port -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/newlib/platform_include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/freertos/config/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/freertos/config/include/freertos -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/freertos/config/riscv/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/freertos/esp_additions/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/include/soc -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/include/soc/esp32c5 -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/dma/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/ldo/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/debug_probe/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/power_supply/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32c5/. -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32c5/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32c5/private_include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32c5/. -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32c5/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/heap/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/heap/tlsf -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/log/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/soc/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/soc/esp32c5 -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/soc/esp32c5/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/soc/esp32c5/register -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/hal/platform_port/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/hal/esp32c5/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/hal/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_rom/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_rom/esp32c5/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_rom/esp32c5/include/esp32c5 -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_rom/esp32c5 -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_common/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/soc -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/include/riscv -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_system/port/include/private -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/riscv/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/spi_flash/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_driver_spi/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_pm/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_driver_gpio/include -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_driver_i2c/include -IE:/project/Esp32Good/esp32good/managed_components/lvgl__lvgl -IE:/project/Esp32Good/esp32good/managed_components/lvgl__lvgl/src -IE:/project/Esp32Good/esp32good/managed_components -IE:/project/Esp32Good/esp32good/managed_components/lvgl__lvgl/examples -IE:/project/Esp32Good/esp32good/managed_components/lvgl__lvgl/demos -IC:/Users/Administrator/esp/v5.5.1/esp-idf/components/esp_timer/include -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=E:/project/Esp32Good/esp32good=. -fmacro-prefix-map=C:/Users/Administrator/esp/v5.5.1/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/lv_port/lv_port_indev.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\lv_port\lv_port_indev.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/lv_port/lv_port_indev.c.obj -c E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c: In function 'lv_port_indev_init':
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:84:5: error: implicit declaration of function 'mouse_init'; did you mean 'touch_init'? [-Wimplicit-function-declaration]
-   84 |     mouse_init();
-      |     ^~~~~~~~~~
-      |     touch_init
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:89:39: error: 'mouse_read' undeclared (first use in this function)
-   89 |     lv_indev_set_read_cb(indev_mouse, mouse_read);
-      |                                       ^~~~~~~~~~
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:89:39: note: each undeclared identifier is reported only once for each function it appears in
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:101:5: error: implicit declaration of function 'keypad_init'; did you mean 'touchpad_init'? [-Wimplicit-function-declaration]
-  101 |     keypad_init();
-      |     ^~~~~~~~~~~
-      |     touchpad_init
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:106:40: error: 'keypad_read' undeclared (first use in this function); did you mean 'touchpad_read'?
-  106 |     lv_indev_set_read_cb(indev_keypad, keypad_read);
-      |                                        ^~~~~~~~~~~
-      |                                        touchpad_read
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:118:5: error: implicit declaration of function 'encoder_init' [-Wimplicit-function-declaration]
-  118 |     encoder_init();
-      |     ^~~~~~~~~~~~
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:123:41: error: 'encoder_read' undeclared (first use in this function); did you mean 'encoder_state'?
-  123 |     lv_indev_set_read_cb(indev_encoder, encoder_read);
-      |                                         ^~~~~~~~~~~~
-      |                                         encoder_state
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:135:5: error: implicit declaration of function 'button_init' [-Wimplicit-function-declaration]
-  135 |     button_init();
-      |     ^~~~~~~~~~~
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:140:40: error: 'button_read' undeclared (first use in this function); did you mean 'lv_button_create'?
-  140 |     lv_indev_set_read_cb(indev_button, button_read);
-      |                                        ^~~~~~~~~~~
-      |                                        lv_button_create
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c: At top level:
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:43:25: warning: 'encoder_state' defined but not used [-Wunused-variable]
-   43 | static lv_indev_state_t encoder_state;
-      |                         ^~~~~~~~~~~~~
-E:/project/Esp32Good/esp32good/main/lv_port/lv_port_indev.c:42:16: warning: 'encoder_diff' defined but not used [-Wunused-variable]
-   42 | static int32_t encoder_diff;
-      |                ^~~~~~~~~~~~
-ninja: build stopped: subcommand failed.
+Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace E:\project\Esp32Good\esp32good\build\esp32good.elf E:\project\Esp32Good\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;32mI (105) esp_image: segment 1: paddr=00033fc0 vaddr=40800000 sizeI (342) heap_iESP-ROM:esp32c5-eco2-20250121[0m
+Build:Jan 21 2025
+rst:0x15 (USB_UART_HPSYS),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4002601e
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  4 2025 13:52:25[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (27) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=420e0020 size=23f98h (147352) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00033fc0 vaddr=40800000 size=0c058h ( 49240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=dcd44h (904516) map[0m
+[0;32mI (254) esp_image: segment 3: paddr=0011cd6c vaddr=4080c058 size=0c1dch ( 49628) load[0m
+[0;32mI (264) esp_image: segment 4: paddr=00128f50 vaddr=40818280 size=0422ch ( 16940) load[0m
+[0;32mI (274) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (274) boot: Disabling RNG early entropy source...[0m
+[0;32mI (285) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (285) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (286) cpu_start: Unicore app[0m
+[0;32mI (632) my_lcd: LCD id:0000[0m
+[0;32mI (832) my_lcd: Lcd init Finish[0m
+[0;32mI (1442) TOUCH: Touch I2C device found![0m
+[0;32mI (1452) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (1452) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (1462) wifi:wifi driver task: 40839cd8, prio:23, stack:6656, core=0[0m
+[0;32mI (1462) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1462) wifi:wifi certification version: v7.0[0m
+[0;32mI (1472) wifi:config NVS flash: enabled[0m
+[0;32mI (1472) wifi:config nano formatting: disabled[0m
+[0;32mI (1472) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (1482) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1492) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1492) wifi:Init management short buffer num: 32[0m
+[0;32mI (1492) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1502) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1502) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1512) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1512) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1522) wifi_init: rx ba win: 6[0m
+[0;32mI (1522) wifi_init: accept mbox: 6[0m
+[0;32mI (1522) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1522) wifi_init: udp mbox: 6[0m
+[0;32mI (1532) wifi_init: tcp mbox: 6[0m
+[0;32mI (1532) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1532) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1542) wifi_init: tcp mss: 1440[0m
+[0;32mI (1542) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1542) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1552) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1552) phy_init: phy_version 106,706cee23,Aug 27 2025,19:17:04[0m
+[0;33mW (2172) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (2172) wifi:WDEV_RXOFDM_DELAY:256[0m
+[0;33mW (2172) wifi:WDEV_RX_11G_OFDM_DELAY:257[0m
+[0;33mW (2172) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (2172) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (2182) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2192) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2192) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (2202) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (2212) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (2222) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (2222) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (2232) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2232) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2242) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2242) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2252) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2252) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2262) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (2262) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (2272) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (2272) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (2282) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (2292) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (2292) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (2302) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (2302) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2312) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2322) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2332) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2332) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2342) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2352) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2362) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2372) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (2382) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (2392) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2392) wifi:11ax coex: WDEVAX_PTI0(0x040000a0), WDEVAX_PTI1(0x000092a3).[0m
+
+[0;32mI (2402) wifi:mode : sta (d0:cf:13:e0:b2:44)[0m
+[0;32mI (2402) wifi:enable tsf[0m
+[0;33mW (2412) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (2422) wifi:(cap)capinfo:0x1031, Spectrum Management:0 [0m
+[0;33mW (2422) wifi:(vht)vhtcap:0x3c00191, sgi_rx(80mhz:0, 160/80+80mhz:0), stbc(tx:1, rx:1), ldpc_rx:1, bfmer(su:0, mu:0, nsts:0)[0m
+[0;33mW (2432) wifi:(vht)max.RxMPDULen:1(7991), max.RxAMPDULenExponent:7, max.RxAMPDUpre-EOFpaddingBytes:1048575(0xfffff)[0m
+[0;33mW (2442) wifi:(vht)rx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), tx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), max_rate:144[0m
+[0;33mW (2452) wifi:(vht)bandwidth:0, chan_center_frq_seg0:0, chan_center_frq_seg1:0[0m
+[0;33mW (2462) wifi:(ht)primary_chann:149, ht2ndchan:1[0m
+[0;33mW (2462) wifi:(vht)BSS bandwidth:40MHz[0m
+[0;32mI (2472) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2472) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2482) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2492) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2492) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2502) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2512) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2522) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2532) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2542) wifi:new:<149,0>, old:<1,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x10[0m
+[0;32mI (2552) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (2552) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2562) wifi:state: auth -> init (0xe00)[0m
+[0;32mI (2572) wifi:new:<149,0>, old:<149,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2572) wfii_log: WIFI DISCONNECTED[0m
+[0;32mI (10392) LVGLTAG: xpos:195,ypos:277[0m
+[0;32mI (10432) LVGLTAG: xpos:195,ypos:277[0m
+[0;32mI (10462) LVGLTAG: xpos:195,ypos:277[0m
+[0;32mI (10492) LVGLTAG: xpos:195,ypos:277[0m
+[0;32mI (10522) LVGLTAG: xpos:195,ypos:277[0m
+[0;32mI (10562) LVGLTAG: xpos:195,ypos:269[0m
+[0;32mI (10592) LVGLTAG: xpos:195,ypos:261[0m
+[0;32mI (10622) LVGLTAG: xpos:195,ypos:249[0m
+[0;32mI (10662) LVGLTAG: xpos:195,ypos:231[0m
+[0;32mI (10692) LVGLTAG: xpos:195,ypos:215[0m
+[0;32mI (10722) LVGLTAG: xpos:195,ypos:205[0m
+[0;32mI (10762) LVGLTAG: xpos:195,ypos:197[0m
+[0;32mI (10792) LVGLTAG: xpos:195,ypos:187[0m
+[0;32mI (10822) LVGLTAG: xpos:195,ypos:179[0m
+[0;32mI (10852) LVGLTAG: xpos:195,ypos:169[0m
+[0;32mI (10892) LVGLTAG: xpos:195,ypos:158[0m
+[0;32mI (10922) LVGLTAG: xpos:195,ypos:145[0m
+[0;32mI (10952) LVGLTAG: xpos:195,ypos:133[0m
+[0;32mI (10992) LVGLTAG: xpos:195,ypos:122[0m
+[0;32mI (11022) LVGLTAG: xpos:196,ypos:109[0m
+[0;32mI (11052) LVGLTAG: xpos:198,ypos:96[0m
+[0;32mI (11092) LVGLTAG: xpos:199,ypos:86[0m
+[0;32mI (11122) LVGLTAG: xpos:200,ypos:81[0m
+[0;32mI (11782) LVGLTAG: xpos:87,ypos:276[0m
+[0;32mI (11812) LVGLTAG: xpos:87,ypos:276[0m
+[0;32mI (11842) LVGLTAG: xpos:87,ypos:276[0m
+[0;32mI (11882) LVGLTAG: xpos:87,ypos:276[0m
+[0;32mI (11912) LVGLTAG: xpos:87,ypos:276[0m
+[0;32mI (11942) LVGLTAG: xpos:87,ypos:276[0m
+[0;32mI (11982) LVGLTAG: xpos:87,ypos:276[0m
+[0;32mI (12012) LVGLTAG: xpos:87,ypos:276[0m
+[0;32mI (12042) LVGLTAG: xpos:101,ypos:276[0m
+[0;32mI (12082) LVGLTAG: xpos:104,ypos:276[0m
+[0;32mI (12112) LVGLTAG: xpos:115,ypos:276[0m
+[0;32mI (12142) LVGLTAG: xpos:120,ypos:276[0m
+[0;32mI (12172) LVGLTAG: xpos:121,ypos:276[0m
+[0;32mI (12212) LVGLTAG: xpos:132,ypos:276[0m
+[0;32mI (12242) LVGLTAG: xpos:137,ypos:276[0m
+[0;32mI (12272) LVGLTAG: xpos:146,ypos:276[0m
+[0;32mI (12312) LVGLTAG: xpos:152,ypos:276[0m
+[0;32mI (12342) LVGLTAG: xpos:157,ypos:276[0m
+[0;32mI (12372) LVGLTAG: xpos:162,ypos:276[0m
+[1;31mE (12412) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (12412) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (12412) LVGLTAG: xpos:240,ypos:320[0m
+[0;32mI (12442) LVGLTAG: xpos:171,ypos:276[0m
+[0;32mI (12472) LVGLTAG: xpos:175,ypos:276[0m
+[0;32mI (12502) LVGLTAG: xpos:179,ypos:276[0m
+[0;32mI (12542) LVGLTAG: xpos:182,ypos:276[0m
+[0;32mI (12572) LVGLTAG: xpos:185,ypos:276[0m
+[0;32mI (12602) LVGLTAG: xpos:187,ypos:276[0m
+[0;32mI (12642) LVGLTAG: xpos:190,ypos:276[0m
+[0;32mI (12672) LVGLTAG: xpos:192,ypos:276[0m
+[0;32mI (12702) LVGLTAG: xpos:193,ypos:276[0m
+[0;32mI (12742) LVGLTAG: xpos:195,ypos:276[0m
+[0;32mI (12772) LVGLTAG: xpos:197,ypos:276[0m
+[0;32mI (12802) LVGLTAG: xpos:198,ypos:276[0m
+[0;32mI (12832) LVGLTAG: xpos:200,ypos:276[0m
+[0;32mI (12872) LVGLTAG: xpos:202,ypos:276[0m
+[0;32mI (12902) LVGLTAG: xpos:203,ypos:276[0m
+[0;32mI (12932) LVGLTAG: xpos:205,ypos:276[0m
+[0;32mI (12972) LVGLTAG: xpos:216,ypos:276[0m
+[0;32mI (13662) LVGLTAG: xpos:154,ypos:62[0m
+
+assert failed: tlsf_free tlsf/tlsf.c:1123 (!block_is_free(block) && "block already marked as free")
+Core  0 register dump:
+MEPC    : 0x4080ab4c  RA      : 0x4080ab0a  SP      : 0x40835c90  GP      : 0x40818a84  
+TP      : 0x40835f80  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000064  S1      : 0x00000001  A0      : 0x40835ccc  A1      : 0x4081b375  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x40833000  
+A6      : 0x0000000c  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x40835e03  
+S4      : 0x4081b374  S5      : 0x40835e50  S6      : 0x40835e58  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+40835c90: 0x0000001a 0x0000003b 0x4004e16c 0x40811e9e 0x4081b35c 0x4004e16c 0x4081ba44 0x4004e1b8
+40835cb0: 0x4081b36c 0x40835cc4 0x4081b370 0x4004e2ec 0x4081b374 0x33323131 0x40820200 0x65737361
+40835cd0: 0x66207472 0x656c6961 0x74203a64 0x5f66736c 0x65657266 0x736c7420 0x6c742f66 0x632e6673
+40835cf0: 0x3231313a 0x21282033 0x636f6c62 0x73695f6b 0x6572665f 0x6c622865 0x296b636f 0x20262620
+40835d10: 0x6f6c6222 0x61206b63 0x6165726c 0x6d207964 0x656b7261 0x73612064 0x65726620 0x00292265
+40835d30: 0x000000ff 0x4081f680 0x408202d4 0x42016fa0 0x00000000 0x40835d6c 0x40820598 0x00000008
+40835d50: 0x4080bff6 0x4080c08c 0x40835dd0 0x40818a84 0x40835f80 0x4200c4e8 0x00000000 0x00000000
+40835d70: 0x00000000 0x4085cae8 0x0000001f 0x60010134 0x00000017 0x00000000 0x00000000 0x40833000
+40835d90: 0x0000000c 0x00000000 0x00000000 0xff000000 0x4085cae8 0x0000001a 0x40835ec0 0x00000001
+40835db0: 0x40860000 0x40835e58 0x40833434 0x40026cdc 0x40860000 0x40835e58 0x40833434 0x4002eb6c
+40835dd0: 0x0000001a 0x0000003b 0x40835ec0 0x0000001a 0x40860000 0x40835e58 0x40833420 0x4002d776
+40835df0: 0x4081d010 0x4081e398 0x40835e34 0x40800888 0x4081d010 0x0000001a 0x4085cae8 0x40811f68
+40835e10: 0x4081e398 0x4085cae8 0x00000000 0x40802578 0x4081d010 0x00000001 0x40835e5c 0x4200e47a
+40835e30: 0x0000003d 0x4081e398 0x40835e58 0x00000000 0x00000000 0x4085cae8 0x00000005 0x4200c436
+40835e50: 0x0000001a 0x0000003b 0x40835ec0 0x4081e370 0x4081d010 0x40833000 0x4081f348 0x4200be92
+40835e70: 0x4081d010 0x4081f680 0x4081f348 0x420165d8 0x00000072 0x00000022 0x000000cd 0x0000003b
+40835e90: 0x00000000 0x4081f680 0x4081f348 0x42016aae 0x0000003c 0x00000000 0x00000000 0x420177e2
+40835eb0: 0x00000072 0x00000022 0x000000cd 0x00000050 0x00000072 0x00000022 0x000000cd 0x0000003b
+40835ed0: 0x00000000 0x00000000 0x00000000 0x00000000 0x000033a9 0xffffffff 0x4081e3e4 0x42017ad4
+40835ef0: 0x00000000 0x40835e48 0x4081f6dc 0x42023a10 0x00000000 0x4081f250 0x4081f6dc 0x42023ac8
+40835f10: 0x00000000 0x00000003 0x420e2000 0x4200b9cc 0x420e2034 0x000001a6 0x00000000 0x420dc254
+40835f30: 0x00000000 0x00001388 0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x4080be42
+40835f50: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40835f70: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000150 0x40835d50 0x0000052d
+40835f90: 0x4081c748 0x4081c748 0x40835f88 0x4081c740 0x00000018 0x4085d124 0x4085d124 0x40835f88
+40835fb0: 0x00000000 0x00000001 0x40834f84 0x6e69616d 0x00000000 0x00000000 0x00000000 0x40835f80
+40835fd0: 0x00000001 0x00000000 0x40839e2c 0x420072ce 0x00000000 0x40833a38 0x40833aa0 0x40833b08
+40835ff0: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40026de6 0x00000000
+40836010: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836030: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836050: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40836070: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: fd596c4cb
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080ac42
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (22) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  4 2025 13:52:25[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=420e0020 size=23f98h (147352) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00033fc0 vaddr=40800000 size=0c058h ( 49240) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=dcd44h (904516) map[0m
+[0;32mI (313) esp_image: segment 3: paddr=0011cd6c vaddr=4080c058 size=0c1dch ( 49628) load[0m
+[0;32mI (327) esp_image: segment 4: paddr=00128f50 vaddr=40818280 size=0422ch ( 16940) load[0m
+[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (341) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (353) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (354) cpu_start: Unicore app[0m
+[0;32mI (365) cpu_start: Pro cpu start user code[0m
+[0;32mI (365) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (365) app_init: Application information:[0m
+[0;32mI (366) app_init: Project name:     esp32good[0m
+[0;32mI (369) app_init: App version:      19d941c-dirty[0m
+[0;32mI (374) app_init: Compile time:     Oct  4 2025 13:52:06[0m
+[0;32mI (379) app_init: ELF file SHA256:  fd596c4cb...[0m
+[0;32mI (383) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (387) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (391) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (395) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (399) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (405) heap_init: At 40833420 len 00029180 (164 KiB): RAM[0m
+[0;32mI (410) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (415) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (421) spi_flash: detected chip: generic[0m
+[0;32mI (424) spi_flash: flash io: dio[0m
+[0;33mW (427) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (446) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (452) main_task: Started on CPU0[0m
+[0;32mI (452) main_task: Calling app_main()[0m
+[0;32mI (652) my_lcd: LCD id:0000[0m
+[0;32mI (852) my_lcd: Lcd init Finish[0m
+[0;32mI (1462) TOUCH: Touch I2C device found![0m
+[0;32mI (1472) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (1472) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (1492) wifi:wifi driver task: 40839cd8, prio:23, stack:6656, core=0[0m
+[0;32mI (1492) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1492) wifi:wifi certification version: v7.0[0m
+[0;32mI (1492) wifi:config NVS flash: enabled[0m
+[0;32mI (1492) wifi:config nano formatting: disabled[0m
+[0;32mI (1502) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (1502) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1512) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1512) wifi:Init management short buffer num: 32[0m
+[0;32mI (1522) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1522) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1532) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1532) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1542) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1542) wifi_init: rx ba win: 6[0m
+[0;32mI (1542) wifi_init: accept mbox: 6[0m
+[0;32mI (1552) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1552) wifi_init: udp mbox: 6[0m
+[0;32mI (1552) wifi_init: tcp mbox: 6[0m
+[0;32mI (1552) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1562) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1562) wifi_init: tcp mss: 1440[0m
+[0;32mI (1562) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1572) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1572) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1582) phy_init: phy_version 106,706cee23,Aug 27 2025,19:17:04[0m
+[0;33mW (2202) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (2202) wifi:WDEV_RXOFDM_DELAY:264[0m
+[0;33mW (2202) wifi:WDEV_RX_11G_OFDM_DELAY:265[0m
+[0;33mW (2202) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (2202) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (2202) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2212) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2222) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (2222) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (2232) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (2242) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (2252) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (2252) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2262) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2262) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2272) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2272) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2282) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2282) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (2292) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (2292) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (2302) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (2302) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (2312) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (2312) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (2322) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (2322) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2332) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2342) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2352) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2362) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2372) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2382) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2382) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2392) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (2402) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (2412) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2422) wifi:11ax coex: WDEVAX_PTI0(0x040000a0), WDEVAX_PTI1(0x000092a3).[0m
+
+[0;32mI (2422) wifi:mode : sta (d0:cf:13:e0:b2:44)[0m
+[0;32mI (2432) wifi:enable tsf[0m
+[0;33mW (2432) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (2442) wifi:(cap)capinfo:0x1031, Spectrum Management:0 [0m
+[0;33mW (2452) wifi:(vht)vhtcap:0x3c00191, sgi_rx(80mhz:0, 160/80+80mhz:0), stbc(tx:1, rx:1), ldpc_rx:1, bfmer(su:0, mu:0, nsts:0)[0m
+[0;33mW (2452) wifi:(vht)max.RxMPDULen:1(7991), max.RxAMPDULenExponent:7, max.RxAMPDUpre-EOFpaddingBytes:1048575(0xfffff)[0m
+[0;33mW (2462) wifi:(vht)rx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), tx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), max_rate:144[0m
+[0;33mW (2472) wifi:(vht)bandwidth:0, chan_center_frq_seg0:0, chan_center_frq_seg1:0[0m
+[0;33mW (2482) wifi:(ht)primary_chann:149, ht2ndchan:1[0m
+[0;33mW (2492) wifi:(vht)BSS bandwidth:40MHz[0m
+[0;32mI (2492) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2502) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2502) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2512) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2522) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2532) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2532) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2552) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2552) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2562) wifi:new:<149,0>, old:<1,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x10[0m
+[0;32mI (2572) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (2582) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2592) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2592) wifi:(assoc)RESP, Extended Capabilities length:12, operating_mode_notification:1[0m
+[0;32mI (2592) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:1, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0[0m
+[0;32mI (2602) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2612) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2612) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2622) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2632) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2642) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2642) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2662) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2672) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2672) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2682) wifi:(he)ppe_thresholds_present:0, nominal_packet_padding(rx:2, cfg:2)[0m
+[0;32mI (2682) wifi:(trc)phytype:CBW20-SGI, snr:25, maxRate:172, highestRateIdx:0[0m
+[0;33mW (2692) wifi:(trc)band:5G, phymode:3, highestRateIdx:0, lowestRateIdx:9, dataSchedTableSize:10[0m
+[0;32mI (2702) wifi:(trc)band:5G, rate(L-MCS4, rateIdx:4), ampdu(rate:L-MCS4, schedIdx(4, stop:8)), snr:25, ampduState:wait operational[0m
+[0;32mI (2712) wifi:ifidx:0, rssi:-72, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x7, 11ax), max_rate:172, he:1, vht:1, ht:1[0m
+[0;32mI (2722) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (2742) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 1[0m
+[0;32mI (2742) wifi:connected with HUAWEI-1CADZ0, aid = 1, channel 149, BW20(ABOVE, C0), bssid = 42:78:d7:ac:a6:93[0m
+[0;32mI (2752) wifi:security: WPA2-PSK, phy:ax, rssi:-72, cipher(pairwise:0x3, group:0x3), pmf:0, [0m
+[0;32mI (2762) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (2762) wifi:pm start, type:1, aid:0x1, trans-BSSID:42:78:d7:ac:a6:93, BSSID[5]:0x93, mbssid(max-indicator:0, index:0), he:1[0m
+[0;32mI (2772) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2782) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2792) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2802) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2812) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2822) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2832) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2842) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2852) wfii_log: WIFI CONNECTED[0m
+[0;32mI (3862) esp_netif_handlers: sta ip: 192.168.3.29, mask: 255.255.255.0, gw: 192.168.3.1[0m
+[0;32mI (3862) wfii_log: ESP GOT IP![0m
+[1;31mE (38162) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (38162) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (38162) LVGLTAG: xpos:240,ypos:320[0m

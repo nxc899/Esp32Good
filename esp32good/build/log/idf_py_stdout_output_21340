@@ -1,512 +1,426 @@
-Command: ninja flash
-[1/5] cmd.exe /C "cd /D E:\project\Esp32Good\esp32good\build\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/project/Esp32Good/esp32good/build/partition_table/partition-table.bin E:/project/Esp32Good/esp32good/build/esp32good.bin"
-esp32good.bin binary size 0x6ed50 bytes. Smallest app partition is 0x100000 bytes. 0x912b0 bytes (57%) free.
-[2/5] Performing build step for 'bootloader'
-[1/1] C:\Windows\SYSTEM32\cmd.exe /C "cd /D E:\project\Esp32Good\esp32good\build\bootloader\esp-idf\esptool_py && C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/Administrator/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 E:/project/Esp32Good/esp32good/build/bootloader/bootloader.bin"
-Bootloader binary size 0x56a0 bytes. 0x960 bytes (10%) free.
-[3/5] No install step for 'bootloader'
-[4/5] Completed 'bootloader'
-[4/5] cmd.exe /C "cd /D C:\Users\Administrator\esp\v5.5.1\esp-idf\components\esptool_py && C:\Users\Administrator\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/Administrator/esp/v5.5.1/esp-idf -D SERIAL_TOOL=C:/Users/Administrator/.espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Users/Administrator/esp/v5.5.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c5 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;--no-stub;write_flash;@flash_args -D WORKING_DIRECTORY=E:/project/Esp32Good/esp32good/build -P C:/Users/Administrator/esp/v5.5.1/esp-idf/components/esptool_py/run_serial_tool.cmake"
-esptool.py --chip esp32c5 -p COM3 -b 460800 --before=default_reset --after=hard_reset --no-stub write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x2000 bootloader/bootloader.bin 0x10000 esp32good.bin 0x8000 partition_table/partition-table.bin
-esptool.py v4.10.0
-Serial port COM3
-Connecting...
-Chip is ESP32-C5 (revision v1.0)
-Features: WiFi 6, BT 5, IEEE802.15.4
-Crystal is 48MHz
-MAC: d0:cf:13:ff:fe:e0:b2:44
-BASE MAC: d0:cf:13:e0:b2:44
-MAC_EXT: ff:fe
-ROM expects crystal freq: 48 MHz, detected 48 MHz
-Changing baud rate to 460800
-Changed.
-Enabling default SPI flash mode...
-Configuring flash size...
-Flash will be erased from 0x00002000 to 0x00007fff...
-Flash will be erased from 0x00010000 to 0x0007efff...
-Flash will be erased from 0x00008000 to 0x00008fff...
-Erasing flash...
-SHA digest in image updated
-Took 0.10s to erase flash block
-Writing at 0x00002000... (4 %)
-Writing at 0x00002400... (9 %)
-Writing at 0x00002800... (13 %)
-Writing at 0x00002c00... (18 %)
-Writing at 0x00003000... (22 %)
-Writing at 0x00003400... (27 %)
-Writing at 0x00003800... (31 %)
-Writing at 0x00003c00... (36 %)
-Writing at 0x00004000... (40 %)
-Writing at 0x00004400... (45 %)
-Writing at 0x00004800... (50 %)
-Writing at 0x00004c00... (54 %)
-Writing at 0x00005000... (59 %)
-Writing at 0x00005400... (63 %)
-Writing at 0x00005800... (68 %)
-Writing at 0x00005c00... (72 %)
-Writing at 0x00006000... (77 %)
-Writing at 0x00006400... (81 %)
-Writing at 0x00006800... (86 %)
-Writing at 0x00006c00... (90 %)
-Writing at 0x00007000... (95 %)
-Writing at 0x00007400... (100 %)
-Wrote 22528 bytes at 0x00002000 in 0.2 seconds (1042.8 kbit/s)...
-Hash of data verified.
-Erasing flash...
-Took 0.89s to erase flash block
-Writing at 0x00010000... (0 %)
-Writing at 0x00010400... (0 %)
-Writing at 0x00010800... (0 %)
-Writing at 0x00010c00... (0 %)
-Writing at 0x00011000... (1 %)
-Writing at 0x00011400... (1 %)
-Writing at 0x00011800... (1 %)
-Writing at 0x00011c00... (1 %)
-Writing at 0x00012000... (2 %)
-Writing at 0x00012400... (2 %)
-Writing at 0x00012800... (2 %)
-Writing at 0x00012c00... (2 %)
-Writing at 0x00013000... (2 %)
-Writing at 0x00013400... (3 %)
-Writing at 0x00013800... (3 %)
-Writing at 0x00013c00... (3 %)
-Writing at 0x00014000... (3 %)
-Writing at 0x00014400... (4 %)
-Writing at 0x00014800... (4 %)
-Writing at 0x00014c00... (4 %)
-Writing at 0x00015000... (4 %)
-Writing at 0x00015400... (4 %)
-Writing at 0x00015800... (5 %)
-Writing at 0x00015c00... (5 %)
-Writing at 0x00016000... (5 %)
-Writing at 0x00016400... (5 %)
-Writing at 0x00016800... (6 %)
-Writing at 0x00016c00... (6 %)
-Writing at 0x00017000... (6 %)
-Writing at 0x00017400... (6 %)
-Writing at 0x00017800... (6 %)
-Writing at 0x00017c00... (7 %)
-Writing at 0x00018000... (7 %)
-Writing at 0x00018400... (7 %)
-Writing at 0x00018800... (7 %)
-Writing at 0x00018c00... (8 %)
-Writing at 0x00019000... (8 %)
-Writing at 0x00019400... (8 %)
-Writing at 0x00019800... (8 %)
-Writing at 0x00019c00... (9 %)
-Writing at 0x0001a000... (9 %)
-Writing at 0x0001a400... (9 %)
-Writing at 0x0001a800... (9 %)
-Writing at 0x0001ac00... (9 %)
-Writing at 0x0001b000... (10 %)
-Writing at 0x0001b400... (10 %)
-Writing at 0x0001b800... (10 %)
-Writing at 0x0001bc00... (10 %)
-Writing at 0x0001c000... (11 %)
-Writing at 0x0001c400... (11 %)
-Writing at 0x0001c800... (11 %)
-Writing at 0x0001cc00... (11 %)
-Writing at 0x0001d000... (11 %)
-Writing at 0x0001d400... (12 %)
-Writing at 0x0001d800... (12 %)
-Writing at 0x0001dc00... (12 %)
-Writing at 0x0001e000... (12 %)
-Writing at 0x0001e400... (13 %)
-Writing at 0x0001e800... (13 %)
-Writing at 0x0001ec00... (13 %)
-Writing at 0x0001f000... (13 %)
-Writing at 0x0001f400... (13 %)
-Writing at 0x0001f800... (14 %)
-Writing at 0x0001fc00... (14 %)
-Writing at 0x00020000... (14 %)
-Writing at 0x00020400... (14 %)
-Writing at 0x00020800... (15 %)
-Writing at 0x00020c00... (15 %)
-Writing at 0x00021000... (15 %)
-Writing at 0x00021400... (15 %)
-Writing at 0x00021800... (15 %)
-Writing at 0x00021c00... (16 %)
-Writing at 0x00022000... (16 %)
-Writing at 0x00022400... (16 %)
-Writing at 0x00022800... (16 %)
-Writing at 0x00022c00... (17 %)
-Writing at 0x00023000... (17 %)
-Writing at 0x00023400... (17 %)
-Writing at 0x00023800... (17 %)
-Writing at 0x00023c00... (18 %)
-Writing at 0x00024000... (18 %)
-Writing at 0x00024400... (18 %)
-Writing at 0x00024800... (18 %)
-Writing at 0x00024c00... (18 %)
-Writing at 0x00025000... (19 %)
-Writing at 0x00025400... (19 %)
-Writing at 0x00025800... (19 %)
-Writing at 0x00025c00... (19 %)
-Writing at 0x00026000... (20 %)
-Writing at 0x00026400... (20 %)
-Writing at 0x00026800... (20 %)
-Writing at 0x00026c00... (20 %)
-Writing at 0x00027000... (20 %)
-Writing at 0x00027400... (21 %)
-Writing at 0x00027800... (21 %)
-Writing at 0x00027c00... (21 %)
-Writing at 0x00028000... (21 %)
-Writing at 0x00028400... (22 %)
-Writing at 0x00028800... (22 %)
-Writing at 0x00028c00... (22 %)
-Writing at 0x00029000... (22 %)
-Writing at 0x00029400... (22 %)
-Writing at 0x00029800... (23 %)
-Writing at 0x00029c00... (23 %)
-Writing at 0x0002a000... (23 %)
-Writing at 0x0002a400... (23 %)
-Writing at 0x0002a800... (24 %)
-Writing at 0x0002ac00... (24 %)
-Writing at 0x0002b000... (24 %)
-Writing at 0x0002b400... (24 %)
-Writing at 0x0002b800... (25 %)
-Writing at 0x0002bc00... (25 %)
-Writing at 0x0002c000... (25 %)
-Writing at 0x0002c400... (25 %)
-Writing at 0x0002c800... (25 %)
-Writing at 0x0002cc00... (26 %)
-Writing at 0x0002d000... (26 %)
-Writing at 0x0002d400... (26 %)
-Writing at 0x0002d800... (26 %)
-Writing at 0x0002dc00... (27 %)
-Writing at 0x0002e000... (27 %)
-Writing at 0x0002e400... (27 %)
-Writing at 0x0002e800... (27 %)
-Writing at 0x0002ec00... (27 %)
-Writing at 0x0002f000... (28 %)
-Writing at 0x0002f400... (28 %)
-Writing at 0x0002f800... (28 %)
-Writing at 0x0002fc00... (28 %)
-Writing at 0x00030000... (29 %)
-Writing at 0x00030400... (29 %)
-Writing at 0x00030800... (29 %)
-Writing at 0x00030c00... (29 %)
-Writing at 0x00031000... (29 %)
-Writing at 0x00031400... (30 %)
-Writing at 0x00031800... (30 %)
-Writing at 0x00031c00... (30 %)
-Writing at 0x00032000... (30 %)
-Writing at 0x00032400... (31 %)
-Writing at 0x00032800... (31 %)
-Writing at 0x00032c00... (31 %)
-Writing at 0x00033000... (31 %)
-Writing at 0x00033400... (31 %)
-Writing at 0x00033800... (32 %)
-Writing at 0x00033c00... (32 %)
-Writing at 0x00034000... (32 %)
-Writing at 0x00034400... (32 %)
-Writing at 0x00034800... (33 %)
-Writing at 0x00034c00... (33 %)
-Writing at 0x00035000... (33 %)
-Writing at 0x00035400... (33 %)
-Writing at 0x00035800... (34 %)
-Writing at 0x00035c00... (34 %)
-Writing at 0x00036000... (34 %)
-Writing at 0x00036400... (34 %)
-Writing at 0x00036800... (34 %)
-Writing at 0x00036c00... (35 %)
-Writing at 0x00037000... (35 %)
-Writing at 0x00037400... (35 %)
-Writing at 0x00037800... (35 %)
-Writing at 0x00037c00... (36 %)
-Writing at 0x00038000... (36 %)
-Writing at 0x00038400... (36 %)
-Writing at 0x00038800... (36 %)
-Writing at 0x00038c00... (36 %)
-Writing at 0x00039000... (37 %)
-Writing at 0x00039400... (37 %)
-Writing at 0x00039800... (37 %)
-Writing at 0x00039c00... (37 %)
-Writing at 0x0003a000... (38 %)
-Writing at 0x0003a400... (38 %)
-Writing at 0x0003a800... (38 %)
-Writing at 0x0003ac00... (38 %)
-Writing at 0x0003b000... (38 %)
-Writing at 0x0003b400... (39 %)
-Writing at 0x0003b800... (39 %)
-Writing at 0x0003bc00... (39 %)
-Writing at 0x0003c000... (39 %)
-Writing at 0x0003c400... (40 %)
-Writing at 0x0003c800... (40 %)
-Writing at 0x0003cc00... (40 %)
-Writing at 0x0003d000... (40 %)
-Writing at 0x0003d400... (40 %)
-Writing at 0x0003d800... (41 %)
-Writing at 0x0003dc00... (41 %)
-Writing at 0x0003e000... (41 %)
-Writing at 0x0003e400... (41 %)
-Writing at 0x0003e800... (42 %)
-Writing at 0x0003ec00... (42 %)
-Writing at 0x0003f000... (42 %)
-Writing at 0x0003f400... (42 %)
-Writing at 0x0003f800... (43 %)
-Writing at 0x0003fc00... (43 %)
-Writing at 0x00040000... (43 %)
-Writing at 0x00040400... (43 %)
-Writing at 0x00040800... (43 %)
-Writing at 0x00040c00... (44 %)
-Writing at 0x00041000... (44 %)
-Writing at 0x00041400... (44 %)
-Writing at 0x00041800... (44 %)
-Writing at 0x00041c00... (45 %)
-Writing at 0x00042000... (45 %)
-Writing at 0x00042400... (45 %)
-Writing at 0x00042800... (45 %)
-Writing at 0x00042c00... (45 %)
-Writing at 0x00043000... (46 %)
-Writing at 0x00043400... (46 %)
-Writing at 0x00043800... (46 %)
-Writing at 0x00043c00... (46 %)
-Writing at 0x00044000... (47 %)
-Writing at 0x00044400... (47 %)
-Writing at 0x00044800... (47 %)
-Writing at 0x00044c00... (47 %)
-Writing at 0x00045000... (47 %)
-Writing at 0x00045400... (48 %)
-Writing at 0x00045800... (48 %)
-Writing at 0x00045c00... (48 %)
-Writing at 0x00046000... (48 %)
-Writing at 0x00046400... (49 %)
-Writing at 0x00046800... (49 %)
-Writing at 0x00046c00... (49 %)
-Writing at 0x00047000... (49 %)
-Writing at 0x00047400... (50 %)
-Writing at 0x00047800... (50 %)
-Writing at 0x00047c00... (50 %)
-Writing at 0x00048000... (50 %)
-Writing at 0x00048400... (50 %)
-Writing at 0x00048800... (51 %)
-Writing at 0x00048c00... (51 %)
-Writing at 0x00049000... (51 %)
-Writing at 0x00049400... (51 %)
-Writing at 0x00049800... (52 %)
-Writing at 0x00049c00... (52 %)
-Writing at 0x0004a000... (52 %)
-Writing at 0x0004a400... (52 %)
-Writing at 0x0004a800... (52 %)
-Writing at 0x0004ac00... (53 %)
-Writing at 0x0004b000... (53 %)
-Writing at 0x0004b400... (53 %)
-Writing at 0x0004b800... (53 %)
-Writing at 0x0004bc00... (54 %)
-Writing at 0x0004c000... (54 %)
-Writing at 0x0004c400... (54 %)
-Writing at 0x0004c800... (54 %)
-Writing at 0x0004cc00... (54 %)
-Writing at 0x0004d000... (55 %)
-Writing at 0x0004d400... (55 %)
-Writing at 0x0004d800... (55 %)
-Writing at 0x0004dc00... (55 %)
-Writing at 0x0004e000... (56 %)
-Writing at 0x0004e400... (56 %)
-Writing at 0x0004e800... (56 %)
-Writing at 0x0004ec00... (56 %)
-Writing at 0x0004f000... (56 %)
-Writing at 0x0004f400... (57 %)
-Writing at 0x0004f800... (57 %)
-Writing at 0x0004fc00... (57 %)
-Writing at 0x00050000... (57 %)
-Writing at 0x00050400... (58 %)
-Writing at 0x00050800... (58 %)
-Writing at 0x00050c00... (58 %)
-Writing at 0x00051000... (58 %)
-Writing at 0x00051400... (59 %)
-Writing at 0x00051800... (59 %)
-Writing at 0x00051c00... (59 %)
-Writing at 0x00052000... (59 %)
-Writing at 0x00052400... (59 %)
-Writing at 0x00052800... (60 %)
-Writing at 0x00052c00... (60 %)
-Writing at 0x00053000... (60 %)
-Writing at 0x00053400... (60 %)
-Writing at 0x00053800... (61 %)
-Writing at 0x00053c00... (61 %)
-Writing at 0x00054000... (61 %)
-Writing at 0x00054400... (61 %)
-Writing at 0x00054800... (61 %)
-Writing at 0x00054c00... (62 %)
-Writing at 0x00055000... (62 %)
-Writing at 0x00055400... (62 %)
-Writing at 0x00055800... (62 %)
-Writing at 0x00055c00... (63 %)
-Writing at 0x00056000... (63 %)
-Writing at 0x00056400... (63 %)
-Writing at 0x00056800... (63 %)
-Writing at 0x00056c00... (63 %)
-Writing at 0x00057000... (64 %)
-Writing at 0x00057400... (64 %)
-Writing at 0x00057800... (64 %)
-Writing at 0x00057c00... (64 %)
-Writing at 0x00058000... (65 %)
-Writing at 0x00058400... (65 %)
-Writing at 0x00058800... (65 %)
-Writing at 0x00058c00... (65 %)
-Writing at 0x00059000... (65 %)
-Writing at 0x00059400... (66 %)
-Writing at 0x00059800... (66 %)
-Writing at 0x00059c00... (66 %)
-Writing at 0x0005a000... (66 %)
-Writing at 0x0005a400... (67 %)
-Writing at 0x0005a800... (67 %)
-Writing at 0x0005ac00... (67 %)
-Writing at 0x0005b000... (67 %)
-Writing at 0x0005b400... (68 %)
-Writing at 0x0005b800... (68 %)
-Writing at 0x0005bc00... (68 %)
-Writing at 0x0005c000... (68 %)
-Writing at 0x0005c400... (68 %)
-Writing at 0x0005c800... (69 %)
-Writing at 0x0005cc00... (69 %)
-Writing at 0x0005d000... (69 %)
-Writing at 0x0005d400... (69 %)
-Writing at 0x0005d800... (70 %)
-Writing at 0x0005dc00... (70 %)
-Writing at 0x0005e000... (70 %)
-Writing at 0x0005e400... (70 %)
-Writing at 0x0005e800... (70 %)
-Writing at 0x0005ec00... (71 %)
-Writing at 0x0005f000... (71 %)
-Writing at 0x0005f400... (71 %)
-Writing at 0x0005f800... (71 %)
-Writing at 0x0005fc00... (72 %)
-Writing at 0x00060000... (72 %)
-Writing at 0x00060400... (72 %)
-Writing at 0x00060800... (72 %)
-Writing at 0x00060c00... (72 %)
-Writing at 0x00061000... (73 %)
-Writing at 0x00061400... (73 %)
-Writing at 0x00061800... (73 %)
-Writing at 0x00061c00... (73 %)
-Writing at 0x00062000... (74 %)
-Writing at 0x00062400... (74 %)
-Writing at 0x00062800... (74 %)
-Writing at 0x00062c00... (74 %)
-Writing at 0x00063000... (75 %)
-Writing at 0x00063400... (75 %)
-Writing at 0x00063800... (75 %)
-Writing at 0x00063c00... (75 %)
-Writing at 0x00064000... (75 %)
-Writing at 0x00064400... (76 %)
-Writing at 0x00064800... (76 %)
-Writing at 0x00064c00... (76 %)
-Writing at 0x00065000... (76 %)
-Writing at 0x00065400... (77 %)
-Writing at 0x00065800... (77 %)
-Writing at 0x00065c00... (77 %)
-Writing at 0x00066000... (77 %)
-Writing at 0x00066400... (77 %)
-Writing at 0x00066800... (78 %)
-Writing at 0x00066c00... (78 %)
-Writing at 0x00067000... (78 %)
-Writing at 0x00067400... (78 %)
-Writing at 0x00067800... (79 %)
-Writing at 0x00067c00... (79 %)
-Writing at 0x00068000... (79 %)
-Writing at 0x00068400... (79 %)
-Writing at 0x00068800... (79 %)
-Writing at 0x00068c00... (80 %)
-Writing at 0x00069000... (80 %)
-Writing at 0x00069400... (80 %)
-Writing at 0x00069800... (80 %)
-Writing at 0x00069c00... (81 %)
-Writing at 0x0006a000... (81 %)
-Writing at 0x0006a400... (81 %)
-Writing at 0x0006a800... (81 %)
-Writing at 0x0006ac00... (81 %)
-Writing at 0x0006b000... (82 %)
-Writing at 0x0006b400... (82 %)
-Writing at 0x0006b800... (82 %)
-Writing at 0x0006bc00... (82 %)
-Writing at 0x0006c000... (83 %)
-Writing at 0x0006c400... (83 %)
-Writing at 0x0006c800... (83 %)
-Writing at 0x0006cc00... (83 %)
-Writing at 0x0006d000... (84 %)
-Writing at 0x0006d400... (84 %)
-Writing at 0x0006d800... (84 %)
-Writing at 0x0006dc00... (84 %)
-Writing at 0x0006e000... (84 %)
-Writing at 0x0006e400... (85 %)
-Writing at 0x0006e800... (85 %)
-Writing at 0x0006ec00... (85 %)
-Writing at 0x0006f000... (85 %)
-Writing at 0x0006f400... (86 %)
-Writing at 0x0006f800... (86 %)
-Writing at 0x0006fc00... (86 %)
-Writing at 0x00070000... (86 %)
-Writing at 0x00070400... (86 %)
-Writing at 0x00070800... (87 %)
-Writing at 0x00070c00... (87 %)
-Writing at 0x00071000... (87 %)
-Writing at 0x00071400... (87 %)
-Writing at 0x00071800... (88 %)
-Writing at 0x00071c00... (88 %)
-Writing at 0x00072000... (88 %)
-Writing at 0x00072400... (88 %)
-Writing at 0x00072800... (88 %)
-Writing at 0x00072c00... (89 %)
-Writing at 0x00073000... (89 %)
-Writing at 0x00073400... (89 %)
-Writing at 0x00073800... (89 %)
-Writing at 0x00073c00... (90 %)
-Writing at 0x00074000... (90 %)
-Writing at 0x00074400... (90 %)
-Writing at 0x00074800... (90 %)
-Writing at 0x00074c00... (90 %)
-Writing at 0x00075000... (91 %)
-Writing at 0x00075400... (91 %)
-Writing at 0x00075800... (91 %)
-Writing at 0x00075c00... (91 %)
-Writing at 0x00076000... (92 %)
-Writing at 0x00076400... (92 %)
-Writing at 0x00076800... (92 %)
-Writing at 0x00076c00... (92 %)
-Writing at 0x00077000... (93 %)
-Writing at 0x00077400... (93 %)
-Writing at 0x00077800... (93 %)
-Writing at 0x00077c00... (93 %)
-Writing at 0x00078000... (93 %)
-Writing at 0x00078400... (94 %)
-Writing at 0x00078800... (94 %)
-Writing at 0x00078c00... (94 %)
-Writing at 0x00079000... (94 %)
-Writing at 0x00079400... (95 %)
-Writing at 0x00079800... (95 %)
-Writing at 0x00079c00... (95 %)
-Writing at 0x0007a000... (95 %)
-Writing at 0x0007a400... (95 %)
-Writing at 0x0007a800... (96 %)
-Writing at 0x0007ac00... (96 %)
-Writing at 0x0007b000... (96 %)
-Writing at 0x0007b400... (96 %)
-Writing at 0x0007b800... (97 %)
-Writing at 0x0007bc00... (97 %)
-Writing at 0x0007c000... (97 %)
-Writing at 0x0007c400... (97 %)
-Writing at 0x0007c800... (97 %)
-Writing at 0x0007cc00... (98 %)
-Writing at 0x0007d000... (98 %)
-Writing at 0x0007d400... (98 %)
-Writing at 0x0007d800... (98 %)
-Writing at 0x0007dc00... (99 %)
-Writing at 0x0007e000... (99 %)
-Writing at 0x0007e400... (99 %)
-Writing at 0x0007e800... (99 %)
-Writing at 0x0007ec00... (100 %)
-Wrote 454656 bytes at 0x00010000 in 3.4 seconds (1057.0 kbit/s)...
-Hash of data verified.
-Erasing flash...
-Took 0.02s to erase flash block
-Writing at 0x00008000... (33 %)
-Writing at 0x00008400... (66 %)
-Writing at 0x00008800... (100 %)
-Wrote 3072 bytes at 0x00008000 in 0.0 seconds (1121.4 kbit/s)...
-Hash of data verified.
+Command: C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Administrator\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace E:\project\Esp32Good\esp32good\build\esp32good.elf E:\project\Esp32Good\esp32good\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Administrator\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Administrator\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;32mI (104) esp_image: segment 1: paddr=00032a90 vaddr=40800000 sizeimage header(2048k)ESP-ROM:esp32c5-eco2-20250121[0m
+Build:Jan 21 2025
+rst:0x15 (USB_UART_HPSYS),boot:0x3c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4003af4e
+SPI mode:DIO, clock div:1
+load:0x408556b0,len:0x1710
+load:0x4084bba0,len:0xd9c
+load:0x4084e5a0,len:0x3198
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Oct  3 2025 22:58:38[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (27) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=22a68h (141928) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=00032a90 vaddr=40800000 size=0d588h ( 54664) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=c1e74h (794228) map[0m
+[0;32mI (238) esp_image: segment 3: paddr=00101e9c vaddr=4080d588 size=0acach ( 44204) load[0m
+[0;32mI (247) esp_image: segment 4: paddr=0010cb50 vaddr=40818280 size=041cch ( 16844) load[0m
+[0;32mI (256) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (257) boot: Disabling RNG early entropy source...[0m
+[0;32mI (267) MSPI Timing: tuning success, best point is index 4[0m
+[0;32mI (267) MSPI Timing: Flash timing tuning index: 4[0m
+[0;32mI (268) cpu_start: Unicore app[0m
+[0;32mI (612) my_lcd: LCD id:0000[0m
+[0;32mI (812) my_lcd: Lcd init Finish[0m
+[0;32mI (1542) TOUCH: Touch I2C device found![0m
+[0;32mI (1542) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (1542) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (1562) wifi:wifi driver task: 4082ca40, prio:23, stack:6656, core=0[0m
+[0;32mI (1562) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1562) wifi:wifi certification version: v7.0[0m
+[0;32mI (1562) wifi:config NVS flash: enabled[0m
+[0;32mI (1562) wifi:config nano formatting: disabled[0m
+[0;32mI (1572) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (1572) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1582) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1582) wifi:Init management short buffer num: 32[0m
+[0;32mI (1592) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1592) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1602) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1602) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1602) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1612) wifi_init: rx ba win: 6[0m
+[0;32mI (1612) wifi_init: accept mbox: 6[0m
+[0;32mI (1622) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1622) wifi_init: udp mbox: 6[0m
+[0;32mI (1622) wifi_init: tcp mbox: 6[0m
+[0;32mI (1622) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1632) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1632) wifi_init: tcp mss: 1440[0m
+[0;32mI (1632) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1642) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1642) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1662) phy_init: phy_version 106,706cee23,Aug 27 2025,19:17:04[0m
+[0;33mW (1662) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (2272) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (2272) wifi:WDEV_RXOFDM_DELAY:258[0m
+[0;33mW (2272) wifi:WDEV_RX_11G_OFDM_DELAY:259[0m
+[0;33mW (2272) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (2272) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (2282) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2282) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2292) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (2302) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (2312) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (2322) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (2322) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (2332) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2332) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2342) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2342) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2352) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2352) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2362) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (2362) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (2372) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (2372) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (2382) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (2382) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (2392) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (2392) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (2402) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2412) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2422) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2422) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2432) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2442) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2452) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2462) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2472) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (2482) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (2482) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2492) wifi:11ax coex: WDEVAX_PTI0(0x040000a0), WDEVAX_PTI1(0x00007284).[0m
 
-Leaving...
-Hard resetting via RTS pin...
+[0;32mI (2502) wifi:mode : sta (d0:cf:13:e0:b2:44)[0m
+[0;32mI (2502) wifi:enable tsf[0m
+[0;33mW (2502) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (8322) wifi:(cap)capinfo:0x1031, Spectrum Management:0 [0m
+[0;33mW (8322) wifi:(vht)vhtcap:0x3c00191, sgi_rx(80mhz:0, 160/80+80mhz:0), stbc(tx:1, rx:1), ldpc_rx:1, bfmer(su:0, mu:0, nsts:0)[0m
+[0;33mW (8322) wifi:(vht)max.RxMPDULen:1(7991), max.RxAMPDULenExponent:7, max.RxAMPDUpre-EOFpaddingBytes:1048575(0xfffff)[0m
+[0;33mW (8332) wifi:(vht)rx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), tx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), max_rate:144[0m
+[0;33mW (8342) wifi:(vht)bandwidth:0, chan_center_frq_seg0:0, chan_center_frq_seg1:0[0m
+[0;33mW (8352) wifi:(ht)primary_chann:149, ht2ndchan:1[0m
+[0;33mW (8352) wifi:(vht)BSS bandwidth:40MHz[0m
+[0;32mI (8362) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (8372) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (8372) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (8382) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (8382) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (8392) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (8402) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (8412) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (8422) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (8582) wifi:new:<149,0>, old:<1,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x10[0m
+[0;32mI (8582) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (8582) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8592) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8592) wifi:(assoc)RESP, Extended Capabilities length:12, operating_mode_notification:1[0m
+[0;32mI (8602) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:1, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0[0m
+[0;32mI (8612) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (8622) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (8622) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (8632) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (8642) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (8652) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (8652) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (8672) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (8672) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (8682) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8682) wifi:(he)ppe_thresholds_present:0, nominal_packet_padding(rx:2, cfg:2)[0m
+[0;32mI (8692) wifi:(trc)phytype:CBW20-SGI, snr:22, maxRate:172, highestRateIdx:0[0m
+[0;33mW (8702) wifi:(trc)band:5G, phymode:3, highestRateIdx:0, lowestRateIdx:9, dataSchedTableSize:10[0m
+[0;32mI (8712) wifi:(trc)band:5G, rate(L-MCS4, rateIdx:4), ampdu(rate:L-MCS4, schedIdx(4, stop:8)), snr:22, ampduState:wait operational[0m
+[0;32mI (8722) wifi:ifidx:0, rssi:-76, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x7, 11ax), max_rate:172, he:1, vht:1, ht:1[0m
+[0;32mI (8732) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (8752) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 1[0m
+[0;32mI (8752) wifi:connected with HUAWEI-1CADZ0, aid = 4, channel 149, BW20(ABOVE, C0), bssid = 42:78:d7:ac:a6:93[0m
+[0;32mI (8762) wifi:security: WPA2-PSK, phy:ax, rssi:-76, cipher(pairwise:0x3, group:0x3), pmf:0, [0m
+[0;32mI (8782) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (8782) wifi:pm start, type:1, aid:0x4, trans-BSSID:42:78:d7:ac:a6:93, BSSID[5]:0x93, mbssid(max-indicator:0, index:0), he:1[0m
+[0;32mI (8782) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (8792) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (8802) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (8812) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (8832) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (8832) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (8842) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (8852) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (8862) wfii_log: WIFI CONNECTED[0m
+[0;32mI (9872) esp_netif_handlers: sta ip: 192.168.3.29, mask: 255.255.255.0, gw: 192.168.3.1[0m
+[0;32mI (315) app_init: Application information:[0m
+[0;32mI (315) app_init: Project name:     esp32good[0m
+[0;32mI (319) app_init: App version:      19d941c-dirty[0m
+[0;32mI (323) app_init: Compile time:     Oct  3 2025 22:58:17[0m
+[0;32mI (328) app_init: ELF file SHA256:  ac3b34414...[0m
+[0;32mI (333) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (337) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (340) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (344) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (348) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (355) heap_init: At 40826330 len 00036270 (216 KiB): RAM[0m
+[0;32mI (360) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (365) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (371) spi_flash: detected chip: generic[0m
+[0;32mI (374) spi_flash: flash io: dio[0m
+[0;33mW (377) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (389) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (395) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (402) main_task: Started on CPU0[0m
+[0;32mI (402) main_task: Calling app_main()[0m
+[0;32mI (602) my_lcd: LCD id:0000[0m
+[0;32mI (802) my_lcd: Lcd init Finish[0m
+[0;32mI (1532) TOUCH: Touch I2C device found![0m
+[0;32mI (1542) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (1542) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (1552) wifi:wifi driver task: 4082cb48, prio:23, stack:6656, core=0[0m
+[0;32mI (1552) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1552) wifi:wifi certification version: v7.0[0m
+[0;32mI (1552) wifi:config NVS flash: enabled[0m
+[0;32mI (1562) wifi:config nano formatting: disabled[0m
+[0;32mI (1562) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (1572) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1572) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1582) wifi:Init management short buffer num: 32[0m
+[0;32mI (1582) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1582) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1592) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1602) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1602) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1602) wifi_init: rx ba win: 6[0m
+[0;32mI (1612) wifi_init: accept mbox: 6[0m
+[0;32mI (1612) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1612) wifi_init: udp mbox: 6[0m
+[0;32mI (1612) wifi_init: tcp mbox: 6[0m
+[0;32mI (1622) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1622) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1622) wifi_init: tcp mss: 1440[0m
+[0;32mI (1632) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1632) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1642) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1642) phy_init: phy_version 106,706cee23,Aug 27 2025,19:17:04[0m
+[0;33mW (2252) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (2252) wifi:WDEV_RXOFDM_DELAY:266[0m
+[0;33mW (2252) wifi:WDEV_RX_11G_OFDM_DELAY:267[0m
+[0;33mW (2252) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (2252) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (2262) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2262) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2272) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (2282) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (2292) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (2302) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (2302) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (2312) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2312) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2322) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2322) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2332) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2332) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2342) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (2342) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (2352) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (2352) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (2362) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (2362) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (2372) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (2372) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (2382) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2392) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2402) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2402) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2412) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2422) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2432) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2442) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2452) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (2462) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (2462) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2472) wifi:11ax coex: WDEVAX_PTI0(0x040000a0), WDEVAX_PTI1(0x00007284).[0m
+
+[0;32mI (2482) wifi:mode : sta (d0:cf:13:e0:b2:44)[0m
+[0;32mI (2482) wifi:enable tsf[0m
+[0;33mW (2482) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (2502) wifi:(cap)capinfo:0x1031, Spectrum Management:0 [0m
+[0;33mW (2502) wifi:(vht)vhtcap:0x3c00191, sgi_rx(80mhz:0, 160/80+80mhz:0), stbc(tx:1, rx:1), ldpc_rx:1, bfmer(su:0, mu:0, nsts:0)[0m
+[0;33mW (2512) wifi:(vht)max.RxMPDULen:1(7991), max.RxAMPDULenExponent:7, max.RxAMPDUpre-EOFpaddingBytes:1048575(0xfffff)[0m
+[0;33mW (2522) wifi:(vht)rx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), tx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), max_rate:144[0m
+[0;33mW (2532) wifi:(vht)bandwidth:0, chan_center_frq_seg0:0, chan_center_frq_seg1:0[0m
+[0;33mW (2542) wifi:(ht)primary_chann:149, ht2ndchan:1[0m
+[0;33mW (2542) wifi:(vht)BSS bandwidth:40MHz[0m
+[0;32mI (2542) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2552) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2562) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2562) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2572) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2582) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2592) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2602) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2612) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2622) wifi:new:<149,0>, old:<1,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x10[0m
+[0;32mI (2622) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (2632) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2632) wifi:state: auth -> init (0xe00)[0m
+[0;32mI (2652) wifi:new:<149,0>, old:<149,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2652) wfii_log: WIFI DISCONNECTED[0m
+[0;32mI (315) cpu_start: Pro cpu start user code[0m
+[0;32mI (315) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (315) app_init: Application information:[0m
+[0;32mI (315) app_init: Project name:     esp32good[0m
+[0;32mI (319) app_init: App version:      19d941c-dirty[0m
+[0;32mI (323) app_init: Compile time:     Oct  3 2025 22:58:17[0m
+[0;32mI (328) app_init: ELF file SHA256:  ac3b34414...[0m
+[0;32mI (333) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (337) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (340) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (344) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (348) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (355) heap_init: At 40826330 len 00036270 (216 KiB): RAM[0m
+[0;32mI (360) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (365) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (371) spi_flash: detected chip: generic[0m
+[0;32mI (374) spi_flash: flash io: dio[0m
+[0;33mW (377) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (389) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (395) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (402) main_task: Started on CPU0[0m
+[0;32mI (402) main_task: Calling app_main()[0m
+[0;32mI (602) my_lcd: LCD id:0000[0m
+[0;32mI (802) my_lcd: Lcd init Finish[0m
+[0;32mI (1532) TOUCH: Touch I2C device found![0m
+[0;32mI (1542) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (1542) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (1552) wifi:wifi driver task: 4082cb48, prio:23, stack:6656, core=0[0m
+[0;32mI (1552) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1552) wifi:wifi certification version: v7.0[0m
+[0;32mI (1552) wifi:config NVS flash: enabled[0m
+[0;32mI (1562) wifi:config nano formatting: disabled[0m
+[0;32mI (1562) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (1572) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1572) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1582) wifi:Init management short buffer num: 32[0m
+[0;32mI (1582) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1582) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1592) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1602) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1602) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1602) wifi_init: rx ba win: 6[0m
+[0;32mI (1612) wifi_init: accept mbox: 6[0m
+[0;32mI (1612) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1612) wifi_init: udp mbox: 6[0m
+[0;32mI (1612) wifi_init: tcp mbox: 6[0m
+[0;32mI (1622) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1622) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1622) wifi_init: tcp mss: 1440[0m
+[0;32mI (1632) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1632) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1642) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1642) phy_init: phy_version 106,706cee23,Aug 27 2025,19:17:04[0m
+[0;33mW (2252) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (2252) wifi:WDEV_RXOFDM_DELAY:265[0m
+[0;33mW (2252) wifi:WDEV_RX_11G_OFDM_DELAY:266[0m
+[0;33mW (2252) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (2252) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (2252) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2262) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (2272) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (2282) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (2282) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (2292) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (2302) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (2302) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2312) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2312) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2322) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (2322) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (2332) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (2332) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (2342) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (2342) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (2352) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (2352) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (2362) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (2372) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (2372) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (2382) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2382) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (2392) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2402) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (2412) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2422) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2432) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2442) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (2442) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (2452) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (2462) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2472) wifi:11ax coex: WDEVAX_PTI0(0x040000a0), WDEVAX_PTI1(0x00007284).[0m
+
+[0;32mI (2482) wifi:mode : sta (d0:cf:13:e0:b2:44)[0m
+[0;32mI (2482) wifi:enable tsf[0m
+[0;33mW (2482) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (2502) wifi:(cap)capinfo:0x1031, Spectrum Management:0 [0m
+[0;33mW (2502) wifi:(vht)vhtcap:0x3c00191, sgi_rx(80mhz:0, 160/80+80mhz:0), stbc(tx:1, rx:1), ldpc_rx:1, bfmer(su:0, mu:0, nsts:0)[0m
+[0;33mW (2502) wifi:(vht)max.RxMPDULen:1(7991), max.RxAMPDULenExponent:7, max.RxAMPDUpre-EOFpaddingBytes:1048575(0xfffff)[0m
+[0;33mW (2512) wifi:(vht)rx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), tx(mcs:0xfffa, highest:0x190, highest_lgi_rate:400), max_rate:144[0m
+[0;33mW (2532) wifi:(vht)bandwidth:0, chan_center_frq_seg0:0, chan_center_frq_seg1:0[0m
+[0;33mW (2532) wifi:(ht)primary_chann:149, ht2ndchan:1[0m
+[0;33mW (2542) wifi:(vht)BSS bandwidth:40MHz[0m
+[0;32mI (2542) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2552) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2552) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2562) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2572) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2582) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2582) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2602) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2612) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2622) wifi:new:<149,0>, old:<1,0>, ap:<255,255>, sta:<149,0>, prof:1, snd_ch_cfg:0x10[0m
+[0;32mI (2622) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (2632) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2642) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2642) wifi:(assoc)RESP, Extended Capabilities length:12, operating_mode_notification:1[0m
+[0;32mI (2642) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:1, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0[0m
+[0;32mI (2652) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2662) wifi:(mac)omc_ul_mu_data_disable_rx:0[0m
+[0;32mI (2672) wifi:(phy)ppe_thresholds_present:0, nominal_packet_padding:2[0m
+[0;32mI (2672) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:3, nss:0)[0m
+[0;32mI (2682) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:0, mu:0), ldpc:1, max_rate:172[0m
+[0;33mW (2692) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (2702) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2712) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2722) wifi:(opr)len:7, BSS Color:14, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2722) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2732) wifi:(he)ppe_thresholds_present:0, nominal_packet_padding(rx:2, cfg:2)[0m
+[0;32mI (2732) wifi:(trc)phytype:CBW20-SGI, snr:23, maxRate:172, highestRateIdx:0[0m
+[0;33mW (2742) wifi:(trc)band:5G, phymode:3, highestRateIdx:0, lowestRateIdx:9, dataSchedTableSize:10[0m
+[0;32mI (2752) wifi:(trc)band:5G, rate(L-MCS4, rateIdx:4), ampdu(rate:L-MCS4, schedIdx(4, stop:8)), snr:23, ampduState:wait operational[0m
+[0;32mI (2762) wifi:ifidx:0, rssi:-74, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x7, 11ax), max_rate:172, he:1, vht:1, ht:1[0m
+[0;32mI (2772) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (2792) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 1[0m
+[0;32mI (2792) wifi:connected with HUAWEI-1CADZ0, aid = 4, channel 149, BW20(ABOVE, C0), bssid = 42:78:d7:ac:a6:93[0m
+[0;32mI (2802) wifi:security: WPA2-PSK, phy:ax, rssi:-74, cipher(pairwise:0x3, group:0x3), pmf:0, [0m
+[0;32mI (2812) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (2812) wifi:pm start, type:1, aid:0x4, trans-BSSID:42:78:d7:ac:a6:93, BSSID[5]:0x93, mbssid(max-indicator:0, index:0), he:1[0m
+[0;32mI (2822) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2832) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2842) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2852) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2862) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2872) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2882) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2892) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:32[0m
+[0;32mI (2902) wfii_log: WIFI CONNECTED[0m
+[0;32mI (3912) esp_netif_handlers: sta ip: 192.168.3.29, mask: 255.255.255.0, gw: 192.168.3.1[0m

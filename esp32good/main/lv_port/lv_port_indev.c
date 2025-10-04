@@ -125,13 +125,13 @@ static bool touchpad_is_pressed(void)
 /*Get the x and y coordinates if the touchpad is pressed*/
 static void touchpad_get_xy(int32_t * x, int32_t * y)
 {
-    uint16_t buf[4];
     /*Your code comes here*/
     get_touch_pos();
 
     (*x) = (int32_t)touch_dev.x;
     (*y) = (int32_t)touch_dev.y;
 #ifdef ENABLE_TOUCH_TEST
+    uint16_t buf[4];
     ESP_LOGI("LVGLTAG","xpos:%d,ypos:%d",touch_dev.x,touch_dev.y);
     memset(buf,0x001F,sizeof(uint16_t)*4);
     LCD_DRAW_POINT(touch_dev.x,touch_dev.y,buf,2);
